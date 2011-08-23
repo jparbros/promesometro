@@ -1,0 +1,13 @@
+!!! 5
+%html
+  %head
+    %title= Promesometro
+    = stylesheet_link_tag :all
+    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.0.0.min.css"
+    = javascript_include_tag :defaults 
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = csrf_meta_tag
+    
+
+  %body
+    = yield
