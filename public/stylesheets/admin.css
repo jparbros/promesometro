@@ -1,0 +1,4 @@
+/* line 1, ../../app/stylesheets/admin.scss */
+body > .container, .container-fluid {
+  padding-top: 50px !important;
+}

@@ -1,0 +1,33 @@
+= form_for [:admin, @official], :html => {:multipart => true} do |form|
+  = render "admin/shared/error_messages", :target => @official
+  %fieldset
+    %legend Nuevo Funcionario
+    .clearfix
+      = form.label :nombre
+      .input
+        = form.text_field :name, :class => 'xlarge'
+    
+    .clearfix
+      = form.label :posicion
+      .input
+        = form.select :position, @positions, { :include_blank => true }
+    
+    .clearfix
+      = form.label :twitter
+      .input
+        = form.text_field :twitter, :class => 'xlarge'
+
+    .clearfix
+      = form.label :facebook
+      .input
+        = form.text_field :facebook, :class => 'xlarge'
+        
+    .clearfix
+      = form.label :fotografia
+      .input
+        = form.file_field :avatar
+        = form.hidden_field :avatar_cache
+
+    .actions
+      = form.submit 'Crear Funcionario', :class => 'btn primary'
+      %input{:type => 'reset', :class => 'btn'}

@@ -1,0 +1,12 @@
+= link_to 'Nuevo Funcionario', new_admin_official_path
+%table.common-table.zebra-striped
+  %thead
+    %tr
+      %td Nombre
+      %td Posición
+      %td Twitter
+      %td Facebook
+      %td Fotografia
+  
+  %tbody
+    = render @officials

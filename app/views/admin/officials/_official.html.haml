@@ -1,0 +1,7 @@
+%tr
+  %td= official.name
+  %td= official.position_name
+  %td= official.twitter
+  %td= official.facebook
+  %td= image_tag official.avatar.url(:thumb)
+  %td= link_to 'Editar', edit_admin_official_path(official)

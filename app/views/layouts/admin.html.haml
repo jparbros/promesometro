@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %title= Promesometro
+    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css"
+    = include_stylesheets :admin, :media => 'all'
+    = include_javascripts :app 
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = csrf_meta_tag
+    
+
+  %body
+    %header
+      .topbar
+        .fill
+          .container
+            %h3= link_to 'Promesometro', '/admin'
+            %ul
+              %li= link_to 'Officials', admin_officials_path
+        
+    .container
+      - if alert
+        .alert-message.error
+          = link_to 'x','#', :class => 'close'
+          %p= alert
+      - if notice
+        .alert-message.info
+          = link_to 'x','#', :class => 'close'
+          %p= notice
+      = yield
