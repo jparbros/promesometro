@@ -1,0 +1,25 @@
+.clearfix
+  = form.label :nombre
+  .input
+    = form.text_field :name, :class => 'xxlarge'
+
+.clearfix
+  = form.label :posicion
+  .input
+    = form.select :position, official_positions, { :include_blank => true }
+
+.clearfix
+  = form.label :twitter
+  .input
+    = form.text_field :twitter, :class => 'xxlarge'
+
+.clearfix
+  = form.label :facebook
+  .input
+    = form.text_field :facebook, :class => 'xxlarge'
+    
+.clearfix
+  = form.label :fotografia
+  .input
+    = form.file_field :avatar
+    = form.hidden_field :avatar_cache

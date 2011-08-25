@@ -6,7 +6,6 @@ class Admin::OfficialsController < Admin::BaseController
   
   def new
     @official = Official.new
-    @positions = Official::POSITIONS.collect {|position| [position, Official::POSITIONS.index(position)]}
   end
   
   def create
@@ -14,8 +13,21 @@ class Admin::OfficialsController < Admin::BaseController
     if @official.save
       redirect_to admin_officials_url, :notice => "Funcionario creado exitosamente"
     else
-      @positions = Official::POSITIONS.collect {|position| [position, Official::POSITIONS.index(position)]}
       render :new
     end
+  end
+  
+  def create
+    @official = Official.find(params[:id])
+    if @official.update_attributes(params[:official])
+      redirect_to admin_officials_url, :notice => "Funcionario editado exitosamente"
+    else
+      render :edit
+    end
+  end
+  
+  def edit
+    @official = Official.find(params[:id])
+    @positions = Official::POSITIONS.collect {|position| [position, Official::POSITIONS.index(position)]}
   end
 end

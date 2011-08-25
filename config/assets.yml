@@ -4,7 +4,10 @@ javascripts:
     - public/javascripts/jquery.min.js
     - public/javascripts/jquery_ujs.js
     - public/javascripts/application.js
-
+  admin:
+    - public/javascripts/jquery.min.js
+    - public/javascripts/jquery_ujs.js
+    - public/javascripts/admin.js
 stylesheets:
   admin:
     - public/stylesheets/admin.css

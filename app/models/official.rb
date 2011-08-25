@@ -1,6 +1,11 @@
 class Official < ActiveRecord::Base
   
   #
+  # Associations
+  #
+  has_many :promises
+  
+  #
   # CarrierWave
   #
   mount_uploader :avatar, AvatarUploader

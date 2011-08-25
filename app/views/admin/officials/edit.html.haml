@@ -1,9 +1,10 @@
 .page-header
-  %h2 Nuevo Funcionario
+  %h2 Editar Funcionario
+  
 = form_for [:admin, @official], :html => {:multipart => true} do |form|
   = render "admin/shared/error_messages", :target => @official
   %fieldset
     = render :partial => 'form', :locals => {:form => form}
     .actions
-      = form.submit 'Crear Funcionario', :class => 'btn primary'
+      = form.submit 'Editar Funcionario', :class => 'btn primary'
       %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

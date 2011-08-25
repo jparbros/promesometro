@@ -14,6 +14,9 @@ ActiveRecord::Schema.define(:version => 20110823071925) do
 
   create_table "milestones", :force => true do |t|
     t.string   "name"
+    t.text     "description"
+    t.string   "state"
+    t.integer  "promise_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20110823071925) do
   create_table "promises", :force => true do |t|
     t.string   "title"
     t.text     "description"
+    t.integer  "official_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -3,6 +3,7 @@ class CreatePromises < ActiveRecord::Migration
     create_table :promises do |t|
       t.string :title
       t.text :description
+      t.integer :official_id
 
       t.timestamps
     end

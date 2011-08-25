@@ -2,3 +2,20 @@
 body > .container, .container-fluid {
   padding-top: 50px !important;
 }
+
+/* line 3, ../../app/stylesheets/admin.scss */
+#nuevo_hito {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 5, ../../app/stylesheets/admin.scss */
+.well a.close {
+  color: #000000;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #FFFFFF;
+}

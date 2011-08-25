@@ -1,0 +1,20 @@
+.clearfix
+  = form.label :titulo
+  .input
+    = form.text_field :title, :class => 'xxlarge'
+
+.clearfix
+  = form.label :descripcion
+  .input
+    = form.text_area :description, :class => 'xxlarge', :rows => '5'
+
+.page-header
+  %h3 Hitos
+
+=link_to 'Agregar Hito','', :id => 'nuevo_hito'
+
+#new_milestones
+  = form.fields_for :milestones do |milestone_form|
+    = render :partial => 'milestone', :locals => {:milestone_form => milestone_form}
+    
+=link_to 'Agregar Hito','', :id => 'nuevo_hito'

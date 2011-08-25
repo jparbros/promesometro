@@ -1,0 +1,14 @@
+.page-header
+  %h2 Promesas
+  
+= link_to 'Nueva Promesa', new_admin_official_promise_path
+%table.common-table.zebra-striped
+  %thead
+    %tr
+      %td Titulo
+      %td Descripcion
+      %td Funcionario
+      %td
+  
+  %tbody
+    = render @promises
