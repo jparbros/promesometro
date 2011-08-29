@@ -50,8 +50,20 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    excon (0.6.5)
     faker (0.9.5)
       i18n (~> 0.4)
+    fog (0.11.0)
+      builder
+      excon (~> 0.6.5)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0.3)
+      net-scp (~> 1.0.4)
+      net-ssh (~> 2.1.4)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    formatador (0.2.0)
     fssm (0.2.7)
     haml (3.1.2)
     i18n (0.5.0)
@@ -70,7 +82,12 @@ GEM
     mime-types (1.16)
     mini_magick (3.3)
       subexec (~> 0.1.0)
+    multi_json (1.0.3)
     mysql2 (0.2.13)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-ssh (2.1.4)
+    nokogiri (1.5.0)
     open4 (1.1.0)
     orm_adapter (0.0.5)
     polyglot (0.3.2)
@@ -114,6 +131,7 @@ GEM
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
+    ruby-hmac (0.4.0)
     sass (3.1.7)
     shoulda (2.11.3)
     state_machine (1.0.2)
@@ -136,6 +154,7 @@ DEPENDENCIES
   compass
   devise
   faker
+  fog
   haml
   jammit
   jquery-rails (~> 1.0.12)
