@@ -1,7 +1,7 @@
 %tr
   %td= official.name
   %td= official.position_name
-  %td= image_tag official.avatar.url(:thumb)
+  %td= image_tag official.photo(:thumb)
   %td= link_to 'Editar', edit_admin_official_path(official)
   %td= link_to 'Borrar', admin_official_path(official), :method => :delete, :confirm => '¿Esta seguro que desea eliminar al funcionario?'
   %td= link_to 'Promesas', admin_official_promises_path(official)

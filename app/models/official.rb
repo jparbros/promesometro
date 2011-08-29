@@ -35,4 +35,12 @@ class Official < ActiveRecord::Base
   def position_name
     POSITIONS[position]
   end
+  
+  def photo(type = :thumb)
+    if avatar.nil?
+      "/images/user_#{type.to_s}.png"
+    else
+      avatar.url(type)
+    end
+  end
 end

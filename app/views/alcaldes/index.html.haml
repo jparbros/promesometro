@@ -9,7 +9,7 @@
       - state.provinces.each do |province|
         .span7.columns.alert-message.block-message.info.title_box
           .span2.columns
-            = image_tag province.official.avatar.url(:thumb)
+            = image_tag province.official.photo(:thumb)
           .span4.columns
             %h3= link_to province.official.name, alcalde_path(province.official)
             %p
