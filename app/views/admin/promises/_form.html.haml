@@ -9,6 +9,16 @@
     = form.text_area :description, :class => 'xxlarge', :rows => '5'
 
 .page-header
+  %h3 Temas
+      
+.well.promise_topics
+  - @topics.each do |topic|
+    %label
+      %span
+        = topic.name
+      = check_box_tag "promise[topic_ids][]", topic.id, form.object.topics.include?(topic)
+
+.page-header
   %h3 Hitos
 
 =link_to 'Agregar Hito','', :id => 'nuevo_hito'

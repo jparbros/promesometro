@@ -1,0 +1,21 @@
+.page-header
+  %h2 
+    Temas
+    %small
+      Arrastre para ordenar
+
+= link_to 'Nuevo Tema', new_admin_topic_path
+%table.common-table.zebra-striped#sorteable_topics
+  %thead
+    %tr
+      %td Nombre
+      %td Posicion
+      %td
+  
+  %tbody
+    = render @topics
+
+%script
+  $(document).ready(function(){  
+  $.sorteable_topics( "#{admin_sort_topics_path}",  "#{form_authenticity_token}");
+  });

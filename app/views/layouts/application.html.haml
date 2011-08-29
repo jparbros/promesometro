@@ -2,12 +2,32 @@
 %html
   %head
     %title= Promesometro
-    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.0.0.min.css"
+    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css"
     = include_stylesheets :app, :media => 'all'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
     = include_javascripts :app 
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
     = csrf_meta_tag
     
 
   %body
-    = yield
+    %header.container
+      %ul.tabs
+        %li= link_to 'Promesometro', ''
+        %li= link_to 'Promesas', promesas_path
+        %li= link_to 'Presidentes Regionales', presidentes_regionales_path
+        %li= link_to 'Alcaldes', alcaldes_path
+        %li= link_to 'Comenta', ''
+        %li= link_to 'Contacto', ''
+
+    .container
+      - if alert
+        .alert-message.error
+          = link_to 'x','#', :class => 'close'
+          %p= alert
+      - if notice
+        .alert-message.info
+          = link_to 'x','#', :class => 'close'
+          %p= notice
+
+      = yield

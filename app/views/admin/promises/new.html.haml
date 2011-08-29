@@ -1,5 +1,7 @@
 .page-header
-  %h2 Nueva Promesa
+  %h2 
+    Nueva Promesa
+    %small.link= link_to 'Promesas', admin_official_promises_path
 = form_for [:admin, @official, @promise], :html => {:multipart => true} do |form|
   = render "admin/shared/error_messages", :target => @promise
   %fieldset

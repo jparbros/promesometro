@@ -1,0 +1,24 @@
+.row
+  .span11.columns
+    %h1= @promise.title
+    = link_to_official @promise.official
+    .well.floatLeft
+      .span2.columns
+        = image_tag 'document_64.png'
+      .span8.columns
+        = @promise.description
+    %h2 Hitos
+    - @promise.milestones.each do |milestone|
+      .well.milestone{:class => milestone_class(milestone)}
+        .span10.columns
+          %h3= milestone.name
+          %p= milestone.description
+          Estado: 
+          %b= milestone_states(milestone)
+        .span5.columns
+          %h4 Gobierno
+        .span5.columns
+          %h4 Ciudadanos
+  .span5.columns
+    = render :partial => 'shared/search'
+    = render :partial => 'shared/topics'

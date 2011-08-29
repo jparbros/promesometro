@@ -1,0 +1,42 @@
+ul.tabs { margin-top: 20px }
+
+#search {
+  label {
+    width: 60px;
+  }
+  
+  .input {
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+}
+
+.promise {
+  overflow: scroll;
+  height: 600px;
+}
+  
+.milestone { float:left }
+.milestone_new {
+  background-color: #FDDFDE;
+  border-color: #FBC7C6;
+}
+
+.milestone_started {
+  background-color: #FDF5D9;
+  border-color: #FCEEC1;
+}
+
+.milestone_finished {
+  background-color: #D1EED1;
+  border-color: #BFE7BF;
+}
+
+.province { display: none}
+
+.note {
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.floatLeft { float: left}

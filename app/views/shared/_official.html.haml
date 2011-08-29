@@ -1,0 +1,38 @@
+.row
+  %h1
+    = @official.name
+  .span4.columns
+    .well
+      = image_tag @official.avatar.url(:profile)
+    .well
+      %p
+        %b Puesto:
+        = @official.position_name
+      %p
+        %b Estado:
+        = @official.state.name
+      -if @official.province
+        %p
+          %b Provincia:
+          = @official.province.name
+      %p
+        %b Twitter:
+        = link_to @official.twitter, "http://www.twitter.com/#{@official.twitter}", :target => '_blank'
+      
+      %p
+        %b Facebook:
+        = link_to @official.facebook, "http://www.facebook.com/#{@official.facebook}", :target => '_blank'
+  .span7.columns
+    %h2 Promesas
+    .promise
+      - @official.promises.each do |promise|
+        .well
+          %h3= link_to promise.title, alcalde_promesa_path(@official, promise)
+          %p= promise.description
+          - promise.milestones.each do |milestone|
+            .well{:class => milestone_class(milestone)}
+              %p= milestone.name
+              Estado: 
+              %b= milestone_states(milestone)
+  .span5.columns
+    = render :partial => 'shared/search'

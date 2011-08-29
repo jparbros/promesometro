@@ -4,6 +4,7 @@
     %title= Promesometro
     = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css"
     = include_stylesheets :admin, :media => 'all'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
     = include_javascripts :admin 
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
     = csrf_meta_tag
@@ -17,6 +18,7 @@
             %h3= link_to 'Promesometro', '/admin'
             %ul
               %li= link_to 'Funcionarios', admin_officials_path
+              %li= link_to 'Temas', admin_topics_path
         
     .container
       - if alert

@@ -1,0 +1,28 @@
+.well#search
+  %h3 Busqueda
+  .clearfix
+    = label_tag :nombre
+    %br
+    .input
+      .input-prepend
+        %span.add-on
+          = image_tag 'search.png'
+        = text_field_tag :nombre, '', :class => 'medium'
+
+  .clearfix
+    = label_tag :entidad
+    %br
+    .input
+      .input-prepend
+        %span.add-on
+          = image_tag 'search.png'
+        = text_field_tag :entidad, '', :class => 'medium'
+
+  .clearfix
+    = label_tag :partido
+    %br
+    .input
+      .input-prepend
+        %span.add-on
+          = image_tag 'search.png'
+        = text_field_tag :partido, '', :class => 'medium'

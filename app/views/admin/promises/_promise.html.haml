@@ -1,5 +1,5 @@
 %tr
-  %td= promise.title
+  %td= link_to promise.title, admin_official_promise_path(@official, promise)
   %td= promise.description
   %td= promise.official_name
   %td= link_to 'Editar', edit_admin_official_promise_path(@official, promise)

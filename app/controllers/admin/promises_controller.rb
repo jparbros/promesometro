@@ -9,6 +9,7 @@ class Admin::PromisesController < Admin::BaseController
   def new
     @promise = @official.promises.build
     @promise.milestones.build
+    @topics = Topic.all
   end
   
   def create
@@ -23,15 +24,21 @@ class Admin::PromisesController < Admin::BaseController
   def edit
     @promise = @official.promises.find(params[:id])
     @promise.milestones.build if @promise.milestones.empty?
+    @topics = Topic.all
   end
   
   def update
+    params[:promise][:topic_ids] ||= []
     @promise = @official.promises.find(params[:id])
     if @promise.update_attributes(params[:promise])
       redirect_to admin_official_promises_url(@official), :notice => 'Promesa editada exitosamente'
     else
       render :edit
     end
+  end
+  
+  def show
+    @promise = @official.promises.find(params[:id])
   end
   
   def get_official

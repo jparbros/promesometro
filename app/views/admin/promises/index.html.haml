@@ -1,5 +1,7 @@
 .page-header
-  %h2 Promesas
+  %h2 
+    Promesas
+    %small.link= link_to 'Funcionarios', admin_officials_path
   
 = link_to 'Nueva Promesa', new_admin_official_promise_path
 %table.common-table.zebra-striped
@@ -8,6 +10,7 @@
       %td Titulo
       %td Descripcion
       %td Funcionario
+      %td
       %td
   
   %tbody

@@ -3,12 +3,28 @@ Promesometro::Application.routes.draw do
   # first created -> highest priority.
 
   namespace :admin do
+    match 'officials/provinces/:state_id', :to => "officials#provinces", :as => 'official_provinces'
     resources :officials do
       resources :promises do
         resources :milestones
       end
     end
+    resources :topics, :except => [:show]
+    match 'topics/sort', :to => "topics#sort", :as => 'sort_topics'
+    root :to => "dashboard#index"
   end
+  
+  root :to => "home#show"
+  
+  resources :temas, :only => [:show]
+  resources :promesas, :only => [:index]
+  resources :presidentes_regionales, :only => [:index, :show] do
+    resources :promesas, :only => [:show]
+  end
+  resources :alcaldes, :only => [:index, :show] do
+    resources :promesas, :only => [:show]
+  end
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

@@ -19,3 +19,14 @@ body > .container, .container-fluid {
   opacity: 0.2;
   text-shadow: 0 1px 0 #FFFFFF;
 }
+
+/* line 15, ../../app/stylesheets/admin.scss */
+h2 small.link {
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 20, ../../app/stylesheets/admin.scss */
+.promise_topics {
+  float: left;
+}

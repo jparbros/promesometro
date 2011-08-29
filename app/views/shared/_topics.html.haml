@@ -1,0 +1,5 @@
+.well.floatLeft
+  %h3 Temas
+  - Topic.all.each do |topic|
+    .span2.columns
+      =link_to topic.name.humanize, tema_path(:id => topic.id)

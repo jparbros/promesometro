@@ -1,0 +1,4 @@
+.row
+  - @topics.each do |topic|
+    .span4.columns.alert-message.block-message.info.title_box
+      = link_to topic.name.humanize, tema_path(topic)

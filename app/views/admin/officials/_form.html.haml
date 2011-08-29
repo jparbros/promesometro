@@ -7,6 +7,16 @@
   = form.label :posicion
   .input
     = form.select :position, official_positions, { :include_blank => true }
+    
+.clearfix
+  = form.label :region
+  .input
+    = form.select :state_id, @states, { :include_blank => true }
+
+.clearfix
+  = form.label :provincia
+  .input
+    = form.select :province_id, @provinces, { :include_blank => true}, {:class => provinces_class(form.object), :disabled =>  provinces_disabled?(form.object)}
 
 .clearfix
   = form.label :twitter

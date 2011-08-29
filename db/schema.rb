@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110823071925) do
+ActiveRecord::Schema.define(:version => 20110829063316) do
 
   create_table "milestones", :force => true do |t|
     t.string   "name"
@@ -29,12 +29,39 @@ ActiveRecord::Schema.define(:version => 20110823071925) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "state_id"
+    t.integer  "province_id"
   end
 
   create_table "promises", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.integer  "official_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "promises_topics", :id => false, :force => true do |t|
+    t.integer "promise_id"
+    t.integer "topic_id"
+  end
+
+  create_table "provinces", :force => true do |t|
+    t.string   "name"
+    t.integer  "state_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "states", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "topics", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

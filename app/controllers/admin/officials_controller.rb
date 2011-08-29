@@ -6,6 +6,8 @@ class Admin::OfficialsController < Admin::BaseController
   
   def new
     @official = Official.new
+    @states = State.all.collect {|state| [state.name, state.id]}
+    @provinces = []
   end
   
   def create
@@ -17,7 +19,7 @@ class Admin::OfficialsController < Admin::BaseController
     end
   end
   
-  def create
+  def update
     @official = Official.find(params[:id])
     if @official.update_attributes(params[:official])
       redirect_to admin_officials_url, :notice => "Funcionario editado exitosamente"
@@ -28,6 +30,12 @@ class Admin::OfficialsController < Admin::BaseController
   
   def edit
     @official = Official.find(params[:id])
-    @positions = Official::POSITIONS.collect {|position| [position, Official::POSITIONS.index(position)]}
+    @states = State.all.collect {|state| [state.name, state.id]}
+    @provinces = @official.state ?  @official.state.provinces.collect {|province| [province.name, province.id]} : []
+  end
+  
+  def provinces
+    states = State.find(params[:state_id])
+    render :json => states.provinces
   end
 end
