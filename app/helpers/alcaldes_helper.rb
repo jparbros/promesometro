@@ -22,6 +22,6 @@ module AlcaldesHelper
   end
   
   def name_to_function(name)
-    name.gsub(' ','_').gsub('á','a').gsub('é','e').gsub('í','i').gsub('ó','o').gsub('ú','u')
+    name.gsub(' ','_')
   end
 end
