@@ -4,7 +4,7 @@ class Milestone < ActiveRecord::Base
   # Associations
   #
   belongs_to :promise
-  has_many :notes, :polymorphic => true
+  has_many :notes#, :polymorphic => true
   
   state_machine :state, :initial => :new do
     state :new
