@@ -37,7 +37,7 @@ class Official < ActiveRecord::Base
   end
   
   def photo(type = :thumb)
-    if avatar.nil?
+    if avatar.url.nil?
       "/images/user_#{type.to_s}.png"
     else
       avatar.url(type)
