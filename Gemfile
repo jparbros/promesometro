@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'carrierwave'
 gem 'devise'
+gem 'fog'
 gem 'haml'
 gem 'jammit'
 gem 'jquery-rails', '~> 1.0.12'
