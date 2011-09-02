@@ -10,13 +10,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110829063316) do
+ActiveRecord::Schema.define(:version => 20110901032905) do
 
   create_table "milestones", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "state"
     t.integer  "promise_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "notes", :force => true do |t|
+    t.text     "note"
+    t.string   "note_by"
+    t.integer  "noteable_id"
+    t.string   "noteable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,6 +40,13 @@ ActiveRecord::Schema.define(:version => 20110829063316) do
     t.datetime "updated_at"
     t.integer  "state_id"
     t.integer  "province_id"
+  end
+
+  create_table "political_parties", :force => true do |t|
+    t.string   "name"
+    t.string   "logo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "promises", :force => true do |t|

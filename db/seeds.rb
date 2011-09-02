@@ -262,63 +262,86 @@ topics.each_with_index do |topic,index|
   Topic.create(:name => topic, :position => index)
 end
 
-avatar = ['moe.gif','apu.png','red.png','bart.jpg','homer.jpg']
-miletone_states = ['new','in_progress','finished']
+political_party = PoliticalParty.create(:name => 'Accion Popular')
+political_party.logo = File.open('doc/partidos/accion_popular.gif')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Agrupacion Independiente Si Cumple')
+political_party.logo = File.open('doc/partidos/agrupacion_independiente_si_cumple.jpg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Alianza para el Progreso')
+political_party.logo = File.open('doc/partidos/alianza_para_el_progreso.png')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Cambio 90')
+political_party.logo = File.open('doc/partidos/cambio_90.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Cambio Radical')
+political_party.logo = File.open('doc/partidos/cambio_radical.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Despertar Nacional')
+political_party.logo = File.open('doc/partidos/despertar_nacional.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Fonavistas del Peru')
+political_party.logo = File.open('doc/partidos/fonavistas_del_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Fuerza 2011')
+political_party.logo = File.open('doc/partidos/fuerza_2011.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Fuerza Nacional')
+political_party.logo = File.open('doc/partidos/fuerza_nacional.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Participacion Popular')
+political_party.logo = File.open('doc/partidos/participacion_popular.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Aprista Peruano')
+political_party.logo = File.open('doc/partidos/partido_aprista_peruano.png')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Democratico Somos Peru')
+political_party.logo = File.open('doc/partidos/partido_democratico_somos_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Humanista Peruano')
+political_party.logo = File.open('doc/partidos/partido_humanista_peruano.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Politico Adelante')
+political_party.logo = File.open('doc/partidos/partido_politico_adelante.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Popular Cristiano')
+political_party.logo = File.open('doc/partidos/partido_popular_cristiano.jpg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Peru Posible')
+political_party.logo = File.open('doc/partidos/peru_posible.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Renovacion Nacional')
+political_party.logo = File.open('doc/partidos/renovacion_nacional.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Restauracion Nacional')
+political_party.logo = File.open('doc/partidos/restauracion_social.jpg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Siempre Unidos')
+political_party.logo = File.open('doc/partidos/siempres_unidos.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Solidaridad Nacional')
+political_party.logo = File.open('doc/partidos/solidaridad_nacional.jpg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Union por el Peru')
+political_party.logo = File.open('doc/partidos/union_por_el_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Nueva Izquierda')
+political_party.logo = File.open('doc/partidos/movimiento_nueva_izquierda.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Todos por el Peru')
+political_party.logo = File.open('doc/partidos/todos_por_el_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Frente Popular Agricola Fia del Peru')
+political_party.logo = File.open('doc/partidos/frente_popular_agricola_la_fia_del_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Partido Descentralista Fuerza Social')
+political_party.logo = File.open('doc/partidos/partido_descentralista_fuerza_social.jpg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Gana Peru')
+political_party.logo = File.open('doc/partidos/gana_peru.jpeg')
+political_party.save
+political_party = PoliticalParty.create(:name => 'Justicia, Tecnologia, Ecologia')
+political_party.logo = File.open('doc/partidos/justicia_tecnologia_ecologia.jpeg')
+political_party.save
 
-State.all.each do |state|
-  official = Official.create(
-      :name => Faker::Name.name, 
-      :position => 1, 
-      :facebook => Faker::Internet.user_name, 
-      :twitter => Faker::Internet.user_name,
-      :state_id => state.id
-  )
-  official.avatar = File.open("doc/#{avatar[rand(5)]}")
-  official.save
-  for i in 1..rand(6) do
-    promise = Promise.create(
-        :title => Faker::Lorem.sentence(rand(6)), 
-        :description => Faker::Lorem.paragraph(rand(6)), 
-        :official_id => official.id)
-        
-    for i in 1..rand(6) do
-      Milestone.create(
-          :name => Faker::Lorem.sentence(rand(6)),
-          :description => Faker::Lorem.paragraph(rand(6)),
-          :promise_id => promise.id,
-          :state => miletone_states[rand(3)])
-    end
-  end
-end
 
-Province.all.each do |province|
-  official = Official.create(
-      :name => Faker::Name.name, 
-      :position => 0, 
-      :facebook => Faker::Internet.user_name, 
-      :twitter => Faker::Internet.user_name,
-      :state_id => province.state.id,
-      :province_id => province.id
-  )
-  official.avatar = File.open("doc/#{avatar[rand(5)]}")
-  official.save
-  for i in 1..rand(6) do
-    topics = []
-    for i in 1..rand(16) do
-      topics << rand(Topic.last.id-1)+1
-    end
-    promise = Promise.create(
-        :title => Faker::Lorem.sentence(rand(6)), 
-        :description => Faker::Lorem.paragraph(rand(6)), 
-        :official_id => official.id,
-        :topic_ids => topics)
-        
-    for i in 1..rand(6) do
-      Milestone.create(
-          :name => Faker::Lorem.sentence(rand(6)),
-          :description => Faker::Lorem.paragraph(rand(6)),
-          :promise_id => promise.id,
-          :state => miletone_states[rand(3)])
-    end
-  end
-end

@@ -9,6 +9,7 @@ Promesometro::Application.routes.draw do
         resources :milestones
       end
     end
+    resources :political_parties
     resources :topics, :except => [:show]
     match 'topics/sort', :to => "topics#sort", :as => 'sort_topics'
     root :to => "dashboard#index"
