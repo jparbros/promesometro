@@ -2,4 +2,4 @@
   %h3 Temas
   - Topic.all.each do |topic|
     .span2.columns
-      =link_to topic.name.humanize, tema_path(:id => topic.id)
+      =link_to topic.name.humanize, promesas_path('search[topics_name_equals]' => topic.name)

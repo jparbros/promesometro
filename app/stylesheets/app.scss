@@ -1,3 +1,5 @@
+@import 'partials/rounded_border';
+
 ul.tabs { margin-top: 20px }
 
 #search {
@@ -40,3 +42,35 @@ ul.tabs { margin-top: 20px }
 }
 
 .floatLeft { float: left}
+
+header {
+  display: inline-block;
+  margin: 0 0 0 150px;
+  
+  div {
+    display: inline-block;
+  }
+}
+
+#promesas {
+  .filter {
+    @include border-radius(5px);
+    border:1px solid #181619;
+    background-color: #e5dfd1;
+    display: inline-block;
+  }
+  
+  .promesa {
+    border-bottom: 5px solid #7dbeb8;
+    margin: 0 0 30px 0;
+  
+    .topic {
+      @include border-radius(5px);
+      border:1px solid #181619;
+      background-color: #e5dfd1;
+      display: inline-block;
+      margin: 5px;
+      padding: 10px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ class Official < ActiveRecord::Base
   has_many :promises
   belongs_to :state
   belongs_to :province
+  belongs_to :political_party
   
   #
   # CarrierWave

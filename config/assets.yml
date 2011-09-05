@@ -10,6 +10,7 @@ javascripts:
 stylesheets:
   app:
     - public/stylesheets/app.css
+    - public/stylesheets/jquery-ui.css
   admin:
     - public/stylesheets/admin.css
     - public/stylesheets/jquery.tagsinput.css

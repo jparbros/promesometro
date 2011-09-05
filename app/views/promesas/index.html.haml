@@ -1,4 +1,13 @@
-.row
-  - @topics.each do |topic|
-    .span4.columns.alert-message.block-message.info.title_box
-      = link_to topic.name.humanize, tema_path(topic)
+.page-header
+  %h1
+    Promesas
+
+.row#promesas
+  .span11.columns
+    = render :partial => 'promesa', :collection => @promises
+    - if @promises.empty?
+      %h3
+        No existen coincidencias para su busqueda
+  .span5.columns
+    = render :partial => 'shared/search'
+    = render :partial => 'shared/topics'

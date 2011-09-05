@@ -1,28 +1,35 @@
-.well#search
-  %h3 Busqueda
-  .clearfix
-    = label_tag :nombre
-    %br
-    .input
-      .input-prepend
-        %span.add-on
-          = image_tag 'search.png'
-        = text_field_tag :nombre, '', :class => 'medium'
+= form_for @search, :url => promesas_path do |form|
+  .well#search
+    %h3 Busqueda
+    .clearfix
+      = label_tag :nombre
+      %br 
+      %br
+      .input
+        .input-prepend
+          %span.add-on
+            = image_tag 'search.png'
+          = form.text_field :official_name_contains, :class => 'medium'
 
-  .clearfix
-    = label_tag :entidad
-    %br
-    .input
-      .input-prepend
-        %span.add-on
-          = image_tag 'search.png'
-        = text_field_tag :entidad, '', :class => 'medium'
+    .clearfix
+      = label_tag :entidad
+      %br
+      %br
+      .input
+        .input-prepend
+          %span.add-on
+            = image_tag 'search.png'
+          = form.text_field :official_state_name_contains, :class => 'medium'
 
-  .clearfix
-    = label_tag :partido
-    %br
-    .input
-      .input-prepend
-        %span.add-on
-          = image_tag 'search.png'
-        = text_field_tag :partido, '', :class => 'medium'
+    .clearfix
+      = label_tag :partido
+      %br
+      %br
+      .input
+        .input-prepend
+          %span.add-on
+            = image_tag 'search.png'
+          = text_field_tag :partido, '', :class => 'medium'
+    
+    .clearfix
+      = form.submit 'Buscar', :class => 'btn'

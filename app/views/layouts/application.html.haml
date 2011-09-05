@@ -4,21 +4,21 @@
     %title= Promesometro
     = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css"
     = include_stylesheets :app, :media => 'all'
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
     = include_javascripts :app 
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
     = csrf_meta_tag
     
 
   %body
-    %header.container
-      %ul.tabs
-        %li= link_to 'Promesometro', ''
-        %li= link_to 'Promesas', promesas_path
-        %li= link_to 'Presidentes Regionales', presidentes_regionales_path
-        %li= link_to 'Alcaldes', alcaldes_path
-        %li= link_to 'Comenta', ''
-        %li= link_to 'Contacto', ''
+    .container
+      %header
+        = image_tag 'logo.png'
+        %div
+          %ul.tabs
+            %li= link_to 'Promesometro', ''
+            %li= link_to 'Promesas', promesas_path
+            %li= link_to 'Directorio', ''
 
     .container
       - if alert

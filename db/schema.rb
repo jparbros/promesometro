@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110901032905) do
+ActiveRecord::Schema.define(:version => 20110902143029) do
 
   create_table "milestones", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110901032905) do
     t.datetime "updated_at"
     t.integer  "state_id"
     t.integer  "province_id"
+    t.integer  "political_party_id"
   end
 
   create_table "political_parties", :force => true do |t|

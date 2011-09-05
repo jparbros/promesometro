@@ -8,17 +8,27 @@
       .span8.columns
         = @promise.description
     %h2 Hitos
-    - @promise.milestones.each do |milestone|
-      .well.milestone{:class => milestone_class(milestone)}
-        .span10.columns
+    #milestones
+      %ul
+        - @promise.milestones.each do |milestone|
+          %li
+            = link_to milestone.name, "##{milestone.id}"
+      
+      - @promise.milestones.each do |milestone|
+        %div{:id => milestone.id}
           %h3= milestone.name
           %p= milestone.description
           Estado: 
           %b= milestone_states(milestone)
-        .span5.columns
-          %h4 Gobierno
-        .span5.columns
-          %h4 Ciudadanos
+          .span5.columns
+            %h4 Gobierno
+          .span5.columns
+            %h4 Ciudadanos
   .span5.columns
     = render :partial => 'shared/search'
     = render :partial => 'shared/topics'
+    
+%script
+  $(document).ready(function(){
+  $("#milestones").tabs();
+  })

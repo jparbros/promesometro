@@ -1,11 +1,12 @@
 class PromesasController < ApplicationController
   
   def index
-    @topics = Topic.all
+    @search = Promise.search(params[:search])
+    @promises = @search.all
   end
   
   def show
-    @official = Official.find(params[:alcalde_id] || params[:presidentes_regionale_id])
-    @promise = @official.promises.find(params[:id])
+    @search = Promise.search(params[:search])
+    @promise = Promise.find(params[:id])
   end
 end

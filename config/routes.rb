@@ -18,13 +18,11 @@ Promesometro::Application.routes.draw do
   root :to => "home#show"
   
   resources :temas, :only => [:show]
-  resources :promesas, :only => [:index]
-  resources :presidentes_regionales, :only => [:index, :show] do
-    resources :promesas, :only => [:show]
-  end
-  resources :alcaldes, :only => [:index, :show] do
-    resources :promesas, :only => [:show]
-  end
+  resources :promesas, :only => [:index, :show]
+  resources :presidentes_regionales, :only => [:index, :show]
+  resources :alcaldes, :only => [:index, :show]
+  
+  #match 'promesas/:title', :to => "promesas#show", :as => 'promesa'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
