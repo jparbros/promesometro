@@ -20,10 +20,15 @@
           %p= milestone.description
           Estado: 
           %b= milestone_states(milestone)
-          .span5.columns
+          %div
             %h4 Gobierno
-          .span5.columns
+            = render :partial => 'comment', :collection => milestone.comments.government_approved
+          %div
             %h4 Ciudadanos
+            = render :partial => 'comment', :collection => milestone.comments.citizens_approved
+          %div
+            = render :partial => 'comment_form', :locals => {:milestone => milestone}
+            
   .span5.columns
     = render :partial => 'shared/search'
     = render :partial => 'shared/topics'

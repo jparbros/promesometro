@@ -7,6 +7,6 @@ class PromesasController < ApplicationController
   
   def show
     @search = Promise.search(params[:search])
-    @promise = Promise.find(params[:id])
+    @promise = Promise.find_by_slug(params[:slug])
   end
 end
