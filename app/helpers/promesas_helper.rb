@@ -12,4 +12,8 @@ module PromesasHelper
   def promesa_started_in_words(promise)
     concat(content_tag('h3', 'Iniciado hace' + time_ago_in_words(promise.started_at) )) if promise.started_at
   end
+  
+  def titulo_filtro_promesas(filtro)
+    concat ' - ' +  filtro['topics_name_equals'].humanize if filtro.include? 'topics_name_equals'
+  end
 end
