@@ -1,0 +1,27 @@
+.well.row
+  %h3
+    = official.name
+  
+  .span4.columns
+    = image_tag official.photo(:profile)
+  .span4.columns
+    %p
+      %b Puesto:
+      = official.position_name
+    %p
+      %b Estado:
+      = official.state.name
+    -if official.province
+      %p
+        %b Provincia:
+        = official.province.name
+    %p
+      %b Twitter:
+      = link_to official.twitter, "http://www.twitter.com/#{official.twitter}", :target => '_blank'
+    
+    %p
+      %b Facebook:
+      = link_to official.facebook, "http://www.facebook.com/#{official.facebook}", :target => '_blank'
+    
+    %p
+      = link_to_official official

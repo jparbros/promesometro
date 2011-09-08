@@ -33,6 +33,9 @@ Promesometro::Application.routes.draw do
   match "promesas/hito/:milestone_id/comentario", :to => "comments#create", :as => "hito_comentario"
   match "promesas/:slug", :to => "promesas#show", :as => "promesa"
   
+  match "directorio", :to => "regiones#index", :as => "directorio"
+  match "regiones/:region_name", :to => "regiones#show", :as => "region"
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

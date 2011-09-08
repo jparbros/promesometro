@@ -1,0 +1,6 @@
+.page-header
+  %h1= @region.name.humanize
+
+= render :partial => 'official', :locals => {:official => @region.official}
+
+= render :partial => 'official', :collection => @region.provinces.collect {|province| province.official}
