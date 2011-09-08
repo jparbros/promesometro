@@ -1,6 +1,26 @@
 .page-header
-  %h2= @promise.title
+  %h1 Promesa
+
+%h2= @promise.title
 
 %p
   = @promise.description
   
+  
+.page-header
+  %h3 Hitos
+
+#milestones
+  %ul
+    - @promise.milestones.each do |milestone|
+      %li
+        = link_to milestone.name, "##{milestone.id}"
+  
+  - @promise.milestones.each do |milestone|
+    %div{:id => milestone.id}
+      = render :partial => 'show_milestone', :collection => @promise.milestones
+        
+%script
+  $(document).ready(function(){
+  $("#milestones").tabs();
+  })

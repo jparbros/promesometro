@@ -1,0 +1,22 @@
+%h4= show_milestone.name
+%p= show_milestone.description
+%p
+  Estado: 
+  %b= milestone_states(show_milestone)
+
+.page-header
+  %h5 Comentarios
+
+%h6.government_header{:id => "#{show_milestone.id}"}
+  %span.ui-icon.ui-icon-triangle-1-e
+  Gobierno
+%div.government_content{:id => "#{show_milestone.id}_government" }
+  = render :partial => 'comment', :collection => show_milestone.comments.government
+  
+%h6.citizens_header{:id => "#{show_milestone.id}"}
+  %span.ui-icon.ui-icon-triangle-1-e 
+  Ciudadanos
+%div.citizens_content{:id => "#{show_milestone.id}_citizens" }
+  = render :partial => 'comment', :collection => show_milestone.comments.citizens_approved
+  
+= render :partial => 'comment_form', :locals => { :show_milestone => show_milestone }

@@ -9,7 +9,10 @@ Promesometro::Application.routes.draw do
         resources :milestones
       end
     end
-    resources :comments
+    match "promises/milestones/:milestone_id/comment", :to => "comments#create", :as => "comment_milestone"
+    resources :comments do
+      resource :comment_approval, :controller => :comment_approval, :only => [:create, :destroy]
+    end
     resources :political_parties
     resources :topics, :except => [:show]
     match 'topics/sort', :to => "topics#sort", :as => 'sort_topics'

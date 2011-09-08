@@ -73,6 +73,34 @@ $.extend({
         });
       });
     }
+  },
+  
+  show_governmnet_comments: function() {
+    header = $('.government_header')
+    header.click(function(){
+      content = $('#'+ $(this).attr('id') + '_government')
+      if( content.is(':visible')) {
+        content.hide();
+        header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
+      } else {
+        content.show();
+        header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
+      }
+    })
+  },
+  
+  show_citizens_comments: function() {
+    header = $('.citizens_header')
+    header.click(function(){
+      content = $('#'+ $(this).attr('id') + '_citizens')
+      if( content.is(':visible')) {
+        content.hide();
+        header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
+      } else {
+        content.show();
+        header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
+      }
+    })
   }
 });
 
@@ -82,4 +110,6 @@ $(document).ready(function(){
   $.close_alerts();
   $.auto_close_alerts();
   $.change_province();
+  $.show_governmnet_comments();
+  $.show_citizens_comments();
 });

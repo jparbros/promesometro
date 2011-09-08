@@ -5,12 +5,11 @@ javascripts:
     - public/javascripts/application.js
   admin:
     - public/javascripts/jquery_ujs.js
-    - public/javascripts/jquery.tagsinput.min.js
     - public/javascripts/admin.js
 stylesheets:
   app:
     - public/stylesheets/app.css
     - public/stylesheets/jquery-ui.css
   admin:
+    - public/stylesheets/jquery-ui.css
     - public/stylesheets/admin.css
-    - public/stylesheets/jquery.tagsinput.css

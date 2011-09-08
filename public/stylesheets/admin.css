@@ -30,3 +30,18 @@ h2 small.link {
 .promise_topics {
   float: left;
 }
+
+/* line 22, ../../app/stylesheets/admin.scss */
+.ui-icon {
+  display: inline-block;
+}
+
+/* line 24, ../../app/stylesheets/admin.scss */
+.citizens_content, .government_content {
+  display: none;
+}
+
+/* line 26, ../../app/stylesheets/admin.scss */
+.government_header, .citizens_header {
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+%tr
+  %td= comment.author
+  %td= comment.comment
+  %td= comment_kind(comment.kind)
+  %td= comment.commentable.name
+  %td= comment.commentable.promise.title
+  %td= link_to_approval(comment)
