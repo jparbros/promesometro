@@ -8,7 +8,7 @@
 %p
   %strong
   Iniciada hace
-  = time_ago_in_words(@promise.started_at)
+  = time_ago_in_words(@promise.started_at) if @promise.started_at
   
 .page-header
   %h3 Hitos
