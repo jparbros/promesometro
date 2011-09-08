@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110905232110) do
+ActiveRecord::Schema.define(:version => 20110908134612) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20110905232110) do
     t.integer  "promise_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "started_at"
+    t.datetime "ended_at"
   end
 
   create_table "notes", :force => true do |t|
@@ -68,6 +70,8 @@ ActiveRecord::Schema.define(:version => 20110905232110) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "slug"
+    t.datetime "started_at"
+    t.datetime "ended_at"
   end
 
   create_table "promises_topics", :id => false, :force => true do |t|

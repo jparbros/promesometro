@@ -5,7 +5,10 @@
 
 %p
   = @promise.description
-  
+%p
+  %strong
+  Iniciada hace
+  = time_ago_in_words(@promise.started_at)
   
 .page-header
   %h3 Hitos
@@ -15,10 +18,8 @@
     - @promise.milestones.each do |milestone|
       %li
         = link_to milestone.name, "##{milestone.id}"
-  
-  - @promise.milestones.each do |milestone|
-    %div{:id => milestone.id}
-      = render :partial => 'show_milestone', :collection => @promise.milestones
+
+  = render :partial => 'show_milestone', :collection => @promise.milestones
         
 %script
   $(document).ready(function(){

@@ -10,6 +10,8 @@ Promesometro::Application.routes.draw do
       end
     end
     match "promises/milestones/:milestone_id/comment", :to => "comments#create", :as => "comment_milestone"
+    match "promises/milestones/:milestone_id/milestone_state", :to => "milestone_state#create", :as => "milestone_state", :via => :post
+    match "promises/milestones/:milestone_id/milestone_state", :to => "milestone_state#update", :as => "milestone_state", :via => :put
     resources :comments do
       resource :comment_approval, :controller => :comment_approval, :only => [:create, :destroy]
     end

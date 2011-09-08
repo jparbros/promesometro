@@ -5,11 +5,17 @@ class Milestone < ActiveRecord::Base
   #
   belongs_to :promise
   has_many :comments, :as => :commentable #:polymorphic => true
-  
+
+  #
+  # States Machine
+  #
   state_machine :state, :initial => :new do
     state :new
     state :in_progress
     state :finished
+    
+    after_transition :new => :in_progress, :do => :start_milestone
+    after_transition :in_progress => :finished, :do => :finish_milestone
     
     event :start do
       transition :to => :in_progress, :from => :new
@@ -18,5 +24,25 @@ class Milestone < ActiveRecord::Base
     event :finish do
       transition :to => :finished, :from => :in_progress
     end
+  end
+  
+  #
+  # Delegates
+  #
+  delegate :start, :to => :promise, :allow_nil => true, :prefix => true
+  delegate :started?, :to => :promise, :allow_nil => true, :prefix => true
+  delegate :finish, :to => :promise, :allow_nil => true, :prefix => true
+  delegate :finished?, :to => :promise, :allow_nil => true, :prefix => true
+  
+  def start_milestone
+    self.started_at = Time.now
+    self.save
+    self.promise_start unless self.promise_started?
+  end
+  
+  def finish_milestone
+    self.ended_at = Time.now
+    self.save
+    self.promise_finish unless self.promise_finished?
   end
 end

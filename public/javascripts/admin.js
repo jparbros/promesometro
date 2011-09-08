@@ -76,29 +76,29 @@ $.extend({
   },
   
   show_governmnet_comments: function() {
-    header = $('.government_header')
-    header.click(function(){
+    gov_header = $('.government_header')
+    gov_header.click(function(){
       content = $('#'+ $(this).attr('id') + '_government')
       if( content.is(':visible')) {
         content.hide();
-        header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
+        gov_header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
       } else {
         content.show();
-        header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
+        gov_header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
       }
     })
   },
   
   show_citizens_comments: function() {
-    header = $('.citizens_header')
-    header.click(function(){
+    cit_header = $('.citizens_header')
+    cit_header.click(function(){
       content = $('#'+ $(this).attr('id') + '_citizens')
       if( content.is(':visible')) {
         content.hide();
-        header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
+        cit_header.find('span').removeClass('ui-icon-triangle-1-s').addClass('ui-icon-triangle-1-e')
       } else {
         content.show();
-        header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
+        cit_header.find('span').removeClass('ui-icon-triangle-1-e').addClass('ui-icon-triangle-1-s')
       }
     })
   }

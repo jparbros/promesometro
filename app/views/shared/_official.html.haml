@@ -27,7 +27,7 @@
     .promise
       - @official.promises.each do |promise|
         .well
-          %h3= link_to promise.title, alcalde_promesa_path(@official, promise)
+          -# %h3= link_to promise.title, alcalde_promesa_path(@official, promise)
           %p= promise.description
           - promise.milestones.each do |milestone|
             .well{:class => milestone_class(milestone)}
