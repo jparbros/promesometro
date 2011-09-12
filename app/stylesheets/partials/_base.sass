@@ -1,0 +1,110 @@
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+$blueprint-grid-columns   : 24
+$blueprint-container-size : 950px
+$blueprint-grid-margin    : 10px
+
+// Use this to calculate the width based on the total width.
+// Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+
+html 
+  body
+    background: url('../images/background.png') repeat-x
+    color: $text_color
+    font-family: Arial
+    font-size: 14px
+    
+    a
+      color: $link_color
+      text-decoration: none
+    
+    a:hover
+      color: $link_hover_color
+      
+    header
+      +column(24)
+      +last
+      min-height: 40px
+    
+      #logo
+        margin: 5px 0 0 110px
+        
+      #contacto
+        background: url('../images/contacto.png') no-repeat 65px 0px
+        color: $contact_link_color
+        float: right
+        margin: 10px 20px 0 0
+        min-height: 20px
+        padding: 3px 35px 0 0
+    
+    #container
+      +container
+      background: url('../images/flecha.png') no-repeat 25px 5px
+       
+    .home
+      background: url('../images/flecha_home.png') no-repeat 50px 10px !important
+      
+    nav
+      +column(24)
+      +last
+      text-align: center
+      
+      ul
+        display: inline-block
+        list-style-type: none
+        margin: 0 0 30px 0
+        
+        li
+          float: left
+          margin: 20px 35px 0 0
+  
+    .content
+      +column(24)
+      +last
+      background: url('../images/flecha_arriba.png') no-repeat 168px -2px, url('../images/flecha_footer.png') no-repeat 642px bottom
+      padding: 0 0 20px
+      
+    h1
+      font-size: 30px
+      margin: 0 auto
+      margin-bottom: 15px
+      text-align: center
+      
+    footer
+      +column(24)
+      +last
+      background: url('../images/footer_background.png') no-repeat 590px -1px
+      margin-bottom: 20px
+      
+      nav
+        +column(15)
+        +last
+        min-height: 40px
+        text-align: left
+        
+        img
+          border-right: 2px solid #FFFFFF
+          float: left
+          margin: 10px 20px 0
+          padding: 0 20px 0 0
+          
+        background: $footer_background_color
+        ul
+          margin: 0 
+           
+          a
+            color: $footer_text_color
+          li
+            margin: 10px 15px 0 0
+            padding: 0 15px 0 0
+            border-right: 1px solid #fff
+
+    .well
+      +border-radius(10px)
+      +box-shadow
+      background: $sidebar_background_color
+      margin: 0 0 20px 0
+      padding: 10px
+      width: 92%

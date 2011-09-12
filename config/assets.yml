@@ -8,7 +8,8 @@ javascripts:
     - public/javascripts/admin.js
 stylesheets:
   app:
-    - public/stylesheets/app.css
+    - public/stylesheets/screen.css
+    - public/stylesheets/print.css
     - public/stylesheets/jquery-ui.css
   admin:
     - public/stylesheets/jquery-ui.css

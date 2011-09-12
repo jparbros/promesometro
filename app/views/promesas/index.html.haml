@@ -1,14 +1,14 @@
-.page-header
+#promesas
   %h1
     Promesas
-    - titulo_filtro_promesas(@search.search_attributes)
 
-.row#promesas
-  .span11.columns
-    = render :partial => 'promesa', :collection => @promises
-    - if @promises.empty?
-      %h3
-        No existen coincidencias para su busqueda
-  .span5.columns
-    = render :partial => 'shared/search'
-    = render :partial => 'shared/topics'
+  - titulo_filtro_promesas(@search.search_attributes)
+
+  = render :partial => 'promesa', :collection => @promises
+  - if @promises.empty?
+    %h3
+      No existen coincidencias para su busqueda
+      
+#sidebar
+  = render :partial => 'shared/search'
+  = render :partial => 'shared/topics'

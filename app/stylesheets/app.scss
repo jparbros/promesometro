@@ -2,6 +2,22 @@
 
 ul.tabs { margin-top: 20px }
 
+html body {
+  background: url('../images/background.png') repeat-x; 
+}
+
+header {
+  img#logo {
+    float: left;
+    margin: 5px 0 0 0;
+  }
+  
+  img#flecha {
+    float: left;
+    margin: 5px 10px 0 10px;
+  }
+}
+
 #search {
   label {
     width: 60px;

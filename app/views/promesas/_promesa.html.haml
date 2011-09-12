@@ -1,6 +1,6 @@
 .promesa
-  .page-header
-    %h3
-      = link_to promesa.title.humanize, promesa_path(promesa.slug)
+  %h3
+    = link_to promesa.title.humanize, promesa_path(promesa.slug)
+
   - promesa.topics.each do |topic|
-    = link_to topic.name.humanize, '', :class => 'topic'
+    = link_to topic.name.humanize, ''

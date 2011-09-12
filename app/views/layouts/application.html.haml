@@ -2,8 +2,10 @@
 %html
   %head
     %title= Promesometro
-    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css"
     = include_stylesheets :app, :media => 'all'
+    <!--[if IE]>
+    %link{:href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+    <![endif]-->
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
     = include_javascripts :app 
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
@@ -11,23 +13,33 @@
     
 
   %body
-    .container
+    #container
       %header
-        = image_tag 'logo.png'
-        %div
-          %ul.tabs
-            %li= link_to 'Promesometro', ''
+        = image_tag 'logo.png', :id => 'logo'
+        = link_to 'Contacto','', :id => 'contacto'
+      .content
+        %nav
+          %ul
+            %li= link_to 'Inicio', root_path
             %li= link_to 'Promesas', promesas_path
             %li= link_to 'Directorio', directorio_path
+        
+        - if alert
+          .alert-message.error
+            = link_to 'x','#', :class => 'close'
+            %p= alert
+        - if notice
+          .alert-message.info
+            = link_to 'x','#', :class => 'close'
+            %p= notice
 
-    .container
-      - if alert
-        .alert-message.error
-          = link_to 'x','#', :class => 'close'
-          %p= alert
-      - if notice
-        .alert-message.info
-          = link_to 'x','#', :class => 'close'
-          %p= notice
+        = yield
 
-      = yield
+      %footer
+        %nav
+          = image_tag 'logo_footer.png'
+          %ul
+            %li= link_to 'Inicio', root_path
+            %li= link_to 'Promesas', promesas_path
+            %li= link_to 'Directorio', directorio_path
+            %li= link_to 'Contacto', ''
