@@ -1,9 +1,11 @@
 $.extend({
   new_milestone: function() {
     $('a#nuevo_hito').click(function(){
-      html = $('#new_milestones .well').first().clone();
-      $.clean_milestone(html);
-      html.appendTo('#new_milestones');
+      if($('#new_milestones .well').size() < 5) {
+        html = $('#new_milestones .well').first().clone();
+        $.clean_milestone(html);
+        html.appendTo('#new_milestones');
+      }
       return false;
     });
   },

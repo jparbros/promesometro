@@ -17,6 +17,7 @@ class Admin::PromisesController < Admin::BaseController
     if @promise.save
       redirect_to admin_official_promises_url(@official), :notice => 'Promesa creada exitosamente'
     else
+      @topics = Topic.all
       render :new
     end
   end
@@ -33,6 +34,7 @@ class Admin::PromisesController < Admin::BaseController
     if @promise.update_attributes(params[:promise])
       redirect_to admin_official_promises_url(@official), :notice => 'Promesa editada exitosamente'
     else
+      @topics = Topic.all
       render :edit
     end
   end

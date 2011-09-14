@@ -24,6 +24,11 @@ class Promise < ActiveRecord::Base
   validates :title, :presence => true
   validates :description, :presence => true
   
+  #
+  # Callbacks
+  #
+  before_save :set_slug
+  
   def start
     self.started_at = Time.now
     self.save
@@ -44,5 +49,9 @@ class Promise < ActiveRecord::Base
   
   def ready_to_finish?
     self.milestones.where(:ended_at => nil).count == 1
+  end
+  
+  def set_slug
+    self.slug = self.title.parameterize
   end
 end
