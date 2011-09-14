@@ -152,11 +152,19 @@ html body .content {
 /* line 69, ../../app/stylesheets/partials/_base.sass */
 html body h1 {
   font-size: 30px;
+  font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
   text-align: center;
 }
-/* line 75, ../../app/stylesheets/partials/_base.sass */
+/* line 76, ../../app/stylesheets/partials/_base.sass */
+html body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+/* line 82, ../../app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
@@ -170,7 +178,7 @@ html body footer {
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 81, ../../app/stylesheets/partials/_base.sass */
+/* line 88, ../../app/stylesheets/partials/_base.sass */
 html body footer nav {
   display: inline;
   float: left;
@@ -185,29 +193,29 @@ html body footer nav {
 * html html body footer nav {
   overflow-x: hidden;
 }
-/* line 87, ../../app/stylesheets/partials/_base.sass */
+/* line 94, ../../app/stylesheets/partials/_base.sass */
 html body footer nav img {
   border-right: 2px solid white;
   float: left;
   margin: 10px 20px 0;
   padding: 0 20px 0 0;
 }
-/* line 94, ../../app/stylesheets/partials/_base.sass */
+/* line 101, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }
-/* line 97, ../../app/stylesheets/partials/_base.sass */
+/* line 104, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul a {
   color: white;
 }
-/* line 99, ../../app/stylesheets/partials/_base.sass */
+/* line 106, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul li {
   margin: 10px 15px 0 0;
   padding: 0 15px 0 0;
   border-right: 1px solid white;
 }
-/* line 104, ../../app/stylesheets/partials/_base.sass */
-html body .well {
+/* line 111, ../../app/stylesheets/partials/_base.sass */
+html body .sidebar-box {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
@@ -222,6 +230,15 @@ html body .well {
   margin: 0 0 20px 0;
   padding: 10px;
   width: 92%;
+}
+/* line 120, ../../app/stylesheets/partials/_base.sass */
+html body #search label {
+  width: 60px;
+}
+/* line 123, ../../app/stylesheets/partials/_base.sass */
+html body #search .input {
+  margin-left: 12px;
+  margin-top: 10px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_promesas.sass */
@@ -244,17 +261,15 @@ html body .well {
 #promesas .promesa h3 {
   background: url("../images/promesa_header.png") no-repeat;
   border-bottom: 1px solid #7dbeb8;
-  font-size: 18px;
-  margin: 0 0 5px 0;
   max-width: 457px;
-  padding: 18px 0 0 30px;
+  padding: 10px 0 5px 30px;
 }
-/* line 16, ../../app/stylesheets/partials/_promesas.sass */
+/* line 14, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa a {
   margin: 0 10px 0 0;
 }
 
-/* line 19, ../../app/stylesheets/partials/_promesas.sass */
+/* line 17, ../../app/stylesheets/partials/_promesas.sass */
 #sidebar {
   display: inline;
   float: left;
@@ -267,7 +282,52 @@ html body .well {
   overflow-x: hidden;
 }
 
-/* line 21, ../../app/stylesheets/screen.sass */
+/* line 1, ../../app/stylesheets/partials/_form.sass */
+.input-prepend .add-on, .input-append .add-on {
+  -moz-border-radius: 3px 0px 0px 3px;
+  -webkit-border-radius: 3px 0px 0px 3px;
+  -o-border-radius: 3px 0px 0px 3px;
+  -ms-border-radius: 3px 0px 0px 3px;
+  -khtml-border-radius: 3px 0px 0px 3px;
+  border-radius: 3px 0px 0px 3px;
+  background: #f5f5f5;
+  border: 1px solid #cccccc;
+  display: block;
+  float: left;
+  font-weight: normal;
+  height: 18px;
+  line-height: 18px;
+  min-width: 16px;
+  padding: 4px 4px 4px 5px;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+  width: auto;
+}
+
+/* line 16, ../../app/stylesheets/partials/_form.sass */
+.input-medium, input.medium, textarea.medium, select.medium {
+  width: 150px;
+}
+
+/* line 19, ../../app/stylesheets/partials/_form.sass */
+input, textarea, select, .uneditable-input {
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  -ms-border-radius: 3px 3px 3px 3px;
+  -khtml-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #cccccc;
+  color: gray;
+  display: inline-block;
+  font-size: 13px;
+  height: 18px;
+  line-height: 18px;
+  padding: 4px;
+  width: 210px;
+}
+
+/* line 22, ../../app/stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -703,14 +763,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 36, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 37, ../../app/stylesheets/screen.sass */
+/* line 38, ../../app/stylesheets/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -721,7 +781,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 39, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -732,7 +792,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;

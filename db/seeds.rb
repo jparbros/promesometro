@@ -1,3 +1,4 @@
+# encoding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup.id).
 #
@@ -6,7 +7,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }].id)
 #   Mayor.create(:name => 'Daley', :city => cities.first.id)
 
-states = ['amazonas', 'áncash', 'apurímac', 'arequipa', 'ayacucho', 'cajamarca', 'callao', 'cusco', 'huancavelica', 'huánuco', 'ica', 'junín', 'la libertad', 'lambayeque', 'lima', 'loreto', 'madre de dios', 'moquegua', 'pasco', 'piura', 'puno', 'san martín', 'tacna', 'tumbes', 'ucayali']
+states = ['amazonas', 'ancash', 'apurimac', 'arequipa', 'ayacucho', 'cajamarca', 'callao', 'cusco', 'huancavelica', 'huanuco', 'ica', 'junin', 'la libertad', 'lambayeque', 'lima', 'loreto', 'madre de dios', 'moquegua', 'pasco', 'piura', 'puno', 'san martin', 'tacna', 'tumbes', 'ucayali']
 
 states.each do |state|
   State.create(:name => state)
@@ -14,20 +15,20 @@ end
 amazonas = State.find_by_name('amazonas')
 Province.create(:name => 'chachapoyas', :state_id => amazonas.id)
 Province.create(:name => 'bagua', :state_id => amazonas.id)
-Province.create(:name => 'bongará', :state_id => amazonas.id)
+Province.create(:name => 'bongara', :state_id => amazonas.id)
 Province.create(:name => 'condorcanqui', :state_id => amazonas.id)
 Province.create(:name => 'luya', :state_id => amazonas.id)
-Province.create(:name => 'rodríguez de mendoza', :state_id => amazonas.id)
+Province.create(:name => 'rodriguez de mendoza', :state_id => amazonas.id)
 Province.create(:name => 'utcubamba', :state_id => amazonas.id)
 
-ancash = State.find_by_name('áncash')
+ancash = State.find_by_name('ancash')
 Province.create(:name => 'huaraz', :state_id => ancash.id)
 Province.create(:name => 'aija', :state_id => ancash.id)
 Province.create(:name => 'antonio raymondi', :state_id => ancash.id)
-Province.create(:name => 'asunción', :state_id => ancash.id)
+Province.create(:name => 'asuncion', :state_id => ancash.id)
 Province.create(:name => 'bolognesi', :state_id => ancash.id)
 Province.create(:name => 'carhuaz', :state_id => ancash.id)
-Province.create(:name => 'carlos fermín fitzcarrald', :state_id => ancash.id)
+Province.create(:name => 'carlos fermin fitzcarrald', :state_id => ancash.id)
 Province.create(:name => 'casma', :state_id => ancash.id)
 Province.create(:name => 'corongo', :state_id => ancash.id)
 Province.create(:name => 'huari', :state_id => ancash.id)
@@ -42,7 +43,7 @@ Province.create(:name => 'santa', :state_id => ancash.id)
 Province.create(:name => 'sihuas', :state_id => ancash.id)
 Province.create(:name => 'yungay', :state_id => ancash.id)
 
-apurimac = State.find_by_name('apurímac')
+apurimac = State.find_by_name('apurimac')
 Province.create(:name => 'abancay', :state_id => apurimac.id)
 Province.create(:name => 'antabamba', :state_id => apurimac.id)
 Province.create(:name => 'aymaraes', :state_id => apurimac.id)
@@ -53,13 +54,13 @@ Province.create(:name => 'andahuaylas', :state_id => apurimac.id)
 
 arequipa = State.find_by_name('arequipa')
 Province.create(:name => 'arequipa', :state_id => arequipa.id)
-Province.create(:name => 'camaná', :state_id => arequipa.id)
-Province.create(:name => 'caravelí', :state_id => arequipa.id)
+Province.create(:name => 'camana', :state_id => arequipa.id)
+Province.create(:name => 'caraveli', :state_id => arequipa.id)
 Province.create(:name => 'castilla', :state_id => arequipa.id)
 Province.create(:name => 'caylloma', :state_id => arequipa.id)
 Province.create(:name => 'condesuyos', :state_id => arequipa.id)
 Province.create(:name => 'islay', :state_id => arequipa.id)
-Province.create(:name => 'la unión', :state_id => arequipa.id)
+Province.create(:name => 'la union', :state_id => arequipa.id)
 
 ayacucho = State.find_by_name('ayacucho')
 Province.create(:name => 'cangallo', :state_id => ayacucho.id)
@@ -69,23 +70,23 @@ Province.create(:name => 'huancasancos', :state_id => ayacucho.id)
 Province.create(:name => 'la mar', :state_id => ayacucho.id)
 Province.create(:name => 'lucanas', :state_id => ayacucho.id)
 Province.create(:name => 'parinacochas', :state_id => ayacucho.id)
-Province.create(:name => 'páucar del sara sara', :state_id => ayacucho.id)
+Province.create(:name => 'paucar del sara sara', :state_id => ayacucho.id)
 Province.create(:name => 'sucre', :state_id => ayacucho.id)
 Province.create(:name => 'victor fajardo', :state_id => ayacucho.id)
-Province.create(:name => 'vilcas huamán', :state_id => ayacucho.id)
+Province.create(:name => 'vilcas huaman', :state_id => ayacucho.id)
 
 cajamarca = State.find_by_name('cajamarca')
 Province.create(:name => 'san ignacio', :state_id => cajamarca.id)
-Province.create(:name => 'jaén', :state_id => cajamarca.id)
+Province.create(:name => 'jaen', :state_id => cajamarca.id)
 Province.create(:name => 'cutervo', :state_id => cajamarca.id)
 Province.create(:name => 'chota', :state_id => cajamarca.id)
 Province.create(:name => 'santa cruz', :state_id => cajamarca.id)
 Province.create(:name => 'hualgayoc', :state_id => cajamarca.id)
-Province.create(:name => 'celendín', :state_id => cajamarca.id)
+Province.create(:name => 'celendin', :state_id => cajamarca.id)
 Province.create(:name => 'san miguel', :state_id => cajamarca.id)
 Province.create(:name => 'san pablo', :state_id => cajamarca.id)
 Province.create(:name => 'cajamarca', :state_id => cajamarca.id)
-Province.create(:name => 'contumazá', :state_id => cajamarca.id)
+Province.create(:name => 'contumaza', :state_id => cajamarca.id)
 Province.create(:name => 'cajabamba', :state_id => cajamarca.id)
 Province.create(:name => 'san marcos', :state_id => cajamarca.id)
 
@@ -101,7 +102,7 @@ Province.create(:name => 'canas', :state_id => cusco.id)
 Province.create(:name => 'canchis', :state_id => cusco.id)
 Province.create(:name => 'chumbivilcas', :state_id => cusco.id)
 Province.create(:name => 'espinar', :state_id => cusco.id)
-Province.create(:name => 'la convención', :state_id => cusco.id)
+Province.create(:name => 'la convencion', :state_id => cusco.id)
 Province.create(:name => 'paruro', :state_id => cusco.id)
 Province.create(:name => 'paucartambo', :state_id => cusco.id)
 Province.create(:name => 'quispicanchi', :state_id => cusco.id)
@@ -113,17 +114,17 @@ Province.create(:name => 'acobamba', :state_id => huancavelica.id)
 Province.create(:name => 'angaraes', :state_id => huancavelica.id)
 Province.create(:name => 'castrovirreyna', :state_id => huancavelica.id)
 Province.create(:name => 'churcampa', :state_id => huancavelica.id)
-Province.create(:name => 'huaytará', :state_id => huancavelica.id)
+Province.create(:name => 'huaytara', :state_id => huancavelica.id)
 Province.create(:name => 'tayacaja', :state_id => huancavelica.id)
 
-huanuco = State.find_by_name('huánuco')
-Province.create(:name => 'huánuco', :state_id => huanuco.id)
+huanuco = State.find_by_name('huanuco')
+Province.create(:name => 'huanuco', :state_id => huanuco.id)
 Province.create(:name => 'ambo', :state_id => huanuco.id)
 Province.create(:name => 'dos de mayo', :state_id => huanuco.id)
 Province.create(:name => 'huacaybamba', :state_id => huanuco.id)
-Province.create(:name => 'huamalíes', :state_id => huanuco.id)
+Province.create(:name => 'huamalies', :state_id => huanuco.id)
 Province.create(:name => 'leoncio prado', :state_id => huanuco.id)
-Province.create(:name => 'marañón', :state_id => huanuco.id)
+Province.create(:name => 'marañon', :state_id => huanuco.id)
 Province.create(:name => 'pachitea', :state_id => huanuco.id)
 Province.create(:name => 'puerto inca', :state_id => huanuco.id)
 Province.create(:name => 'lauricocha', :state_id => huanuco.id)
@@ -136,12 +137,12 @@ Province.create(:name => 'nazca', :state_id => ica.id)
 Province.create(:name => 'palpa', :state_id => ica.id)
 Province.create(:name => 'pisco', :state_id => ica.id)
 
-junin = State.find_by_name('junín')
+junin = State.find_by_name('junin')
 Province.create(:name => 'huancayo', :state_id => junin.id)
-Province.create(:name => 'concepción', :state_id => junin.id)
+Province.create(:name => 'concepcion', :state_id => junin.id)
 Province.create(:name => 'chanchamayo', :state_id => junin.id)
 Province.create(:name => 'jauja', :state_id => junin.id)
-Province.create(:name => 'junín', :state_id => junin.id)
+Province.create(:name => 'junin', :state_id => junin.id)
 Province.create(:name => 'satipo', :state_id => junin.id)
 Province.create(:name => 'tarma', :state_id => junin.id)
 Province.create(:name => 'yauli', :state_id => junin.id)
@@ -150,16 +151,16 @@ Province.create(:name => 'chupaca', :state_id => junin.id)
 la_libertad = State.find_by_name('la libertad')
 Province.create(:name => 'trujillo', :state_id => la_libertad.id)
 Province.create(:name => 'ascope', :state_id => la_libertad.id)
-Province.create(:name => 'bolívar', :state_id => la_libertad.id)
-Province.create(:name => 'chepén', :state_id => la_libertad.id)
-Province.create(:name => 'julcán', :state_id => la_libertad.id)
+Province.create(:name => 'bolivar', :state_id => la_libertad.id)
+Province.create(:name => 'chepen', :state_id => la_libertad.id)
+Province.create(:name => 'julcan', :state_id => la_libertad.id)
 Province.create(:name => 'otuzco', :state_id => la_libertad.id)
 Province.create(:name => 'pacasmayo', :state_id => la_libertad.id)
 Province.create(:name => 'pataz', :state_id => la_libertad.id)
-Province.create(:name => 'sánchez carrión', :state_id => la_libertad.id)
+Province.create(:name => 'sanchez carrion', :state_id => la_libertad.id)
 Province.create(:name => 'santiago de chuco', :state_id => la_libertad.id)
-Province.create(:name => 'gran chimú', :state_id => la_libertad.id)
-Province.create(:name => 'virú', :state_id => la_libertad.id)
+Province.create(:name => 'gran chimu', :state_id => la_libertad.id)
+Province.create(:name => 'viru', :state_id => la_libertad.id)
 
 lambayeque = State.find_by_name('lambayeque')
 Province.create(:name => 'chiclayo', :state_id => lambayeque.id)
@@ -173,19 +174,19 @@ Province.create(:name => 'cajatambo', :state_id => lima.id)
 Province.create(:name => 'canta', :state_id => lima.id)
 Province.create(:name => 'cañete', :state_id => lima.id)
 Province.create(:name => 'huaral', :state_id => lima.id)
-Province.create(:name => 'huarochirí', :state_id => lima.id)
+Province.create(:name => 'huarochiri', :state_id => lima.id)
 Province.create(:name => 'huaura', :state_id => lima.id)
-Province.create(:name => 'oyón', :state_id => lima.id)
+Province.create(:name => 'oyon', :state_id => lima.id)
 Province.create(:name => 'yauyos', :state_id => lima.id)
 
 loreto = State.find_by_name('loreto')
 Province.create(:name => 'maynas', :state_id => loreto.id)
 Province.create(:name => 'alto amazonas', :state_id => loreto.id)
 Province.create(:name => 'loreto', :state_id => loreto.id)
-Province.create(:name => 'mariscal ramón castilla', :state_id => loreto.id)
+Province.create(:name => 'mariscal ramon castilla', :state_id => loreto.id)
 Province.create(:name => 'requena', :state_id => loreto.id)
 Province.create(:name => 'ucayali', :state_id => loreto.id)
-Province.create(:name => 'datem del marañón', :state_id => loreto.id)
+Province.create(:name => 'datem del marañon', :state_id => loreto.id)
 
 madre_de_dios = State.find_by_name('madre de dios')
 Province.create(:name => 'tambopata', :state_id => madre_de_dios.id)
@@ -194,19 +195,19 @@ Province.create(:name => 'tahuamanu', :state_id => madre_de_dios.id)
 
 moquegua = State.find_by_name('moquegua')
 Province.create(:name => 'mariscal nieto', :state_id => moquegua.id)
-Province.create(:name => 'general sánchez cerro', :state_id => moquegua.id)
+Province.create(:name => 'general sanchez cerro', :state_id => moquegua.id)
 Province.create(:name => 'ilo', :state_id => moquegua.id)
 
 pasco = State.find_by_name('pasco')
 Province.create(:name => 'pasco', :state_id => pasco.id)
-Province.create(:name => 'daniel alcides carrión', :state_id => pasco.id)
+Province.create(:name => 'daniel alcides carrion', :state_id => pasco.id)
 Province.create(:name => 'oxapampa', :state_id => pasco.id)
 
 piura = State.find_by_name('piura')
 Province.create(:name => 'piura', :state_id => piura.id)
 Province.create(:name => 'ayabaca', :state_id => piura.id)
 Province.create(:name => 'huancabamba', :state_id => piura.id)
-Province.create(:name => 'morropón', :state_id => piura.id)
+Province.create(:name => 'morropon', :state_id => piura.id)
 Province.create(:name => 'paita', :state_id => piura.id)
 Province.create(:name => 'sullana', :state_id => piura.id)
 Province.create(:name => 'talara', :state_id => piura.id)
@@ -214,29 +215,29 @@ Province.create(:name => 'sechura', :state_id => piura.id)
 
 puno = State.find_by_name('puno')
 Province.create(:name => 'puno', :state_id => puno.id)
-Province.create(:name => 'azángaro', :state_id => puno.id)
+Province.create(:name => 'azangaro', :state_id => puno.id)
 Province.create(:name => 'carabaya', :state_id => puno.id)
 Province.create(:name => 'chucuito', :state_id => puno.id)
 Province.create(:name => 'el collao', :state_id => puno.id)
-Province.create(:name => 'huancané', :state_id => puno.id)
+Province.create(:name => 'huancane', :state_id => puno.id)
 Province.create(:name => 'lampa', :state_id => puno.id)
 Province.create(:name => 'melgar', :state_id => puno.id)
 Province.create(:name => 'moho', :state_id => puno.id)
 Province.create(:name => 'san antonio de putina', :state_id => puno.id)
-Province.create(:name => 'san román', :state_id => puno.id)
+Province.create(:name => 'san roman', :state_id => puno.id)
 Province.create(:name => 'sandia', :state_id => puno.id)
 Province.create(:name => 'yunguyo', :state_id => puno.id)
 
-san_martin = State.find_by_name('san martín')
+san_martin = State.find_by_name('san martin')
 Province.create(:name => 'moyobamba', :state_id => san_martin.id)
 Province.create(:name => 'bellavista', :state_id => san_martin.id)
 Province.create(:name => 'el dorado', :state_id => san_martin.id)
 Province.create(:name => 'huallaga', :state_id => san_martin.id)
 Province.create(:name => 'lamas', :state_id => san_martin.id)
-Province.create(:name => 'mariscal cáceres', :state_id => san_martin.id)
+Province.create(:name => 'mariscal caceres', :state_id => san_martin.id)
 Province.create(:name => 'picota', :state_id => san_martin.id)
 Province.create(:name => 'rioja', :state_id => san_martin.id)
-Province.create(:name => 'san martín', :state_id => san_martin.id)
+Province.create(:name => 'san martin', :state_id => san_martin.id)
 Province.create(:name => 'tocache', :state_id => san_martin.id)
 
 tacna = State.find_by_name('tacna')
@@ -254,9 +255,9 @@ ucayali = State.find_by_name('ucayali')
 Province.create(:name => 'coronel portillo', :state_id => ucayali.id)
 Province.create(:name => 'atalaya', :state_id => ucayali.id)
 Province.create(:name => 'padre abad', :state_id => ucayali.id)
-Province.create(:name => 'purús', :state_id => ucayali.id)
+Province.create(:name => 'purus', :state_id => ucayali.id)
 
-topics = ['abasto','acceso a la información','acciones afirmativas','acciones colectivas','administración pública','agricultura','amparo','Amparo.','aprobación','archivos','arraigo','asistencia Social','auditorías','autonomía constitucional','candidaturas ciudadanas','candidaturas independientes','CNDH','colegiaturas','comunicación política','Congreso','constitucionalidad','consulta popular','control legislativo','control presupuestario','defensoría pública.','delicuencia organizada.','dependencias homólogas','derecho a la salud','derechos colectivos','derechos de las mujeres','derechos de las niñas','derechos de las personas adultas mayores.','derechos de las personas con capacidades diferentes','derechos de las víctimas','derechos de los migrantes','derechos de niñas','derechos humanos','derechos indígenas','derechos laborales','derechos políticos','desarrollo municipal','desarrollo rural','desarrollo rural sustentable','Desarrollo Social','desarrollo social','desempeño de funcionarios','diputados','educación','educación básica','elaboración de reglamentos','elecciones','elección de auditor','energía','entidades paraestatales.','equidad de género','evaluación','evaluación del desempeño','Evaluación.','excedentes petroleros','facultades de la Cámara de Diputados','facultades del Congreso','financiamiento de partidos','fiscalización','impuestos','impugnación ciudadana','ingresos','iniciativa preferente','iniciativas ciudadanas','intérprete','Justicia','justicia','labor legislativa','ley de amparo','los niños y los adolescentes','migración','niños y adolescentes.','nombramientos','organismos públicos autónomos','participación ciudadana','participación social','Pemex','pensiones','Plan Nacional de Desarrollo','poder legislativo','políticas de género','políticas públicas','presupuesto','procedimiento legislativo','procedimiento penal','procedimientos penales','producción','profesionalización','programa especial concurrente','programas de desarrollo social','programas de inversión','propaganda política','protección de datos persnoales','publicidad','publicidad electoral','publicidad oficial','pueblos indígenas','quejas','Reforma Constitucional','reforma constitucional','reforma política','reglas de operación','regulación.','rendición de cuentas','representación popular','responsabilidad civil','responsabilidades administrativas','salud pública','secretaria de desarrollo social','sedesol','seguridad pública','seguridad social','senadores','servicios','Sistema de Evaluación del desempeño','sociedad civil','subejercicios','suplencia de la queja','Suprema Corte de Justicia de la Nación','tarifas','tiempos oficiales','trabajo legislativo','transparencia','violación de garantías individuales','violencia de género']
+topics = ['abasto','acceso a la informacion','acciones afirmativas','acciones colectivas','administracion publica','agricultura','amparo','Amparo.','aprobacion','archivos','arraigo','asistencia Social','auditorias','autonomia constitucional','candidaturas ciudadanas','candidaturas independientes','CNDH','colegiaturas','comunicacion politica','Congreso','constitucionalidad','consulta popular','control legislativo','control presupuestario','defensoria publica.','delicuencia organizada.','dependencias homologas','derecho a la salud','derechos colectivos','derechos de las mujeres','derechos de las niñas','derechos de las personas adultas mayores.','derechos de las personas con capacidades diferentes','derechos de las victimas','derechos de los migrantes','derechos de niñas','derechos humanos','derechos indigenas','derechos laborales','derechos politicos','desarrollo municipal','desarrollo rural','desarrollo rural sustentable','Desarrollo Social','desarrollo social','desempeño de funcionarios','diputados','educacion','educacion basica','elaboracion de reglamentos','elecciones','eleccion de auditor','energia','entidades paraestatales.','equidad de genero','evaluacion','evaluacion del desempeño','Evaluacion.','excedentes petroleros','facultades de la Camara de Diputados','facultades del Congreso','financiamiento de partidos','fiscalizacion','impuestos','impugnacion ciudadana','ingresos','iniciativa preferente','iniciativas ciudadanas','interprete','Justicia','justicia','labor legislativa','ley de amparo','los niños y los adolescentes','migracion','niños y adolescentes.','nombramientos','organismos publicos autonomos','participacion ciudadana','participacion social','Pemex','pensiones','Plan Nacional de Desarrollo','poder legislativo','politicas de genero','politicas publicas','presupuesto','procedimiento legislativo','procedimiento penal','procedimientos penales','produccion','profesionalizacion','programa especial concurrente','programas de desarrollo social','programas de inversion','propaganda politica','proteccion de datos persnoales','publicidad','publicidad electoral','publicidad oficial','pueblos indigenas','quejas','Reforma Constitucional','reforma constitucional','reforma politica','reglas de operacion','regulacion.','rendicion de cuentas','representacion popular','responsabilidad civil','responsabilidades administrativas','salud publica','secretaria de desarrollo social','sedesol','seguridad publica','seguridad social','senadores','servicios','Sistema de Evaluacion del desempeño','sociedad civil','subejercicios','suplencia de la queja','Suprema Corte de Justicia de la Nacion','tarifas','tiempos oficiales','trabajo legislativo','transparencia','violacion de garantias individuales','violencia de genero']
 
 topics.each_with_index do |topic,index|
   Topic.create(:name => topic, :position => index)
@@ -343,5 +344,85 @@ political_party.save
 political_party = PoliticalParty.create(:name => 'Justicia, Tecnologia, Ecologia')
 political_party.logo = File.open('doc/partidos/justicia_tecnologia_ecologia.jpeg')
 political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional De Las Manos Limpias')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/lambayeque/SIMBOLO-LOGO-MOVIMIENTO-REGIONAL-DE-LAS-MANOS-LIMPIAS.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Accion Regional')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/piura/SIMBOLO-LOGO-MOVIMIENTO-ACCION-REGIONAL.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Nueva Amazonia')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/san-martin/SIMBOLO-LOGO-NUEVA-AMAZONIA.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Fuerza Comunal')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/san-martin/SIMBOLO-LOGO-FUERZA-COMUNAL.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Gran Alianza Nacionalista Cusco')
+political_party.remote_logo_url = 'http://www.infogob.com.pe/Partido/ImgHandler.ashx?imgid=2092'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Patria Arriba Perú Adelante')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/cusco/SIMBOLO-LOGO-PATRIA-ARRIBA-PERU-ADELANTE.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Pan')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/cusco/SIMBOLO-LOGO-MOVIMIENTO-REGIONAL-PAN.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Inka Pachakuteq')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/cusco/simbolo-movimiento-regional-inka-pachakuteq.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Tierra y Libertad')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/lambayeque/SIMBOLO-LOGO-MOVIMIENTO-TIERRA-Y-LIBERTAD-LAMBAYEQUE.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Autogobierno Ayllu')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/cusco/simbolo-autogobierno-ayllu.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Acuerdo Popular Unificado')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/cusco/SIMBOLO-LOGO-MOVIMIENTO-REGIONAL-ACUERDO-POPULAR-UNIFICADO.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => ' Movimiento Regional Luchemos Por Tumbes')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/tumbes/SIMBOLO-LOGO-LUCHEMOS-POR-TUMBES.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Nueva Alternativa')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/tumbes/SIMBOLO-LOGO-NUEVA-ALTERNATIVA.jpg'
+political_party.save
+political_party = PoliticalParty.create(:name => 'Movimiento Regional Zarumilla Rumbo Al Cambio')
+political_party.remote_logo_url = 'http://www.eleccionesenperu.com/img/movimiento-regional/tumbes/SIMBOLO-LOGO-NUEVA-ALTERNATIVA.jpg'
+political_party.save
 
 
+urls = ''
+File.open('doc/PROMESOMETRO_REGIONES.csv','r') {|file| urls = file.read }
+urls = urls.split(/\r\n/)
+
+urls.each do |url|
+  
+  hp = Hpricot(open(url))
+
+  political_party = hp.search('span#lblOPolitica').inner_text.downcase
+  position = hp.search('span#lblCargo').inner_text.downcase
+  dni = hp.search('span#lblDNI').inner_text.downcase
+  paterno = hp.search('span#lblPaterno').inner_text.humanize
+  materno = hp.search('span#lblMaterno').inner_text.humanize
+  nombres = hp.search('span#lblNombre').inner_text.humanize
+  birthday = hp.search('span#lblFechaN').inner_text.downcase
+  place = hp.search('span#lblUbicacion').inner_text.downcase
+  data = hp.search('span#lblForma').inner_text.humanize
+  image = hp.search('img#fotoCandidato').attr('src').gsub('../','')
+  
+  Official.create do |official|
+    official.name = " #{nombres} #{paterno} #{materno}"
+    official.dni = dni
+    official.political_party = PoliticalParty.find_or_create_by_name political_party
+    official.birthday = birthday
+    official.remote_avatar_url = "http://200.37.211.183/hdverm2010/#{image}"
+    official.supplementary_data = data
+    official.resume = url
+    if (position == 'presidente regional')
+      official.position = 1
+      official.state =  State.find_by_name place
+    else
+      place = place.split(' - ')
+      official.position = 0
+      official.state =  State.find_by_name place[0]
+      official.province =  Province.find_by_name place[1]
+    end
+  end
+end

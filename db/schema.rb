@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110908134612) do
+ActiveRecord::Schema.define(:version => 20110914132628) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -18,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20110908134612) do
     t.string   "commentable_type"
     t.integer  "commentable_id"
     t.text     "kind"
-    t.boolean  "approved"
+    t.boolean  "approved",         :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,14 +47,16 @@ ActiveRecord::Schema.define(:version => 20110908134612) do
   create_table "officials", :force => true do |t|
     t.string   "name"
     t.string   "avatar"
-    t.string   "twitter"
-    t.string   "facebook"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "state_id"
     t.integer  "province_id"
     t.integer  "political_party_id"
+    t.string   "dni"
+    t.date     "birthday"
+    t.string   "supplementary_data"
+    t.string   "resume"
   end
 
   create_table "political_parties", :force => true do |t|

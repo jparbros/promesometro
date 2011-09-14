@@ -1,5 +1,4 @@
-.well.floatLeft
+.sidebar-box
   %h3 Temas
-  - Topic.all.each do |topic|
-    .span2.columns
-      =link_to topic.name.humanize, promesas_path('search[topics_name_equals]' => topic.name)
+  - print_topics_links
+  - print_topics_by_letter

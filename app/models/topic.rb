@@ -18,6 +18,10 @@ class Topic < ActiveRecord::Base
         topic.update_attribute(:position, index)
       end
     end
+    
+    def grouped_by_first_letter
+      self.all.group_by {|topic| topic.name.chars.first.upcase}
+    end
   end
   
 end
