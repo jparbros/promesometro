@@ -390,23 +390,46 @@ html body #search .input {
 * html #show-promesa .hito_content .citizen_comments, * html #show-promesa .hito_content .goverment_comment {
   overflow-x: hidden;
 }
-/* line 60, ../../app/stylesheets/partials/_promesas.sass */
+/* line 59, ../../app/stylesheets/partials/_promesas.sass */
+#show-promesa .hito_content .citizen_comments .flecha_comentario, #show-promesa .hito_content .goverment_comment .flecha_comentario {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .hito_content .citizen_comments .flecha_comentario, * html #show-promesa .hito_content .goverment_comment .flecha_comentario {
+  overflow-x: hidden;
+}
+/* line 61, ../../app/stylesheets/partials/_promesas.sass */
+#show-promesa .hito_content .citizen_comments .comentario_contenido, #show-promesa .hito_content .goverment_comment .comentario_contenido {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+  margin-right: 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .hito_content .citizen_comments .comentario_contenido, * html #show-promesa .hito_content .goverment_comment .comentario_contenido {
+  overflow-x: hidden;
+}
+/* line 65, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_0, #show-promesa #hito_counter_0, #show-promesa #hito_content_0 {
   background: #c5ebcd;
 }
-/* line 64, ../../app/stylesheets/partials/_promesas.sass */
+/* line 69, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_1, #show-promesa #hito_counter_1, #show-promesa #hito_content_1 {
   background: #abccbd;
 }
-/* line 67, ../../app/stylesheets/partials/_promesas.sass */
+/* line 72, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_2, #show-promesa #hito_counter_2, #show-promesa #hito_content_2 {
   background: #7dbeb8;
 }
-/* line 70, ../../app/stylesheets/partials/_promesas.sass */
+/* line 75, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_3, #show-promesa #hito_counter_3, #show-promesa #hito_content_3 {
   background: #181619;
 }
-/* line 73, ../../app/stylesheets/partials/_promesas.sass */
+/* line 78, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_4, #show-promesa #hito_counter_4, #show-promesa #hito_content_4 {
   background: #e32f21;
 }

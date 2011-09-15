@@ -3,23 +3,26 @@ class Comment < ActiveRecord::Base
   belongs_to :commentable, :polymorphic => true
   
   scope :government, where(:kind => 'government')
-  scope :citizens, where(:kind => 'citizens')
+  scope :citizens, where(:kind => 'citizen')
   scope :approved, where(:approved => true)
   
-  def self.government_approved
-    government.approved
-  end
   
-  def self.citizens_approved
-    citizens.approved
-  end
-  
-  def self.new_citizen(args)
-    self.new args.merge(:kind => 'citizen')
-  end
-  
-  def self.new_government(args)
-    self.new args.merge({:kind => 'government', :approved => true})
+  class << self
+    def government_approved
+      government.approved
+    end
+
+    def citizens_approved
+      citizens.approved
+    end
+
+    def new_citizen(args)
+      self.new args.merge(:kind => 'citizen')
+    end
+
+    def new_government(args)
+      self.new args.merge({:kind => 'government', :approved => true})
+    end
   end
   
   def approve
@@ -33,7 +36,7 @@ class Comment < ActiveRecord::Base
   end
   
   def citizen?
-    self.kind == 'citizens'
+    self.kind == 'citizen'
   end
   
   def government?

@@ -31,6 +31,7 @@
           = render :partial => 'comment', :collection => milestone.comments.citizens_approved
         .goverment_comment
           %h3 Gobierno
+          - puts milestone.comments.government.inspect
           = render :partial => 'comment', :collection => milestone.comments.government
         = render :partial => 'comment_form', :locals => {:milestone => milestone}
     

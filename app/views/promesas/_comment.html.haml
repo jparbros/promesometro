@@ -1,2 +1,7 @@
-= comment.author
-= comment.comment
+.flecha_comentario
+  = image_tag "flecha_comentarios_#{(comment.citizen?)? '0' : '1'}.png"
+.comentario_contenido
+  %p
+    = comment.author
+  %p
+    = comment.comment
