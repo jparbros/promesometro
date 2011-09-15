@@ -4,7 +4,6 @@ class Milestone < ActiveRecord::Base
   # Associations
   #
   belongs_to :promise
-  has_many :comments, :as => :commentable #:polymorphic => true
 
   #
   # States Machine
@@ -33,8 +32,6 @@ class Milestone < ActiveRecord::Base
   delegate :started?, :to => :promise, :allow_nil => true, :prefix => true
   delegate :finish, :to => :promise, :allow_nil => true, :prefix => true
   delegate :finished?, :to => :promise, :allow_nil => true, :prefix => true
-  delegate :citizens_approved, :to => :comments, :allow_nil => true, :prefix => true
-  delegate :government, :to => :comments, :allow_nil => true, :prefix => true
   
   def start_milestone
     self.started_at = Time.now

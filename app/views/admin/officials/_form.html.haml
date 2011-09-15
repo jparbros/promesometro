@@ -19,14 +19,24 @@
     = form.select :province_id, @provinces, { :include_blank => true}, {:class => provinces_class(form.object), :disabled =>  provinces_disabled?(form.object)}
 
 .clearfix
-  = form.label :twitter
+  = form.label :dni
   .input
-    = form.text_field :twitter, :class => 'xxlarge'
+    = form.text_field :dni, :class => 'xxlarge'
 
 .clearfix
-  = form.label :facebook
+  = form.label 'fecha de nacimiento'
   .input
-    = form.text_field :facebook, :class => 'xxlarge'
+    = form.text_field :birthday, :class => 'xxlarge'
+
+.clearfix
+  = form.label 'datos complementarios'
+  .input
+    = form.text_field :supplementary_data, :class => 'xxlarge'
+    
+.clearfix
+  = form.label 'hoja de vida'
+  .input
+    = form.text_field :resume, :class => 'xxlarge'
     
 .clearfix
   = form.label :fotografia

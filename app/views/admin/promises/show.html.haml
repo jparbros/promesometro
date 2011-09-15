@@ -20,7 +20,21 @@
         = link_to milestone.name, "##{milestone.id}"
 
   = render :partial => 'show_milestone', :collection => @promise.milestones
-        
+
+.row
+  .page-header
+    %h3 Comentarios
+
+  .government_comments.span8.columns
+    %h3 Gobierno
+    = render :partial => 'comment', :collection => @promise.comments.government
+  
+  .citizens_comments.span8.columns
+    %h3 Ciudadanos
+    = render :partial => 'comment', :collection => @promise.comments.citizens_approved
+  
+  = render :partial => 'comment_form', :locals => { :promise => @promise }
+  
 %script
   $(document).ready(function(){
   $("#milestones").tabs();

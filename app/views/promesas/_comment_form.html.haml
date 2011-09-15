@@ -1,7 +1,7 @@
 .page-header
   %h4 Agrega tu comentario
 
-= form_for milestone.comments.build, :url => hito_comentario_path(milestone) do |form|
+= form_for promise.comments.build, :url => hito_comentario_path(@promise) do |form|
   .clearfix
     = form.label :nombre
     .input

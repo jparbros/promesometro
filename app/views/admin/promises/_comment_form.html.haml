@@ -1,12 +1,13 @@
-.page-header
-  %h4 Agregar comentario
+.span16.columns
+  .page-header
+    %h4 Agregar comentario
 
-= form_for show_milestone.comments.build, :url => admin_comment_milestone_path(show_milestone) do |form|
-  .clearfix
-    = form.label :commentario
-    .input
-      = form.text_area :comment, :class => 'xlarge', :rows => 7
+  = form_for promise.comments.build, :url => admin_comment_milestone_path(promise) do |form|
+    .clearfix
+      = form.label :commentario
+      .input
+        = form.text_area :comment, :class => 'xlarge', :rows => 7
       
-  .actions
-    = form.submit 'Crear', :class => 'btn primary'
-    %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}
+    .actions
+      = form.submit 'Crear', :class => 'btn primary'
+      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

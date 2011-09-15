@@ -24,16 +24,16 @@
         = milestone.description
       .hito_counter{:id => "hito_counter_#{index}"}
         = milestone_states(milestone)
-        = started_at_in_words(milestone)
-      .hito_content{:id => "hito_content_#{index}"}
-        .citizen_comments
-          %h3 Ciudadanos
-          = render :partial => 'shared/comment', :collection => milestone.comments_citizens_approved
-        .goverment_comment
-          %h3 Gobierno
-          = render :partial => 'shared/comment', :collection => milestone.comments_government
-        = render :partial => 'comment_form', :locals => {:milestone => milestone}
-    
+  
+  .sidebar-box
+    %h2 Comentarios
+    .citizen_comments
+      %h3 Ciudadanos
+      = render :partial => 'shared/comment', :collection => @promise.comments_citizens_approved
+    .goverment_comment
+      %h3 Gobierno
+      = render :partial => 'shared/comment', :collection => @promise.comments_government
+    = render :partial => 'comment_form', :locals => {:promise => @promise}
     
 %script
   $(document).ready(function(){

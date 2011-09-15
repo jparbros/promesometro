@@ -172,13 +172,15 @@ html body footer {
   width: 950px;
   margin-right: 0;
   background: url("../images/footer_background.png") no-repeat 590px -1px;
-  margin-bottom: 20px;
+  border: 0;
+  margin: 0 0 20px 0;
+  padding-top: 0;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 88, ../../app/stylesheets/partials/_base.sass */
+/* line 90, ../../app/stylesheets/partials/_base.sass */
 html body footer nav {
   display: inline;
   float: left;
@@ -193,28 +195,28 @@ html body footer nav {
 * html html body footer nav {
   overflow-x: hidden;
 }
-/* line 94, ../../app/stylesheets/partials/_base.sass */
+/* line 96, ../../app/stylesheets/partials/_base.sass */
 html body footer nav img {
   border-right: 2px solid white;
   float: left;
   margin: 10px 20px 0;
   padding: 0 20px 0 0;
 }
-/* line 101, ../../app/stylesheets/partials/_base.sass */
+/* line 103, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }
-/* line 104, ../../app/stylesheets/partials/_base.sass */
+/* line 106, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul a {
   color: white;
 }
-/* line 106, ../../app/stylesheets/partials/_base.sass */
+/* line 108, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul li {
   margin: 10px 15px 0 0;
   padding: 0 15px 0 0;
   border-right: 1px solid white;
 }
-/* line 111, ../../app/stylesheets/partials/_base.sass */
+/* line 113, ../../app/stylesheets/partials/_base.sass */
 html body .sidebar-box {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -233,16 +235,16 @@ html body .sidebar-box {
   padding: 10px;
   width: 92%;
 }
-/* line 122, ../../app/stylesheets/partials/_base.sass */
+/* line 124, ../../app/stylesheets/partials/_base.sass */
 html body #search label {
   width: 60px;
 }
-/* line 125, ../../app/stylesheets/partials/_base.sass */
+/* line 127, ../../app/stylesheets/partials/_base.sass */
 html body #search .input {
   margin-left: 12px;
   margin-top: 10px;
 }
-/* line 129, ../../app/stylesheets/partials/_base.sass */
+/* line 131, ../../app/stylesheets/partials/_base.sass */
 html .citizen_comments, html .goverment_comment {
   display: inline;
   float: left;
@@ -253,7 +255,7 @@ html .citizen_comments, html .goverment_comment {
 * html html .citizen_comments, * html html .goverment_comment {
   overflow-x: hidden;
 }
-/* line 131, ../../app/stylesheets/partials/_base.sass */
+/* line 133, ../../app/stylesheets/partials/_base.sass */
 html .citizen_comments .flecha_comentario, html .goverment_comment .flecha_comentario {
   display: inline;
   float: left;
@@ -264,7 +266,7 @@ html .citizen_comments .flecha_comentario, html .goverment_comment .flecha_comen
 * html html .citizen_comments .flecha_comentario, * html html .goverment_comment .flecha_comentario {
   overflow-x: hidden;
 }
-/* line 133, ../../app/stylesheets/partials/_base.sass */
+/* line 135, ../../app/stylesheets/partials/_base.sass */
 html .citizen_comments .comentario_contenido, html .goverment_comment .comentario_contenido {
   display: inline;
   float: left;
@@ -276,7 +278,7 @@ html .citizen_comments .comentario_contenido, html .goverment_comment .comentari
 * html html .citizen_comments .comentario_contenido, * html html .goverment_comment .comentario_contenido {
   overflow-x: hidden;
 }
-/* line 137, ../../app/stylesheets/partials/_base.sass */
+/* line 139, ../../app/stylesheets/partials/_base.sass */
 html .home_box {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -293,11 +295,11 @@ html .home_box {
   margin: 0 0 20px 5px;
   padding: 5px;
 }
-/* line 145, ../../app/stylesheets/partials/_base.sass */
+/* line 147, ../../app/stylesheets/partials/_base.sass */
 html .citizen_comments.home_box, html .goverment_comment.home_box {
   margin-left: 40px;
 }
-/* line 148, ../../app/stylesheets/partials/_base.sass */
+/* line 150, ../../app/stylesheets/partials/_base.sass */
 html .banner_home {
   margin-left: 240px;
 }
@@ -457,6 +459,10 @@ html .banner_home {
 /* line 70, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_4, #show-promesa #hito_counter_4, #show-promesa #hito_content_4 {
   background: #e32f21;
+}
+/* line 73, ../../app/stylesheets/partials/_promesas.sass */
+#show-promesa .citizen_comments {
+  padding-left: 40px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_form.sass */
