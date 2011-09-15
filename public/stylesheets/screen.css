@@ -242,6 +242,65 @@ html body #search .input {
   margin-left: 12px;
   margin-top: 10px;
 }
+/* line 129, ../../app/stylesheets/partials/_base.sass */
+html .citizen_comments, html .goverment_comment {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html .citizen_comments, * html html .goverment_comment {
+  overflow-x: hidden;
+}
+/* line 131, ../../app/stylesheets/partials/_base.sass */
+html .citizen_comments .flecha_comentario, html .goverment_comment .flecha_comentario {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html .citizen_comments .flecha_comentario, * html html .goverment_comment .flecha_comentario {
+  overflow-x: hidden;
+}
+/* line 133, ../../app/stylesheets/partials/_base.sass */
+html .citizen_comments .comentario_contenido, html .goverment_comment .comentario_contenido {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+  margin-right: 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html .citizen_comments .comentario_contenido, * html html .goverment_comment .comentario_contenido {
+  overflow-x: hidden;
+}
+/* line 137, ../../app/stylesheets/partials/_base.sass */
+html .home_box {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  background: #e4ded0;
+  color: #685c53;
+  margin: 0 0 20px 5px;
+  padding: 5px;
+}
+/* line 145, ../../app/stylesheets/partials/_base.sass */
+html .citizen_comments.home_box, html .goverment_comment.home_box {
+  margin-left: 40px;
+}
+/* line 148, ../../app/stylesheets/partials/_base.sass */
+html .banner_home {
+  margin-left: 240px;
+}
 
 /* line 1, ../../app/stylesheets/partials/_promesas.sass */
 #promesas {
@@ -380,56 +439,22 @@ html body #search .input {
   overflow-x: hidden;
 }
 /* line 57, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_content .citizen_comments, #show-promesa .hito_content .goverment_comment {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 390px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_content .citizen_comments, * html #show-promesa .hito_content .goverment_comment {
-  overflow-x: hidden;
-}
-/* line 59, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_content .citizen_comments .flecha_comentario, #show-promesa .hito_content .goverment_comment .flecha_comentario {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 30px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_content .citizen_comments .flecha_comentario, * html #show-promesa .hito_content .goverment_comment .flecha_comentario {
-  overflow-x: hidden;
-}
-/* line 61, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_content .citizen_comments .comentario_contenido, #show-promesa .hito_content .goverment_comment .comentario_contenido {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 350px;
-  margin-right: 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_content .citizen_comments .comentario_contenido, * html #show-promesa .hito_content .goverment_comment .comentario_contenido {
-  overflow-x: hidden;
-}
-/* line 65, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_0, #show-promesa #hito_counter_0, #show-promesa #hito_content_0 {
   background: #c5ebcd;
 }
-/* line 69, ../../app/stylesheets/partials/_promesas.sass */
+/* line 61, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_1, #show-promesa #hito_counter_1, #show-promesa #hito_content_1 {
   background: #abccbd;
 }
-/* line 72, ../../app/stylesheets/partials/_promesas.sass */
+/* line 64, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_2, #show-promesa #hito_counter_2, #show-promesa #hito_content_2 {
   background: #7dbeb8;
 }
-/* line 75, ../../app/stylesheets/partials/_promesas.sass */
+/* line 67, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_3, #show-promesa #hito_counter_3, #show-promesa #hito_content_3 {
   background: #181619;
 }
-/* line 78, ../../app/stylesheets/partials/_promesas.sass */
+/* line 70, ../../app/stylesheets/partials/_promesas.sass */
 #show-promesa #hito_header_4, #show-promesa #hito_counter_4, #show-promesa #hito_content_4 {
   background: #e32f21;
 }
@@ -479,7 +504,60 @@ input, textarea, select, .uneditable-input {
   width: 210px;
 }
 
-/* line 22, ../../app/stylesheets/screen.sass */
+/* line 1, ../../app/stylesheets/partials/_official.sass */
+#official_photo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #official_photo {
+  overflow-x: hidden;
+}
+
+/* line 4, ../../app/stylesheets/partials/_official.sass */
+#official_info {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #official_info {
+  overflow-x: hidden;
+}
+
+/* line 9, ../../app/stylesheets/partials/_official.sass */
+.flecha_promesa {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  padding-top: 10px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .flecha_promesa {
+  overflow-x: hidden;
+}
+
+/* line 12, ../../app/stylesheets/partials/_official.sass */
+.promesa_link {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+  margin-right: 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .promesa_link {
+  overflow-x: hidden;
+}
+
+/* line 23, ../../app/stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -915,14 +993,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 36, ../../app/stylesheets/screen.sass */
+/* line 37, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -933,7 +1011,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 41, ../../app/stylesheets/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -944,7 +1022,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 44, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;

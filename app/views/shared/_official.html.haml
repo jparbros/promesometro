@@ -1,32 +1,39 @@
-.row
-  %h1
-    = @official.name
-  .span4.columns
-    .well
-      = image_tag @official.photo(:profile)
-    .well
-      %p
-        %b Puesto:
-        = @official.position_name
-      %p
-        %b Estado:
-        = @official.state.name
-      -if @official.province
-        %p
-          %b Provincia:
-          = @official.province.name
+%h1= @official.name
 
-  .span7.columns
-    %h2 Promesas
-    .promise
-      - @official.promises.each do |promise|
-        .well
-          -# %h3= link_to promise.title, alcalde_promesa_path(@official, promise)
-          %p= promise.description
-          - promise.milestones.each do |milestone|
-            .well{:class => milestone_class(milestone)}
-              %p= milestone.name
-              Estado: 
-              %b= milestone_states(milestone)
-  .span5.columns
-    = render :partial => 'shared/search'
+#official_photo
+  = image_tag @official.photo(:profile)
+#official_info
+  %p
+    %b Puesto:
+    = @official.position_name
+  %p
+    %b Estado:
+    = @official.state.name
+  -if @official.province
+    %p
+      %b Provincia:
+      = @official.province.name
+  %p
+    %b Partido Politico:
+    = @official.political_party_name
+  %p
+    %b DNI:
+    = @official.dni
+  
+  %p
+    %b Fecha de nacimiento:
+    = @official.birthday
+  %p
+    %b Hoja de vida:
+    = link_to 'Click para ir', @official.resume, :target => '_blank'
+
+.sidebar-box
+  = @official.supplementary_data
+
+.sidebar-box
+  %h2 Promesas
+  - @official.promises.each do |promise|
+    .flecha_promesa
+      = image_tag 'flecha_promesas.png'
+    .promesa_link
+      %h3= link_to promise.title, promesa_path(promise.slug)

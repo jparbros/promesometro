@@ -4,15 +4,15 @@
   
   .funcionario
     .fotografia
-      = image_tag @promise.official.avatar_url
+      = image_tag @promise.official_avatar_url
     .info
       %p
         %strong Representante:
-        = @promise.official.name
+        = @promise.official_name
 
       %p
         %strong Partido:
-        = @promise.official.political_party.name
+        = @promise.official_political_party_name
   
   .sidebar-box
     %h2 Hitos
@@ -28,11 +28,10 @@
       .hito_content{:id => "hito_content_#{index}"}
         .citizen_comments
           %h3 Ciudadanos
-          = render :partial => 'comment', :collection => milestone.comments.citizens_approved
+          = render :partial => 'shared/comment', :collection => milestone.comments_citizens_approved
         .goverment_comment
           %h3 Gobierno
-          - puts milestone.comments.government.inspect
-          = render :partial => 'comment', :collection => milestone.comments.government
+          = render :partial => 'shared/comment', :collection => milestone.comments_government
         = render :partial => 'comment_form', :locals => {:milestone => milestone}
     
     

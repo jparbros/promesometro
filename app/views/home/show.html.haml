@@ -1,0 +1,7 @@
+= image_tag 'banner.png', :class => 'banner_home'
+.citizen_comments.home_box
+  %h3 Ciudadanos
+  = render :partial => 'shared/comment', :collection => @citizens
+.goverment_comment.home_box
+  %h3 Gobierno
+  = render :partial => 'shared/comment', :collection => @government

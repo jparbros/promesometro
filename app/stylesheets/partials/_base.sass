@@ -125,3 +125,25 @@ html
       .input 
         margin-left: 12px
         margin-top: 10px
+  
+  .citizen_comments, .goverment_comment
+    +column(10)
+    .flecha_comentario
+      +column(1)
+    .comentario_contenido
+      +column(9)
+      +last
+  
+  .home_box
+    +border-radius(10px)
+    +box-shadow
+    background: $sidebar_background_color
+    color: #685C53
+    margin: 0 0 20px 5px
+    padding: 5px
+    
+  .citizen_comments.home_box, .goverment_comment.home_box
+    margin-left: 40px
+
+  .banner_home
+    margin-left: 240px

@@ -28,10 +28,14 @@ class Official < ActiveRecord::Base
   #
   # Scopes
   #
-  
   scope :mayors, where('position', 0)
   scope :governors, where('position', 1)
   scope :president, where('position', 2)
+  
+  #
+  # Delegates
+  #
+  delegate :name, :to => :political_party, :allow_nil => true, :prefix => true
   
   def position_name
     POSITIONS[position]

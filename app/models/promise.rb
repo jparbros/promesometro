@@ -12,6 +12,10 @@ class Promise < ActiveRecord::Base
   #
   delegate :name, :to => :official, :allow_nil => true, :prefix => true
   delegate :avatar, :to => :official, :allow_nil => true, :prefix => true
+  delegate :avatar_url, :to => :official, :allow_nil => true, :prefix => true
+  delegate :political_party_name, :to => :official, :allow_nil => true, :prefix => true
+  
+  
   
   #
   # Nested Attributes
