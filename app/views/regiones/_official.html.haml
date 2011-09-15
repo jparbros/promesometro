@@ -16,12 +16,4 @@
         %b Provincia:
         = official.province.name
     %p
-      %b Twitter:
-      = link_to official.twitter, "http://www.twitter.com/#{official.twitter}", :target => '_blank'
-    
-    %p
-      %b Facebook:
-      = link_to official.facebook, "http://www.facebook.com/#{official.facebook}", :target => '_blank'
-    
-    %p
       = link_to_official official
