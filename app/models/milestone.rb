@@ -33,6 +33,11 @@ class Milestone < ActiveRecord::Base
   delegate :finish, :to => :promise, :allow_nil => true, :prefix => true
   delegate :ready_to_finish?, :to => :promise, :allow_nil => true, :prefix => true
   
+  #
+  # Scopes
+  #
+  default_scope :order => 'id ASC'
+  
   def start_milestone
     self.started_at = Time.now
     self.save
