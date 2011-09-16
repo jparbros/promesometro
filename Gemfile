@@ -14,4 +14,3 @@ gem 'rails', '~> 3.0.10'
 gem "meta_where"
 gem "meta_search"
 gem 'state_machine'
-gem 'ruby-debug19'
