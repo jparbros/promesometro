@@ -31,7 +31,7 @@ class Milestone < ActiveRecord::Base
   delegate :start, :to => :promise, :allow_nil => true, :prefix => true
   delegate :started?, :to => :promise, :allow_nil => true, :prefix => true
   delegate :finish, :to => :promise, :allow_nil => true, :prefix => true
-  delegate :finished?, :to => :promise, :allow_nil => true, :prefix => true
+  delegate :ready_to_finish?, :to => :promise, :allow_nil => true, :prefix => true
   
   def start_milestone
     self.started_at = Time.now
@@ -40,8 +40,8 @@ class Milestone < ActiveRecord::Base
   end
   
   def finish_milestone
+    self.promise_finish if self.promise_ready_to_finish?
     self.ended_at = Time.now
     self.save
-    self.promise_finish unless self.promise_finished?
   end
 end

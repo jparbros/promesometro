@@ -15,9 +15,9 @@ module AlcaldesHelper
     when 'new'
       'No Iniciado'
     when 'in_progress'
-      "Iniciado #{started_at_in_words(milestone)}"
+      "Iniciado hace #{started_at_in_words(milestone)}"
     when 'finished'
-      'Finalizado'
+      "Finalizado en #{distance_of_time_in_words(milestone.started_at,milestone.ended_at)}"
     end
   end
   

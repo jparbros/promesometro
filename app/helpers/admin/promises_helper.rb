@@ -10,6 +10,6 @@ module Admin::PromisesHelper
   end
   
   def started_at_in_words(milestone)
-    concat 'hace ' + time_ago_in_words(milestone.started_at) if milestone.started_at and milestone.in_progress?
+    time_ago_in_words(milestone.started_at) if milestone.started_at and milestone.in_progress?
   end
 end

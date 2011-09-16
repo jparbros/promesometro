@@ -15,6 +15,7 @@ class Promise < ActiveRecord::Base
   delegate :avatar, :to => :official, :allow_nil => true, :prefix => true
   delegate :avatar_url, :to => :official, :allow_nil => true, :prefix => true
   delegate :political_party_name, :to => :official, :allow_nil => true, :prefix => true
+  delegate :position_name, :to => :official, :allow_nil => true, :prefix => true
   delegate :citizens_approved, :to => :comments, :allow_nil => true, :prefix => true
   delegate :government, :to => :comments, :allow_nil => true, :prefix => true
   
@@ -41,16 +42,20 @@ class Promise < ActiveRecord::Base
   end
   
   def started?
-    !self.started_at.blank?
+    !self.started_at.blank? and self.ended_at.blank?
   end
   
   def finish
-    self.ended_at = Time.now if ready_to_finish?
+    self.ended_at = Time.now
     self.save
   end
   
   def finished?
-    !self.ended_at.blank?
+    !self.started_at.blank? and !self.ended_at.blank?
+  end
+  
+  def not_started?
+    self.ended_at.blank? and self.started_at.blank?
   end
   
   def ready_to_finish?

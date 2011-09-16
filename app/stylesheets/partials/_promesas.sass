@@ -54,10 +54,15 @@
     min-height: 40px
     padding: 5px
   
+  .hito_header_finished, .hito_counter_finished
+    background: #C5EBCD
+  
+  .hito_header_new, .hito_counter_new
+    background: #fff !important
+  
   #hito_header_0, #hito_counter_0, #hito_content_0
     background: #C5EBCD
-    
-  
+
   #hito_header_1, #hito_counter_1, #hito_content_1
     background: #ABCCBD
 
@@ -66,9 +71,15 @@
 
   #hito_header_3, #hito_counter_3, #hito_content_3
     background: #181619
-    
+
   #hito_header_4, #hito_counter_4, #hito_content_4
     background: #E32F21
   
   .citizen_comments
     +prepend(1)
+  
+  .promesa_counter
+    +column(4)
+    +last
+    +prepend(17)
+    margin-left: 18px
