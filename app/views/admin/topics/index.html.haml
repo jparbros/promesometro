@@ -5,6 +5,21 @@
       Arrastre para ordenar
 
 = link_to 'Nuevo Tema', new_admin_topic_path
+
+.well.row
+  %h3 Filtros
+  = form_for @search, :url => admin_topics_path do |form|
+    .span7
+      = label_tag :nombre
+      .input
+        .input-prepend
+          %span.add-on
+            = image_tag 'search.png'
+          = form.text_field :name_contains, :class => 'large'
+
+    .clearfix
+      = form.submit 'Buscar', :class => 'btn'
+
 %table.common-table.zebra-striped#sorteable_topics
   %thead
     %tr
@@ -14,6 +29,8 @@
   
   %tbody
     = render @topics
+
+= paginate @topics unless params[:all]
 
 %script
   $(document).ready(function(){  

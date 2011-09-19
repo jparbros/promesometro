@@ -1,7 +1,8 @@
 class Admin::OfficialsController < Admin::BaseController
   
   def index
-    @officials = Official.all
+    @search = Official.search(params[:search])
+    @officials = @search.page(params[:page])
   end
   
   def new

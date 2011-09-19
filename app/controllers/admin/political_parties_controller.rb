@@ -1,7 +1,8 @@
 class Admin::PoliticalPartiesController < Admin::BaseController
   
   def index
-    @political_parties = PoliticalParty.all
+    @search = PoliticalParty.search(params[:search])
+    @political_parties = @search.page(params[:page])
   end
   
   def new

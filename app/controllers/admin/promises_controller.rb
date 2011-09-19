@@ -3,7 +3,7 @@ class Admin::PromisesController < Admin::BaseController
   before_filter :get_official
   
   def index
-    @promises = @official.promises
+    @promises = @official.promises.page(params[:page])
   end
   
   def new

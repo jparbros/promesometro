@@ -1,7 +1,8 @@
 class Admin::TopicsController < Admin::BaseController
 
   def index
-    @topics = Topic.all
+    @search = Topic.search(params[:search])
+    @topics = params[:all]? Topic.all : @search.page(params[:page])
   end
 
   def new
