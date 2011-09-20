@@ -3,7 +3,7 @@
   %head
     %title= Promesometro
     = include_stylesheets :app, :media => 'all'
-    = stylesheet_link_tag "http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css"
+    %link{:href => 'http://fonts.googleapis.com/css?family=Oswald|Open+Sans|Anton', :rel => 'stylesheet', :type => 'text/css'}
     <!--[if IE]>
     %link{:href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     <![endif]-->
@@ -17,13 +17,18 @@
     #container
       %header
         = image_tag 'logo.png', :id => 'logo'
-        = link_to 'Contacto','', :id => 'contacto'
-      .content
         %nav
           %ul
-            %li= link_to 'Inicio', root_path
+            %li.no-border= link_to 'Inicio', root_path
             %li= link_to 'Promesas', promesas_path
             %li= link_to 'Directorio', directorio_path
+            %li= link_to 'Contacto', directorio_path
+          %ul.follow_us
+            %li Siguenos en:
+            %li= image_tag 'facebook.png'
+            %li= image_tag 'twitter.png'
+            %li= image_tag 'plus.png'
+      .content
         
         - if alert
           .alert-message.error
@@ -38,9 +43,8 @@
 
       %footer
         %nav
-          = image_tag 'logo_footer.png'
           %ul
-            %li= link_to 'Inicio', root_path
+            %li.no-border= link_to 'Inicio', root_path
             %li= link_to 'Promesas', promesas_path
             %li= link_to 'Directorio', directorio_path
             %li= link_to 'Contacto', ''

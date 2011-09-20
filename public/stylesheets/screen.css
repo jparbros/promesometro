@@ -59,21 +59,18 @@ a img {
 
 /* line 13, ../../app/stylesheets/partials/_base.sass */
 html body {
-  background: url("../images/background.png") repeat-x;
+  background: url("../images/background.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
+  background-color: #ced1d6;
   color: #181619;
   font-family: Arial;
   font-size: 14px;
 }
-/* line 19, ../../app/stylesheets/partials/_base.sass */
+/* line 20, ../../app/stylesheets/partials/_base.sass */
 html body a {
-  color: #181619;
+  color: #363636;
   text-decoration: none;
 }
-/* line 23, ../../app/stylesheets/partials/_base.sass */
-html body a:hover {
-  color: #e32f21;
-}
-/* line 26, ../../app/stylesheets/partials/_base.sass */
+/* line 24, ../../app/stylesheets/partials/_base.sass */
 html body header {
   display: inline;
   float: left;
@@ -86,404 +83,179 @@ html body header {
 * html html body header {
   overflow-x: hidden;
 }
-/* line 31, ../../app/stylesheets/partials/_base.sass */
+/* line 29, ../../app/stylesheets/partials/_base.sass */
 html body header #logo {
-  margin: 5px 0 0 110px;
+  margin: 30px 0 0 0;
+  float: left;
 }
-/* line 34, ../../app/stylesheets/partials/_base.sass */
-html body header #contacto {
-  background: url("../images/contacto.png") no-repeat 65px 0px;
-  color: #e32f21;
-  float: right;
-  margin: 10px 20px 0 0;
-  min-height: 20px;
-  padding: 3px 35px 0 0;
-}
-/* line 42, ../../app/stylesheets/partials/_base.sass */
-html body #container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  background: url("../images/flecha.png") no-repeat 25px 5px;
-}
-/* line 46, ../../app/stylesheets/partials/_base.sass */
-html body .home {
-  background: url("../images/flecha_home.png") no-repeat 50px 10px !important;
-}
-/* line 49, ../../app/stylesheets/partials/_base.sass */
+/* line 33, ../../app/stylesheets/partials/_base.sass */
 html body nav {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 950px;
+  width: 670px;
   margin-right: 0;
-  text-align: center;
+  padding-left: 40px;
+  color: #363636;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background: url("../images/menu_nav.png") no-repeat 68px 0;
+  height: 90px;
+  margin: 50px 0 0 0;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body nav {
   overflow-x: hidden;
 }
-/* line 54, ../../app/stylesheets/partials/_base.sass */
+/* line 42, ../../app/stylesheets/partials/_base.sass */
 html body nav ul {
   display: inline-block;
-  list-style-type: none;
-  margin: 0 0 30px 0;
-}
-/* line 59, ../../app/stylesheets/partials/_base.sass */
-html body nav ul li {
   float: left;
-  margin: 20px 35px 0 0;
+  list-style-type: none;
+  margin: 38px 0 0 65px;
 }
-/* line 63, ../../app/stylesheets/partials/_base.sass */
+/* line 48, ../../app/stylesheets/partials/_base.sass */
+html body nav ul li {
+  border-left: 1px solid #363636;
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 0 0 0 15px;
+}
+/* line 54, ../../app/stylesheets/partials/_base.sass */
+html body nav ul li.no-border {
+  border: 0;
+  padding: 0;
+}
+/* line 58, ../../app/stylesheets/partials/_base.sass */
+html body nav .follow_us {
+  font-size: 14px;
+  margin-left: 20px;
+}
+/* line 62, ../../app/stylesheets/partials/_base.sass */
+html body nav .follow_us li {
+  border: 0;
+  margin: 0;
+  padding: 0 5px;
+}
+/* line 67, ../../app/stylesheets/partials/_base.sass */
+html body #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 72, ../../app/stylesheets/partials/_base.sass */
 html body .content {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
   margin-right: 0;
-  background: url("../images/flecha_arriba.png") no-repeat 168px -2px, url("../images/flecha_footer.png") no-repeat 642px bottom;
   padding: 0 0 20px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body .content {
   overflow-x: hidden;
 }
-/* line 69, ../../app/stylesheets/partials/_base.sass */
+/* line 77, ../../app/stylesheets/partials/_base.sass */
 html body h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: strong;
   margin-bottom: 15px;
-  text-align: center;
 }
-/* line 76, ../../app/stylesheets/partials/_base.sass */
+/* line 83, ../../app/stylesheets/partials/_base.sass */
 html body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 82, ../../app/stylesheets/partials/_base.sass */
+/* line 89, ../../app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
   margin-right: 0;
-  background: url("../images/footer_background.png") no-repeat 590px -1px;
-  border: 0;
-  margin: 0 0 20px 0;
-  padding-top: 0;
+  height: 262px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 90, ../../app/stylesheets/partials/_base.sass */
+/* line 94, ../../app/stylesheets/partials/_base.sass */
 html body footer nav {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 590px;
-  margin-right: 0;
-  min-height: 40px;
-  text-align: left;
-  background: #181619;
+  background: none;
+  margin: 25px 0 0 0;
+  padding: 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html html body footer nav {
-  overflow-x: hidden;
-}
-/* line 96, ../../app/stylesheets/partials/_base.sass */
-html body footer nav img {
-  border-right: 2px solid white;
-  float: left;
-  margin: 10px 20px 0;
-  padding: 0 20px 0 0;
-}
-/* line 103, ../../app/stylesheets/partials/_base.sass */
+/* line 99, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
-}
-/* line 106, ../../app/stylesheets/partials/_base.sass */
-html body footer nav ul a {
-  color: white;
-}
-/* line 108, ../../app/stylesheets/partials/_base.sass */
-html body footer nav ul li {
-  margin: 10px 15px 0 0;
-  padding: 0 15px 0 0;
-  border-right: 1px solid white;
-}
-/* line 113, ../../app/stylesheets/partials/_base.sass */
-html body .sidebar-box {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  background: #e4ded0;
-  color: #685c53;
-  float: left;
-  margin: 0 0 20px 5px;
-  padding: 10px;
-  width: 92%;
-}
-/* line 124, ../../app/stylesheets/partials/_base.sass */
-html body #search label {
-  width: 60px;
-}
-/* line 127, ../../app/stylesheets/partials/_base.sass */
-html body #search .input {
-  margin-left: 12px;
-  margin-top: 10px;
-}
-/* line 131, ../../app/stylesheets/partials/_base.sass */
-html .citizen_comments, html .goverment_comment {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 390px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html html .citizen_comments, * html html .goverment_comment {
-  overflow-x: hidden;
-}
-/* line 133, ../../app/stylesheets/partials/_base.sass */
-html .citizen_comments .flecha_comentario, html .goverment_comment .flecha_comentario {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 30px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html html .citizen_comments .flecha_comentario, * html html .goverment_comment .flecha_comentario {
-  overflow-x: hidden;
-}
-/* line 135, ../../app/stylesheets/partials/_base.sass */
-html .citizen_comments .comentario_contenido, html .goverment_comment .comentario_contenido {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 350px;
-  margin-right: 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html html .citizen_comments .comentario_contenido, * html html .goverment_comment .comentario_contenido {
-  overflow-x: hidden;
-}
-/* line 139, ../../app/stylesheets/partials/_base.sass */
-html .home_box {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  background: #e4ded0;
-  color: #685c53;
-  margin: 0 0 20px 5px;
-  padding: 5px;
-}
-/* line 147, ../../app/stylesheets/partials/_base.sass */
-html .citizen_comments.home_box, html .goverment_comment.home_box {
-  margin-left: 40px;
-}
-/* line 150, ../../app/stylesheets/partials/_base.sass */
-html .banner_home {
-  margin-left: 240px;
 }
 
 /* line 1, ../../app/stylesheets/partials/_promesas.sass */
 #promesas {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 590px;
+  color: #666666;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #promesas {
-  overflow-x: hidden;
+/* line 7, ../../app/stylesheets/partials/_promesas.sass */
+#promesas p.promesa_top {
+  text-align: right;
 }
-/* line 4, ../../app/stylesheets/partials/_promesas.sass */
+/* line 10, ../../app/stylesheets/partials/_promesas.sass */
+#promesas span.title {
+  color: #7a95a4;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+/* line 15, ../../app/stylesheets/partials/_promesas.sass */
+#promesas p.topic {
+  color: #959595;
+}
+/* line 18, ../../app/stylesheets/partials/_promesas.sass */
+#promesas span.region {
+  color: #333333;
+  margin-right: 25px;
+}
+/* line 22, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa {
-  max-width: 457px;
-  margin: 10px auto;
-}
-/* line 8, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa h3 {
-  background: url("../images/promesa_header.png") no-repeat;
-  border-bottom: 1px solid #7dbeb8;
-  max-width: 457px;
-  padding: 10px 0 5px 30px;
-}
-/* line 14, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa a {
-  margin: 0 10px 0 0;
-}
-
-/* line 17, ../../app/stylesheets/partials/_promesas.sass */
-#sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 350px;
+  width: 550px;
+  background: url("../images/promesa-bg.png");
+  height: 164px;
+  margin: 0 0 10px 0;
+  padding: 15px 0 0 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa {
+  overflow-x: hidden;
+}
+/* line 29, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .arrow {
+  background: url("../images/arrow.png");
+  display: inline;
+  float: left;
+  height: 179px;
+  width: 50px;
+}
+/* line 36, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .status {
+  display: inline;
+  float: left;
   margin-right: 0;
+  width: 310px;
+  background: url("../images/promesa-bg.png");
+  height: 164px;
+  padding: 15px 0 0 20px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #sidebar {
-  overflow-x: hidden;
-}
-
-/* line 21, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 950px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa {
-  overflow-x: hidden;
-}
-/* line 23, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .funcionario {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 950px;
-  margin: 20px 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .funcionario {
-  overflow-x: hidden;
-}
-/* line 26, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .funcionario .fotografia {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 190px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .funcionario .fotografia {
-  overflow-x: hidden;
-}
-/* line 28, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .funcionario .info {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 750px;
-  margin-right: 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .funcionario .info {
-  overflow-x: hidden;
-}
-/* line 32, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_header {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 670px;
-  border: 2px solid white;
-  cursor: pointer;
-  margin: 5px 6px 5px 0;
-  min-height: 40px;
-  padding: 5px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_header {
-  overflow-x: hidden;
-}
-/* line 40, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_counter {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 150px;
-  margin-right: 0;
-  border: 2px solid white;
-  margin: 5px 0;
-  min-height: 40px;
-  padding: 5px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_counter {
-  overflow-x: hidden;
-}
-/* line 48, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_content {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 830px;
-  margin-right: 0;
-  border: 2px solid white;
-  display: none;
-  margin: 5px 0 15px 0;
-  min-height: 40px;
-  padding: 5px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .hito_content {
-  overflow-x: hidden;
-}
-/* line 57, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_header_finished, #show-promesa .hito_counter_finished {
-  background: #c5ebcd;
-}
-/* line 60, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .hito_header_new, #show-promesa .hito_counter_new {
-  background: white !important;
-}
-/* line 63, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa #hito_header_0, #show-promesa #hito_counter_0, #show-promesa #hito_content_0 {
-  background: #c5ebcd;
-}
-/* line 66, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa #hito_header_1, #show-promesa #hito_counter_1, #show-promesa #hito_content_1 {
-  background: #abccbd;
-}
-/* line 69, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa #hito_header_2, #show-promesa #hito_counter_2, #show-promesa #hito_content_2 {
-  background: #7dbeb8;
-}
-/* line 72, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa #hito_header_3, #show-promesa #hito_counter_3, #show-promesa #hito_content_3 {
-  background: #181619;
-}
-/* line 75, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa #hito_header_4, #show-promesa #hito_counter_4, #show-promesa #hito_content_4 {
-  background: #e32f21;
-}
-/* line 78, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .citizen_comments {
-  padding-left: 40px;
-}
-/* line 81, ../../app/stylesheets/partials/_promesas.sass */
-#show-promesa .promesa_counter {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 150px;
-  margin-right: 0;
-  padding-left: 680px;
-  margin-left: 18px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #show-promesa .promesa_counter {
+* html #promesas .status {
   overflow-x: hidden;
 }
 
@@ -656,7 +428,7 @@ body.bp p .right {
 /* line 62, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp a {
   text-decoration: underline;
-  color: #181619;
+  color: #363636;
 }
 /* line 18, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body.bp a:visited {

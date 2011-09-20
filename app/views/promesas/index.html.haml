@@ -1,8 +1,6 @@
 #promesas
-  .sidebar-box
-    %h1
-      Promesas
-    Aqui puedes observar las promesas hechas por cada alcalde, texto explicativo de cada región y etc etc.
+  %h1
+    Promesas
 
   - titulo_filtro_promesas(@search.search_attributes)
 
@@ -10,7 +8,3 @@
   - if @promises.empty?
     %h3
       No existen coincidencias para su busqueda
-      
-#sidebar
-  = render :partial => 'shared/search'
-  = render :partial => 'shared/topics'

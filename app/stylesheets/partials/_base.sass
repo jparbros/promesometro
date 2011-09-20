@@ -9,9 +9,10 @@ $blueprint-grid-margin    : 10px
 // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
 
-html 
+html
   body
-    background: url('../images/background.png') repeat-x
+    background: url('../images/background.png') repeat-x, url('../images/background-bottom.png') repeat-x bottom
+    background-color: #CED1D6
     color: $text_color
     font-family: Arial
     font-size: 14px
@@ -19,9 +20,6 @@ html
     a
       color: $link_color
       text-decoration: none
-    
-    a:hover
-      color: $link_hover_color
       
     header
       +column(24)
@@ -29,49 +27,58 @@ html
       min-height: 40px
     
       #logo
-        margin: 5px 0 0 110px
+        margin: 30px 0 0 0
+        float: left
         
-      #contacto
-        background: url('../images/contacto.png') no-repeat 65px 0px
-        color: $contact_link_color
-        float: right
-        margin: 10px 20px 0 0
-        min-height: 20px
-        padding: 3px 35px 0 0
-    
-    #container
-      +container
-      background: url('../images/flecha.png') no-repeat 25px 5px
-       
-    .home
-      background: url('../images/flecha_home.png') no-repeat 50px 10px !important
-      
     nav
-      +column(24)
+      +column(17)
       +last
-      text-align: center
-      
+      +prepend(1)
+      +nav_text
+      background: url('../images/menu_nav.png') no-repeat 68px 0
+      height: 90px
+      margin: 50px 0 0 0
+
       ul
         display: inline-block
+        float: left
         list-style-type: none
-        margin: 0 0 30px 0
+        margin: 38px 0 0 65px
+
+        li
+          border-left: 1px solid #363636
+          float: left
+          margin: 0 15px 0 0
+          padding: 0 0 0 15px
+        
+        li.no-border
+          border: 0
+          padding: 0
+      
+      .follow_us
+        font-size: 14px
+        margin-left: 20px
         
         li
-          float: left
-          margin: 20px 35px 0 0
-  
+          border: 0
+          margin: 0
+          padding: 0 5px
+              
+    #container
+      +container
+       
+    .home
+
     .content
       +column(24)
       +last
-      background: url('../images/flecha_arriba.png') no-repeat 168px -2px, url('../images/flecha_footer.png') no-repeat 642px bottom
       padding: 0 0 20px
       
     h1
-      font-size: 30px
-      font-weight: bold
-      margin: 0 auto
+      font-family: 'Oswald', sans-serif
+      font-size: 18px
+      font-weight: strong
       margin-bottom: 15px
-      text-align: center
     
     h3
       font-size: 18px
@@ -82,70 +89,12 @@ html
     footer
       +column(24)
       +last
-      background: url('../images/footer_background.png') no-repeat 590px -1px
-      border: 0
-      margin: 0 0 20px 0
-      padding-top: 0
+      height: 262px
       
       nav
-        +column(15)
-        +last
-        min-height: 40px
-        text-align: left
+        background: none
+        margin: 25px 0 0 0
+        padding: 0
         
-        img
-          border-right: 2px solid #FFFFFF
-          float: left
-          margin: 10px 20px 0
-          padding: 0 20px 0 0
-          
-        background: $footer_background_color
         ul
-          margin: 0 
-           
-          a
-            color: $footer_text_color
-          li
-            margin: 10px 15px 0 0
-            padding: 0 15px 0 0
-            border-right: 1px solid #fff
-
-    .sidebar-box
-      +border-radius(10px)
-      +box-shadow
-      background: $sidebar_background_color
-      color: #685C53
-      float: left
-      margin: 0 0 20px 5px
-      padding: 10px
-      width: 92%
-    
-    #search
-      label
-        width: 60px
-
-      .input 
-        margin-left: 12px
-        margin-top: 10px
-  
-  .citizen_comments, .goverment_comment
-    +column(10)
-    .flecha_comentario
-      +column(1)
-    .comentario_contenido
-      +column(9)
-      +last
-  
-  .home_box
-    +border-radius(10px)
-    +box-shadow
-    background: $sidebar_background_color
-    color: #685C53
-    margin: 0 0 20px 5px
-    padding: 5px
-    
-  .citizen_comments.home_box, .goverment_comment.home_box
-    margin-left: 40px
-
-  .banner_home
-    margin-left: 240px
+          margin: 0

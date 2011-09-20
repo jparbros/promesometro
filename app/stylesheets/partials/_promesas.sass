@@ -1,85 +1,40 @@
 #promesas
-  +column(15)
+  color: #666666
+  font-family: Trebuchet MS, sans-serif
+  font-size: 12px
+  font-weight: bold
   
+  p.promesa_top
+    text-align: right
+  
+  span.title
+    color: #7a95a4
+    font-family: 'Open Sans', sans-serif
+    font-size: 14px
+   
+  p.topic 
+    color: #959595
+    
+  span.region
+    color: #333333
+    margin-right: 25px
+    
   .promesa
-    max-width: 457px
-    margin: 10px auto
+    +column(14)
+    background: url('../images/promesa-bg.png')
+    height: 164px
+    margin: 0 0 10px 0
+    padding: 15px 0 0 20px
     
-    h3
-      background: url('../images/promesa_header.png') no-repeat
-      border-bottom: 1px solid #7DBEB8
-      max-width: 457px
-      padding: 10px 0 5px 30px
-  
-    a
-      margin: 0 10px 0 0
-
-#sidebar
-  +column(9)
-  +last
-
-#show-promesa
-  +column(24)
-  .funcionario
-    +column(24)
-    margin: 20px 0
-    .fotografia
-      +column(5)
-    .info
-      +column(19)
-      +last
-      
-  .hito_header
-    +column(17)
-    border: 2px solid #ffffff
-    cursor: pointer
-    margin: 5px 6px 5px 0
-    min-height: 40px
-    padding: 5px
+  .arrow
+    background: url('../images/arrow.png')
+    display: inline
+    float: left
+    height: 179px
+    width: 50px
     
-  .hito_counter
-    +column(4)
-    +last
-    border: 2px solid #ffffff
-    margin: 5px 0
-    min-height: 40px
-    padding: 5px
-    
-  .hito_content
-    +column(21)
-    +last
-    border: 2px solid #ffffff
-    display: none
-    margin: 5px 0 15px 0
-    min-height: 40px
-    padding: 5px
-  
-  .hito_header_finished, .hito_counter_finished
-    background: #C5EBCD
-  
-  .hito_header_new, .hito_counter_new
-    background: #fff !important
-  
-  #hito_header_0, #hito_counter_0, #hito_content_0
-    background: #C5EBCD
-
-  #hito_header_1, #hito_counter_1, #hito_content_1
-    background: #ABCCBD
-
-  #hito_header_2, #hito_counter_2, #hito_content_2
-    background: #7DBEB8
-
-  #hito_header_3, #hito_counter_3, #hito_content_3
-    background: #181619
-
-  #hito_header_4, #hito_counter_4, #hito_content_4
-    background: #E32F21
-  
-  .citizen_comments
-    +prepend(1)
-  
-  .promesa_counter
-    +column(4)
-    +last
-    +prepend(17)
-    margin-left: 18px
+  .status
+    +column(8, true)
+    background: url('../images/promesa-bg.png')
+    height: 164px
+    padding: 15px 0 0 20px

@@ -1,6 +1,15 @@
 .promesa
-  %h3
-    = link_to promesa.title.humanize, promesa_path(promesa.slug)
-
-  - promesa.topics.each do |topic|
-    = link_to topic.name.humanize, ''
+  %p.promesa_top
+    %span.region
+      = promesa.official_state_name.humanize
+    %span.fecha
+      = promesa.created_at.to_s(:date)
+  %p
+    %span.title= promesa.title.humanize
+  %p.topic
+    Promesa de 
+    - promesa.topics.each do |topic|
+      =  topic.name.humanize
+.arrow
+.status
+  = link_to promesa.title.humanize, promesa_path(promesa.slug)

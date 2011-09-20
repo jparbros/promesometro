@@ -1,6 +1,7 @@
 Promesometro::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  devise_for :users, :controllers => { :sessions => "admin/sessions" }
 
   namespace :admin do
     match 'officials/provinces/:state_id', :to => "officials#provinces", :as => 'official_provinces'

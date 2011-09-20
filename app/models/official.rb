@@ -36,6 +36,7 @@ class Official < ActiveRecord::Base
   # Delegates
   #
   delegate :name, :to => :political_party, :allow_nil => true, :prefix => true
+  delegate :name, :to => :state, :allow_nil => true, :prefix => true
   
   def position_name
     POSITIONS[position]
