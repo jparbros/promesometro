@@ -66,4 +66,24 @@ class Promise < ActiveRecord::Base
   def set_slug
     self.slug = self.title.parameterize
   end
+  
+  def title_scaped
+    if title.size > 70
+      title[0,67] + "..."
+    else
+      title
+    end
+  end
+  
+  def days_started
+    ((Time.now - (started_at || Time.now))/86400).to_i.abs
+  end
+  
+  def description_scaped
+    if description.size > 300
+      description[0,297] + "..."
+    else
+      description
+    end
+  end
 end

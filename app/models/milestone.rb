@@ -37,6 +37,7 @@ class Milestone < ActiveRecord::Base
   # Scopes
   #
   default_scope :order => 'id ASC'
+  scope :completed, where('state = ?','finished')
   
   def start_milestone
     self.started_at = Time.now
@@ -48,5 +49,9 @@ class Milestone < ActiveRecord::Base
     self.promise_finish if self.promise_ready_to_finish?
     self.ended_at = Time.now
     self.save
+  end
+  
+  def method_name
+    
   end
 end

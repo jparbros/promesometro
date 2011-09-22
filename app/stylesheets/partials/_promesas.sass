@@ -19,6 +19,79 @@
     color: #333333
     margin-right: 25px
     
+  .representante
+    border-bottom: 1px dashed #999999
+    float: left
+    margin-bottom: 10px
+    padding-bottom: 10px
+    
+    img.foto_representante
+      +border-radius(3px)
+      height: 37px
+      margin-right: 10px
+      width: 41px
+
+    span.nombre_representante  
+      color: #7a95a4
+      display: inline-block
+      font-size: 14px
+      margin-right: 10px
+      width: 110px
+    
+    span.partido_representante
+      display: inline-block
+      width: 120px
+  
+  .promesa_status
+    +column(8, true)
+    margin-top: -10px
+    .dias_progreso
+      +column(1)
+      .numero
+        +column(1, true)
+        color: #7a95a4
+        font-family: 'Oswald', sans-serif
+        font-size: 54px
+      .dias
+        color: #7a95a4
+        display: inline-block
+        font-family: 'Oswald', sans-serif
+        margin-top: 10px
+    .progreso
+      color: #898989
+    .hito
+      +column(2)
+      margin: 0 25px
+      img
+        margin: 11px 0
+    .estado_contenedor
+      +column(3, true)
+      margin-top: 10px
+      span.etiqueta
+        color: #464646
+      span.estado
+        color: #7a95a4
+        font-family: 'Oswald', sans-serif
+        font-size: 14px
+
+  p.descripcion
+    +column(12, true)
+    +prepend(1)
+    +append(1)
+    border-bottom: 1px dashed #999999
+    height: 55px
+    text-align: center
+    margin-top: 10px
+    margin-bottom: 10px
+    padding-bottom: 10px
+    
+  span.ver_mas a
+    color: #662d91
+    float: left
+  
+  span.compartir
+    float: right
+    
   .promesa
     +column(14)
     background: url('../images/promesa-bg.png')

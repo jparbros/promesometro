@@ -5,11 +5,33 @@
     %span.fecha
       = promesa.created_at.to_s(:date)
   %p
-    %span.title= promesa.title.humanize
+    %span.title= promesa.title_scaped.humanize
   %p.topic
     Promesa de 
     - promesa.topics.each do |topic|
       =  topic.name.humanize
+  %p.descripcion= promesa.description_scaped 
+  %p
+    %span.ver_mas= link_to 'VER MÁS >>', promesa_path(promesa.slug)
+    %span.compartir 
+      Compartir
+      = image_tag 'share.png'
 .arrow
 .status
-  = link_to promesa.title.humanize, promesa_path(promesa.slug)
+  .representante
+    = image_tag promesa.official_avatar_url, :class => 'foto_representante'
+    %span.nombre_representante= promesa.official_name
+    %span.partido_representante= promesa.official_political_party_name
+  .promesa_status
+    .dias_progreso
+      %span.numero= promesa.days_started
+      %span.progreso Progreso
+    .dias_progreso
+      %span.dias Dias
+    .hito
+      = image_tag hito_actual(promesa)
+      %span.progreso Etapa/Hito
+    .estado_contenedor
+      %span.etiqueta Status:
+      %br
+      %span.estado= promesa_state(promesa)
