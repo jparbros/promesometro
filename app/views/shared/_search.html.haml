@@ -1,35 +1,13 @@
 = form_for @search, :url => promesas_path do |form|
-  .sidebar-box#search
-    %h3 Busqueda
-    .clearfix
-      = label_tag :nombre
-      %br 
-      %br
-      .input
-        .input-prepend
-          %span.add-on
-            = image_tag 'search.png'
-          = form.text_field :official_name_contains, :class => 'large'
 
-    .clearfix
-      = label_tag :entidad
-      %br
-      %br
-      .input
-        .input-prepend
-          %span.add-on
-            = image_tag 'search.png'
-          = form.text_field :official_state_name_contains, :class => 'large'
+  = select_tag('buscar_por', options_for_select([['Buscar Por','buscar_por'], ['Promesa','promesa'], ['Representante','representante'], ['Region','region'], ['Partido','partido']]), :class => 'buscar_por')
 
-    .clearfix
-      = label_tag :partido
-      %br
-      %br
-      .input
-        .input-prepend
-          %span.add-on
-            = image_tag 'search.png'
-          = text_field_tag :partido, '', :class => 'large'
-    
-    .clearfix
-      = form.submit 'Buscar', :class => 'btn'
+  = form.text_field :title_contains
+
+  = form.text_field :official_name_contains, :class => 'hidden_field'
+
+  = form.text_field :official_state_name_contains, :class => 'hidden_field'
+  
+  = form.text_field :official_political_party_name_contains, :class => 'hidden_field'
+
+  = form.submit 'Buscar', :class => 'button_search'

@@ -3,7 +3,7 @@
   %head
     %title= Promesometro
     = include_stylesheets :app, :media => 'all'
-    %link{:href => 'http://fonts.googleapis.com/css?family=Oswald|Open+Sans|Anton', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300|Anton', :rel => 'stylesheet', :type => 'text/css'}
     <!--[if IE]>
     %link{:href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     <![endif]-->
@@ -28,6 +28,12 @@
             %li= image_tag 'facebook.png'
             %li= image_tag 'twitter.png'
             %li= image_tag 'plus.png'
+        #search_box
+          #breadcums
+            %span.estas_en Estas en:
+            %span.breadcums= render_crumbs :links => false
+          #search
+            = render :partial => 'shared/search'
       .content
         
         - if alert

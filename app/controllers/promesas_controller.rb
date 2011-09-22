@@ -1,4 +1,5 @@
 class PromesasController < ApplicationController
+  add_crumb "Promesas", '/promesas'
   
   def index
     @search = Promise.search(params[:search])
@@ -9,5 +10,6 @@ class PromesasController < ApplicationController
   def show
     @search = Promise.search(params[:search])
     @promise = Promise.find_by_slug(params[:slug])
+    add_crumb "#{@promise.title[0,20]}", "/promesas/#{@promise.slug}"
   end
 end

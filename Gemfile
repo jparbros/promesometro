@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'carrierwave'
 gem 'compass'
+gem "crummy"
 gem 'devise'
 gem 'fog'
 gem 'haml'

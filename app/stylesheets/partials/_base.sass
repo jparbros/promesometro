@@ -13,9 +13,10 @@ html
   body
     background: url('../images/background.png') repeat-x, url('../images/background-bottom.png') repeat-x bottom
     background-color: #CED1D6
-    color: $text_color
-    font-family: Arial
-    font-size: 14px
+    color: #666666
+    font-family: Trebuchet MS, sans-serif
+    font-size: 12px
+    font-weight: bold
     
     a
       color: $link_color
@@ -30,6 +31,46 @@ html
         margin: 30px 0 0 0
         float: left
         
+      #search_box
+        +column(24, true)
+        border-bottom: 1px dashed #666666
+        height: 35px
+        margin-bottom: 60px
+        #breadcums
+          +column(10)
+          span.estas_en
+            color: #c2abd7
+            +column(2)
+          span.breadcums
+            +column(8,true)
+            color: #898989
+            font-style: italic
+        #search
+          +column(12, true)
+          +prepend(2)
+          input
+            +border-radius(3px)
+            background-color: #f2f2f2
+            border: 1px solid #c7c7c7
+        
+          input.button_search
+            +border-radius(3px)
+            background-color: #c2abd7
+            color: #ffffff
+            height: 28px
+            width: 80px
+          
+        
+          input.hidden_field
+            display: none
+          
+          select.buscar_por
+            +border-radius(3px)
+            background-color: #f2f2f2
+            border: 1px solid #c7c7c7
+            height: 28px
+            width: 140px
+
     nav
       +column(17)
       +last
@@ -57,7 +98,7 @@ html
       
       .follow_us
         font-size: 14px
-        margin-left: 18px
+        margin-left: 70px
         
         li
           border: 0
