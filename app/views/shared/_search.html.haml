@@ -1,4 +1,4 @@
-= form_for @search, :url => promesas_path do |form|
+= form_for Promise.search, :url => promesas_path do |form|
 
   = select_tag('buscar_por', options_for_select([['Buscar Por','buscar_por'], ['Promesa','promesa'], ['Representante','representante'], ['Region','region'], ['Partido','partido']]), :class => 'buscar_por')
 

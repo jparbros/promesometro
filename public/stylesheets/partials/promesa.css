@@ -1,0 +1,107 @@
+/*
+Syntax error: Undefined mixin 'column'.
+        on line 3 of /Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass, in `column'
+        from line 3 of /Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass
+
+1: #show-promesa
+2:   .promesa_estado_titulo
+3:     +column(8, true)
+4:   
+5:   .promesa
+6:     +column(15)
+7:     background: url('../images/promesa_detail-bg.png') no-repeat
+8:     padding: 20px
+
+Backtrace:
+/Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass:3:in `column'
+/Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass:3
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:235:in `visit_rule'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:235:in `visit_rule'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/engine.rb:241:in `block in render'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activerecord-3.0.10/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activerecord-3.0.10/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activerecord-3.0.10/lib/active_record/query_cache.rb:12:in `cache'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activerecord-3.0.10/lib/active_record/query_cache.rb:31:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activerecord-3.0.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activesupport-3.0.10/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/railties-3.0.10/lib/rails/rack/logger.rb:13:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/activesupport-3.0.10/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/actionpack-3.0.10/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/railties-3.0.10/lib/rails/application.rb:168:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/railties-3.0.10/lib/rails/application.rb:77:in `method_missing'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/railties-3.0.10/lib/rails/rack/debugger.rb:21:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/railties-3.0.10/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/Users/jparbros/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/jparbros/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/jparbros/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'column'.\A         on line 3 of /Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass, in `column'\A         from line 3 of /Users/jparbros/Work/promesometro/app/stylesheets/partials/promesa.sass\A \A 1: #show-promesa\A 2:   .promesa_estado_titulo\A 3:     +column(8, true)\A 4:   \A 5:   .promesa\A 6:     +column(15)\A 7:     background: url('../images/promesa_detail-bg.png') no-repeat\A 8:     padding: 20px"; }

@@ -1,0 +1,78 @@
+#show-promesa
+  .promesa_estado_titulo
+    +column(8, true)
+  
+  .promesa
+    +column(15)
+    background: url('../images/promesa_detail-bg.png') no-repeat
+    padding: 20px
+
+  .promesas_candidato
+    +column(7, true)
+    +prepend(1)
+    background: url('../images/promesas_candidato-bg.png') no-repeat
+  
+  .representante
+    +column(15, true)
+    
+    .promesa_status
+      float: right
+      margin-top: -25px
+  
+  p.descripcion
+    +column(15)
+    margin: 10px 0
+  
+  ul#hito
+    background-color: #f3f3f3
+    border: 1px dashed #666666
+    display: inline-block
+    float: left
+    height: 90px
+    list-style-type: none
+    width: 100%
+
+    li.no-border
+      border: 0
+      padding: 0
+
+    div.hito_status
+      float: left
+      margin: 0 0 0 10px
+      width: 175px
+      
+      span.estado
+        font-size: 18px
+      
+      div.tiempo_hito
+        width: 115px
+        float: left
+        
+      
+      div.estado_hito
+        width: 55px
+        float: left
+        margin-left: 5px
+        
+    img
+      float: left
+    
+    li
+      float: left
+      border-left: 1px dashed #666666
+      margin: 15px 0 0 15px
+      max-width: 250px
+      padding-left: 15px
+      
+  .share
+    border: 1px dashed #666
+    border-left: 0
+    border-right: 0
+    display: inline-block
+    margin: 10px 0
+    padding: 5px 0
+    width: 100%
+    
+    .comentarios_counter
+      color: #7a95a4
+      

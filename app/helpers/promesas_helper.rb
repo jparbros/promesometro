@@ -29,4 +29,32 @@ module PromesasHelper
       when 5 then 'hito_5_azul.png'
     end
   end
+  
+  def hito_imagen(hito, promesa)
+    hito_actual = promesa.milestones.completed.size
+    if (hito == hito_actual) || (hito == 1 && hito_actual == 0)
+      milestone = promesa.milestones[hito-1]
+      content = []
+      content << image_tag("hito_#{hito}_azul.png")
+      container = []
+      div1 = []
+      div1 << content_tag('span', 'Tiempo transcurrido', :class => 'etiqueta')
+      div1 << tag(:br)
+      div1 << content_tag('span', milestone.days_started.to_s + " dias", :class => 'estado')
+      container << content_tag(:div, raw(div1.join), :class => 'tiempo_hito')
+      div2 = []
+      div2 << content_tag('span', 'Status', :class => 'etiqueta')
+      div2 << tag(:br)
+      div2 << content_tag('span', milestone.state.upcase, :class => 'estado')
+      container << content_tag(:div, raw(div2.join), :class => 'estado_hito')
+      content << content_tag(:div, raw(container.join), :class => 'hito_status')
+      concat raw(content.join(''))
+    else
+      concat(image_tag("hito_#{hito}_gris.png"))
+    end
+  end
+  
+  def comentarios_count(promesa)
+    concat(content_tag(:span, promesa.comments.citizens_approved.count.to_s + " Comentarios", :class => 'comentarios_counter'))
+  end
 end

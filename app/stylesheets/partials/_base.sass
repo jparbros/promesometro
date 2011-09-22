@@ -10,9 +10,10 @@ $blueprint-grid-margin    : 10px
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
 
 html
+  background: url('../images/patron_bg.jpg') repeat
+  
   body
     background: url('../images/background.png') repeat-x, url('../images/background-bottom.png') repeat-x bottom
-    background-color: #CED1D6
     color: #666666
     font-family: Trebuchet MS, sans-serif
     font-size: 12px
@@ -98,7 +99,8 @@ html
       
       .follow_us
         font-size: 14px
-        margin-left: 70px
+        float: right
+        margin-left: 0
         
         li
           border: 0
@@ -120,6 +122,7 @@ html
       font-size: 18px
       font-weight: strong
       margin-bottom: 15px
+      text-transform: uppercase
     
     h3
       font-size: 18px
@@ -130,7 +133,7 @@ html
     footer
       +column(24)
       +last
-      height: 262px
+      height: 110px
       
       nav
         background: none

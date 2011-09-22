@@ -1,5 +1,61 @@
 #show-promesa
-  %h1= @promise.title
+  .promesa_titulo
+    %h1 Promesas
+    
+  .promesa_estado_titulo
+    %h1 Promesas del mismo candidato
+    
+  .promesa
+    %p.promesa_top
+      %span.region
+        = @promise.official_state_name.humanize
+      %span.fecha
+        = @promise.created_at.to_s(:date)
+        
+    %span.title= @promise.title
+    
+    %p.topic
+      Promesa de 
+      - @promise.topics.each do |topic|
+        =  topic.name.humanize
+    
+    .representante
+      = image_tag @promise.official_avatar_url, :class => 'foto_representante'
+      %span.nombre_representante= @promise.official_name
+      %span.partido_representante= @promise.official_political_party_name
+      
+      .promesa_status
+        .dias_progreso
+          %span.numero= @promise.days_started
+        .dias_progreso
+          %span.dias Dias
+    
+    %p.descripcion= @promise.description_scaped 
+    
+    %span.estado ETAPA/HITO
+    
+    %ul#hito
+      %li.no-border
+        - hito_imagen(1, @promise)
+      %li
+        - hito_imagen(2, @promise)
+      %li
+        - hito_imagen(3, @promise)
+      %li
+        - hito_imagen(4, @promise)
+      %li
+        - hito_imagen(5, @promise)
+    
+    .share
+      - comentarios_count(@promise)
+      %span.compartir 
+        Compartir
+        = image_tag 'share.png'
+      
+  
+  .promesas_candidato
+    
+  
   .sidebar-box= @promise.description
   
   .funcionario

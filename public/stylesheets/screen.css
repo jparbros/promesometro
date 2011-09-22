@@ -57,21 +57,24 @@ a img {
   border: none;
 }
 
-/* line 13, ../../app/stylesheets/partials/_base.sass */
+/* line 12, ../../app/stylesheets/partials/_base.sass */
+html {
+  background: url("../images/patron_bg.jpg") repeat;
+}
+/* line 15, ../../app/stylesheets/partials/_base.sass */
 html body {
   background: url("../images/background.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
-  background-color: #ced1d6;
   color: #666666;
   font-family: Trebuchet MS, sans-serif;
   font-size: 12px;
   font-weight: bold;
 }
-/* line 21, ../../app/stylesheets/partials/_base.sass */
+/* line 22, ../../app/stylesheets/partials/_base.sass */
 html body a {
   color: #363636;
   text-decoration: none;
 }
-/* line 25, ../../app/stylesheets/partials/_base.sass */
+/* line 26, ../../app/stylesheets/partials/_base.sass */
 html body header {
   display: inline;
   float: left;
@@ -84,12 +87,12 @@ html body header {
 * html html body header {
   overflow-x: hidden;
 }
-/* line 30, ../../app/stylesheets/partials/_base.sass */
+/* line 31, ../../app/stylesheets/partials/_base.sass */
 html body header #logo {
   margin: 30px 0 0 0;
   float: left;
 }
-/* line 34, ../../app/stylesheets/partials/_base.sass */
+/* line 35, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box {
   display: inline;
   float: left;
@@ -103,7 +106,7 @@ html body header #search_box {
 * html html body header #search_box {
   overflow-x: hidden;
 }
-/* line 39, ../../app/stylesheets/partials/_base.sass */
+/* line 40, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #breadcums {
   display: inline;
   float: left;
@@ -114,7 +117,7 @@ html body header #search_box #breadcums {
 * html html body header #search_box #breadcums {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/partials/_base.sass */
+/* line 42, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #breadcums span.estas_en {
   color: #c2abd7;
   display: inline;
@@ -126,7 +129,7 @@ html body header #search_box #breadcums span.estas_en {
 * html html body header #search_box #breadcums span.estas_en {
   overflow-x: hidden;
 }
-/* line 44, ../../app/stylesheets/partials/_base.sass */
+/* line 45, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #breadcums span.breadcums {
   display: inline;
   float: left;
@@ -139,7 +142,7 @@ html body header #search_box #breadcums span.breadcums {
 * html html body header #search_box #breadcums span.breadcums {
   overflow-x: hidden;
 }
-/* line 48, ../../app/stylesheets/partials/_base.sass */
+/* line 49, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #search {
   display: inline;
   float: left;
@@ -151,7 +154,7 @@ html body header #search_box #search {
 * html html body header #search_box #search {
   overflow-x: hidden;
 }
-/* line 51, ../../app/stylesheets/partials/_base.sass */
+/* line 52, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #search input {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -162,7 +165,7 @@ html body header #search_box #search input {
   background-color: #f2f2f2;
   border: 1px solid #c7c7c7;
 }
-/* line 56, ../../app/stylesheets/partials/_base.sass */
+/* line 57, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #search input.button_search {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -175,11 +178,11 @@ html body header #search_box #search input.button_search {
   height: 28px;
   width: 80px;
 }
-/* line 64, ../../app/stylesheets/partials/_base.sass */
+/* line 65, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #search input.hidden_field {
   display: none;
 }
-/* line 67, ../../app/stylesheets/partials/_base.sass */
+/* line 68, ../../app/stylesheets/partials/_base.sass */
 html body header #search_box #search select.buscar_por {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -192,7 +195,7 @@ html body header #search_box #search select.buscar_por {
   height: 28px;
   width: 140px;
 }
-/* line 74, ../../app/stylesheets/partials/_base.sass */
+/* line 75, ../../app/stylesheets/partials/_base.sass */
 html body nav {
   display: inline;
   float: left;
@@ -211,44 +214,45 @@ html body nav {
 * html html body nav {
   overflow-x: hidden;
 }
-/* line 83, ../../app/stylesheets/partials/_base.sass */
+/* line 84, ../../app/stylesheets/partials/_base.sass */
 html body nav ul {
   display: inline-block;
   float: left;
   list-style-type: none;
   margin: 38px 0 0 65px;
 }
-/* line 89, ../../app/stylesheets/partials/_base.sass */
+/* line 90, ../../app/stylesheets/partials/_base.sass */
 html body nav ul li {
   border-left: 1px solid #363636;
   float: left;
   margin: 0 15px 0 0;
   padding: 0 0 0 15px;
 }
-/* line 95, ../../app/stylesheets/partials/_base.sass */
+/* line 96, ../../app/stylesheets/partials/_base.sass */
 html body nav ul li.no-border {
   border: 0;
   padding: 0;
 }
-/* line 99, ../../app/stylesheets/partials/_base.sass */
+/* line 100, ../../app/stylesheets/partials/_base.sass */
 html body nav .follow_us {
   font-size: 14px;
-  margin-left: 70px;
+  float: right;
+  margin-left: 0;
 }
-/* line 103, ../../app/stylesheets/partials/_base.sass */
+/* line 105, ../../app/stylesheets/partials/_base.sass */
 html body nav .follow_us li {
   border: 0;
   margin: 0;
   padding: 0 5px;
 }
-/* line 108, ../../app/stylesheets/partials/_base.sass */
+/* line 110, ../../app/stylesheets/partials/_base.sass */
 html body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 113, ../../app/stylesheets/partials/_base.sass */
+/* line 115, ../../app/stylesheets/partials/_base.sass */
 html body .content {
   display: inline;
   float: left;
@@ -261,72 +265,92 @@ html body .content {
 * html html body .content {
   overflow-x: hidden;
 }
-/* line 118, ../../app/stylesheets/partials/_base.sass */
+/* line 120, ../../app/stylesheets/partials/_base.sass */
 html body h1 {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: strong;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
-/* line 124, ../../app/stylesheets/partials/_base.sass */
+/* line 127, ../../app/stylesheets/partials/_base.sass */
 html body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 130, ../../app/stylesheets/partials/_base.sass */
+/* line 133, ../../app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
   margin-right: 0;
-  height: 262px;
+  height: 110px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 135, ../../app/stylesheets/partials/_base.sass */
+/* line 138, ../../app/stylesheets/partials/_base.sass */
 html body footer nav {
   background: none;
   margin: 25px 0 0 0;
   padding: 0;
 }
-/* line 140, ../../app/stylesheets/partials/_base.sass */
+/* line 143, ../../app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }
 
 /* line 2, ../../app/stylesheets/partials/_promesas.sass */
-#promesas p.promesa_top {
-  text-align: right;
+#promesas .promesa_titulo, #show-promesa .promesa_titulo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {
+  overflow-x: hidden;
 }
 /* line 5, ../../app/stylesheets/partials/_promesas.sass */
-#promesas span.title {
+#promesas span.title, #show-promesa span.title {
   color: #7a95a4;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
 }
 /* line 10, ../../app/stylesheets/partials/_promesas.sass */
-#promesas p.topic {
+#promesas p.topic, #show-promesa p.topic {
   color: #959595;
 }
 /* line 13, ../../app/stylesheets/partials/_promesas.sass */
-#promesas span.region {
+#promesas span.region, #show-promesa span.region {
   color: #333333;
   margin-right: 25px;
 }
 /* line 17, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .representante {
+#promesas span.etiqueta, #show-promesa span.etiqueta {
+  color: #464646;
+}
+/* line 20, ../../app/stylesheets/partials/_promesas.sass */
+#promesas p.promesa_top, #show-promesa p.promesa_top {
+  text-align: right;
+}
+/* line 23, ../../app/stylesheets/partials/_promesas.sass */
+#promesas span.compartir, #show-promesa span.compartir {
+  float: right;
+}
+/* line 26, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .representante, #show-promesa .representante {
   border-bottom: 1px dashed #999999;
   float: left;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-/* line 23, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .representante img.foto_representante {
+/* line 32, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .representante img.foto_representante, #show-promesa .representante img.foto_representante {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -337,20 +361,70 @@ html body footer nav ul {
   margin-right: 10px;
   width: 41px;
 }
-/* line 29, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .representante span.nombre_representante {
+/* line 38, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {
   color: #7a95a4;
   display: inline-block;
   font-size: 14px;
   margin-right: 10px;
   width: 110px;
 }
-/* line 36, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .representante span.partido_representante {
+/* line 45, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .representante span.partido_representante, #show-promesa .representante span.partido_representante {
   display: inline-block;
   width: 120px;
 }
-/* line 40, ../../app/stylesheets/partials/_promesas.sass */
+/* line 50, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .promesa_status .dias_progreso, #show-promesa .promesa_status .dias_progreso {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa_status .dias_progreso, * html #show-promesa .promesa_status .dias_progreso {
+  overflow-x: hidden;
+}
+/* line 52, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .promesa_status .dias_progreso .numero, #show-promesa .promesa_status .dias_progreso .numero {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 30px;
+  color: #7a95a4;
+  font-family: "Oswald", sans-serif;
+  font-size: 54px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa_status .dias_progreso .numero, * html #show-promesa .promesa_status .dias_progreso .numero {
+  overflow-x: hidden;
+}
+/* line 57, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {
+  color: #7a95a4;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  margin-top: 10px;
+}
+/* line 63, ../../app/stylesheets/partials/_promesas.sass */
+#promesas span.estado, #show-promesa span.estado {
+  color: #7a95a4;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+/* line 69, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .promesa_estado_titulo {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa_estado_titulo {
+  overflow-x: hidden;
+}
+/* line 72, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status {
   display: inline;
   float: left;
@@ -362,43 +436,11 @@ html body footer nav ul {
 * html #promesas .promesa_status {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa_status .dias_progreso {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 30px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #promesas .promesa_status .dias_progreso {
-  overflow-x: hidden;
-}
-/* line 45, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa_status .dias_progreso .numero {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 30px;
-  color: #7a95a4;
-  font-family: "Oswald", sans-serif;
-  font-size: 54px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #promesas .promesa_status .dias_progreso .numero {
-  overflow-x: hidden;
-}
-/* line 50, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa_status .dias_progreso .dias {
-  color: #7a95a4;
-  display: inline-block;
-  font-family: "Oswald", sans-serif;
-  margin-top: 10px;
-}
-/* line 55, ../../app/stylesheets/partials/_promesas.sass */
+/* line 75, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .progreso {
   color: #898989;
 }
-/* line 57, ../../app/stylesheets/partials/_promesas.sass */
+/* line 77, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito {
   display: inline;
   float: left;
@@ -410,11 +452,11 @@ html body footer nav ul {
 * html #promesas .promesa_status .hito {
   overflow-x: hidden;
 }
-/* line 60, ../../app/stylesheets/partials/_promesas.sass */
+/* line 80, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito img {
   margin: 11px 0;
 }
-/* line 62, ../../app/stylesheets/partials/_promesas.sass */
+/* line 82, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .estado_contenedor {
   display: inline;
   float: left;
@@ -426,17 +468,7 @@ html body footer nav ul {
 * html #promesas .promesa_status .estado_contenedor {
   overflow-x: hidden;
 }
-/* line 65, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa_status .estado_contenedor span.etiqueta {
-  color: #464646;
-}
-/* line 67, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .promesa_status .estado_contenedor span.estado {
-  color: #7a95a4;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-}
-/* line 72, ../../app/stylesheets/partials/_promesas.sass */
+/* line 86, ../../app/stylesheets/partials/_promesas.sass */
 #promesas p.descripcion {
   display: inline;
   float: left;
@@ -455,16 +487,12 @@ html body footer nav ul {
 * html #promesas p.descripcion {
   overflow-x: hidden;
 }
-/* line 83, ../../app/stylesheets/partials/_promesas.sass */
+/* line 97, ../../app/stylesheets/partials/_promesas.sass */
 #promesas span.ver_mas a {
   color: #662d91;
   float: left;
 }
-/* line 87, ../../app/stylesheets/partials/_promesas.sass */
-#promesas span.compartir {
-  float: right;
-}
-/* line 90, ../../app/stylesheets/partials/_promesas.sass */
+/* line 101, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa {
   display: inline;
   float: left;
@@ -479,7 +507,7 @@ html body footer nav ul {
 * html #promesas .promesa {
   overflow-x: hidden;
 }
-/* line 97, ../../app/stylesheets/partials/_promesas.sass */
+/* line 108, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .arrow {
   background: url("../images/arrow.png");
   display: inline;
@@ -487,7 +515,7 @@ html body footer nav ul {
   height: 179px;
   width: 50px;
 }
-/* line 104, ../../app/stylesheets/partials/_promesas.sass */
+/* line 115, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .status {
   display: inline;
   float: left;
@@ -600,7 +628,135 @@ input, textarea, select, .uneditable-input {
   overflow-x: hidden;
 }
 
-/* line 23, ../../app/stylesheets/screen.sass */
+/* line 2, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .promesa_estado_titulo {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .promesa_estado_titulo {
+  overflow-x: hidden;
+}
+/* line 5, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .promesa {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+  background: url("../images/promesa_detail-bg.png") no-repeat;
+  padding: 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .promesa {
+  overflow-x: hidden;
+}
+/* line 10, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .promesas_candidato {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+  padding-left: 40px;
+  background: url("../images/promesas_candidato-bg.png") no-repeat;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .promesas_candidato {
+  overflow-x: hidden;
+}
+/* line 15, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .representante {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 590px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .representante {
+  overflow-x: hidden;
+}
+/* line 18, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .representante .promesa_status {
+  float: right;
+  margin-top: -25px;
+}
+/* line 22, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa p.descripcion {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+  margin: 10px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa p.descripcion {
+  overflow-x: hidden;
+}
+/* line 26, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito {
+  background-color: #f3f3f3;
+  border: 1px dashed #666666;
+  display: inline-block;
+  float: left;
+  height: 90px;
+  list-style-type: none;
+  width: 100%;
+}
+/* line 35, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito li.no-border {
+  border: 0;
+  padding: 0;
+}
+/* line 39, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito div.hito_status {
+  float: left;
+  margin: 0 0 0 10px;
+  width: 175px;
+}
+/* line 44, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito div.hito_status span.estado {
+  font-size: 18px;
+}
+/* line 47, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito div.hito_status div.tiempo_hito {
+  width: 115px;
+  float: left;
+}
+/* line 52, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito div.hito_status div.estado_hito {
+  width: 55px;
+  float: left;
+  margin-left: 5px;
+}
+/* line 57, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito img {
+  float: left;
+}
+/* line 60, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa ul#hito li {
+  float: left;
+  border-left: 1px dashed #666666;
+  margin: 15px 0 0 15px;
+  max-width: 250px;
+  padding-left: 15px;
+}
+/* line 67, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .share {
+  border: 1px dashed #666666;
+  border-left: 0;
+  border-right: 0;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 0;
+  width: 100%;
+}
+/* line 76, ../../app/stylesheets/partials/promesa.sass */
+#show-promesa .share .comentarios_counter {
+  color: #7a95a4;
+}
+
+/* line 24, ../../app/stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1036,14 +1192,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 37, ../../app/stylesheets/screen.sass */
+/* line 38, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 39, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -1054,7 +1210,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -1065,7 +1221,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;
