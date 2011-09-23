@@ -19,6 +19,7 @@ class Promise < ActiveRecord::Base
   delegate :citizens_approved, :to => :comments, :allow_nil => true, :prefix => true
   delegate :government, :to => :comments, :allow_nil => true, :prefix => true
   delegate :state_name, :to => :official, :allow_nil => true, :prefix => true
+  delegate :promises, :to => :official, :allow_nil => true, :prefix => true
   
   
   #

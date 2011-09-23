@@ -54,36 +54,21 @@
       
   
   .promesas_candidato
-    
-  
-  .sidebar-box= @promise.description
-  
-  .funcionario
-    .fotografia
-      = link_to_official(@promise.official, image_tag(@promise.official_avatar_url))
-    .info
-      %h2= link_to_official @promise.official, @promise.official_position_name
-      %p
-        %strong Representante:
-        = @promise.official_name
+    - @promise.official_promises.each do |promise|
+      .representante_promesa
+        %p.promesa_top
+          %span.fecha= promise.created_at.to_s(:date)
+        %span.title= promise.title[0,20]
+        %p.topic
+          Promesa de 
+          - promise.topics.each do |topic|
+            =  topic.name.humanize
 
-      %p
-        %strong Partido:
-        = @promise.official_political_party_name
-  
-  .sidebar-box
-    %h2 Hitos
-    
-    - @promise.milestones.each_with_index do |milestone,index|
-      .hito_header{:id => "hito_header_#{index}", :class => "#{(milestone.new?)? 'hito_header_new' : '' }"}
-        = milestone.name
-        %br
-        = milestone.description
-      .hito_counter{:id => "hito_counter_#{index}", :class => "#{(milestone.new?)? 'hito_counter_new' : '' }"}
-        = milestone_states(milestone)
-    .promesa_counter
-      - promesa_state(@promise)
-      
+        %p.descripcion= promise.description_scaped
+        
+        .share
+          - comentarios_count(promise)
+          %span.ver_mas= link_to 'VER MÁS >>', promesa_path(promise.slug)
   
   .sidebar-box
     %h2 Comentarios

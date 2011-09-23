@@ -269,7 +269,7 @@ html body .content {
 html body h1 {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  font-weight: strong;
+  font-weight: normal;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -628,44 +628,77 @@ input, textarea, select, .uneditable-input {
   overflow-x: hidden;
 }
 
-/* line 2, ../../app/stylesheets/partials/promesa.sass */
+/* line 2, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesa_estado_titulo {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 310px;
+  width: 270px;
+  padding-left: 40px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesa_estado_titulo {
   overflow-x: hidden;
 }
-/* line 5, ../../app/stylesheets/partials/promesa.sass */
+/* line 6, ../../app/stylesheets/partials/_promesa.sass */
+#show-promesa .sidebar-box {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .sidebar-box {
+  overflow-x: hidden;
+}
+/* line 9, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesa {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 590px;
   background: url("../images/promesa_detail-bg.png") no-repeat;
+  margin-right: 40px;
   padding: 20px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesa {
   overflow-x: hidden;
 }
-/* line 10, ../../app/stylesheets/partials/promesa.sass */
+/* line 15, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesas_candidato {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 270px;
-  padding-left: 40px;
   background: url("../images/promesas_candidato-bg.png") no-repeat;
+  padding: 10px;
+  width: 250px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesas_candidato {
   overflow-x: hidden;
 }
-/* line 15, ../../app/stylesheets/partials/promesa.sass */
+/* line 20, ../../app/stylesheets/partials/_promesa.sass */
+#show-promesa .promesas_candidato p.topic {
+  border-bottom: 1px dashed #666666;
+}
+/* line 22, ../../app/stylesheets/partials/_promesa.sass */
+#show-promesa .promesas_candidato p.descripcion {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #show-promesa .promesas_candidato p.descripcion {
+  overflow-x: hidden;
+}
+/* line 24, ../../app/stylesheets/partials/_promesa.sass */
+#show-promesa .promesas_candidato span.ver_mas a {
+  color: #662d91;
+  float: right;
+}
+/* line 28, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .representante {
   display: inline;
   float: left;
@@ -676,24 +709,25 @@ input, textarea, select, .uneditable-input {
 * html #show-promesa .representante {
   overflow-x: hidden;
 }
-/* line 18, ../../app/stylesheets/partials/promesa.sass */
+/* line 31, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .representante .promesa_status {
   float: right;
   margin-top: -25px;
 }
-/* line 22, ../../app/stylesheets/partials/promesa.sass */
+/* line 35, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa p.descripcion {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 590px;
   margin: 10px 0;
+  text-align: center;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa p.descripcion {
   overflow-x: hidden;
 }
-/* line 26, ../../app/stylesheets/partials/promesa.sass */
+/* line 40, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito {
   background-color: #f3f3f3;
   border: 1px dashed #666666;
@@ -703,37 +737,37 @@ input, textarea, select, .uneditable-input {
   list-style-type: none;
   width: 100%;
 }
-/* line 35, ../../app/stylesheets/partials/promesa.sass */
+/* line 49, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito li.no-border {
   border: 0;
   padding: 0;
 }
-/* line 39, ../../app/stylesheets/partials/promesa.sass */
+/* line 53, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status {
   float: left;
   margin: 0 0 0 10px;
   width: 175px;
 }
-/* line 44, ../../app/stylesheets/partials/promesa.sass */
+/* line 58, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status span.estado {
   font-size: 18px;
 }
-/* line 47, ../../app/stylesheets/partials/promesa.sass */
+/* line 61, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status div.tiempo_hito {
   width: 115px;
   float: left;
 }
-/* line 52, ../../app/stylesheets/partials/promesa.sass */
+/* line 66, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status div.estado_hito {
   width: 55px;
   float: left;
   margin-left: 5px;
 }
-/* line 57, ../../app/stylesheets/partials/promesa.sass */
+/* line 71, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito img {
   float: left;
 }
-/* line 60, ../../app/stylesheets/partials/promesa.sass */
+/* line 74, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito li {
   float: left;
   border-left: 1px dashed #666666;
@@ -741,17 +775,17 @@ input, textarea, select, .uneditable-input {
   max-width: 250px;
   padding-left: 15px;
 }
-/* line 67, ../../app/stylesheets/partials/promesa.sass */
+/* line 81, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .share {
   border: 1px dashed #666666;
   border-left: 0;
   border-right: 0;
   display: inline-block;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 5px 0;
   width: 100%;
 }
-/* line 76, ../../app/stylesheets/partials/promesa.sass */
+/* line 90, ../../app/stylesheets/partials/_promesa.sass */
 #show-promesa .share .comentarios_counter {
   color: #7a95a4;
 }

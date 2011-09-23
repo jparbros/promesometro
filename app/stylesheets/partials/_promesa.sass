@@ -1,16 +1,29 @@
 #show-promesa
   .promesa_estado_titulo
-    +column(8, true)
+    +column(7, true)
+    +prepend(1)
+  
+  .sidebar-box
+    +column(24)
   
   .promesa
     +column(15)
     background: url('../images/promesa_detail-bg.png') no-repeat
+    margin-right: 40px
     padding: 20px
 
   .promesas_candidato
-    +column(7, true)
-    +prepend(1)
+    +column-base(true)
     background: url('../images/promesas_candidato-bg.png') no-repeat
+    padding: 10px
+    width: 250px
+    p.topic
+      border-bottom: 1px dashed #666666
+    p.descripcion
+      +column(6)
+    span.ver_mas a
+      color: #662d91
+      float: right
   
   .representante
     +column(15, true)
@@ -22,6 +35,7 @@
   p.descripcion
     +column(15)
     margin: 10px 0
+    text-align: center
   
   ul#hito
     background-color: #f3f3f3
@@ -69,7 +83,7 @@
     border-left: 0
     border-right: 0
     display: inline-block
-    margin: 10px 0
+    margin: 20px 0
     padding: 5px 0
     width: 100%
     
