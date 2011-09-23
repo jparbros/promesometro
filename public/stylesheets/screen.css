@@ -1044,7 +1044,56 @@ body.home .comment span.compartir {
   float: right;
 }
 
-/* line 25, ../../app/stylesheets/screen.sass */
+/* line 2, ../../app/stylesheets/partials/_directorio.sass */
+#directory .directory_title {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #directory .directory_title {
+  overflow-x: hidden;
+}
+/* line 4, ../../app/stylesheets/partials/_directorio.sass */
+#directory .region_title {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #directory .region_title {
+  overflow-x: hidden;
+}
+/* line 6, ../../app/stylesheets/partials/_directorio.sass */
+#directory .official_title {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 350px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #directory .official_title {
+  overflow-x: hidden;
+}
+/* line 9, ../../app/stylesheets/partials/_directorio.sass */
+#directory h1 {
+  border-bottom: 1px dashed #666666;
+}
+/* line 12, ../../app/stylesheets/partials/_directorio.sass */
+#directory .mapa {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #directory .mapa {
+  overflow-x: hidden;
+}
+
+/* line 26, ../../app/stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1480,14 +1529,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 39, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -1498,7 +1547,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -1509,7 +1558,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;
