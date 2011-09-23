@@ -1,0 +1,16 @@
+--- 
+javascripts: 
+- base: 
+  - jquery_ujs
+  - application
+- admin_package:
+  - jquery_ujs
+  - admin
+stylesheets: 
+- base: 
+  - screen
+  - print
+  - jquery-ui
+- admin_package:
+  - jquery-ui
+  - admin

@@ -2,14 +2,15 @@
 %html
   %head
     %title= Promesometro
-    = include_stylesheets :app, :media => 'all'
+    = raw(stylesheet_link_merged(:base))
     %link{:href => 'http://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300|Anton', :rel => 'stylesheet', :type => 'text/css'}
     <!--[if IE]>
     %link{:href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     <![endif]-->
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
-    = include_javascripts :app 
+    
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = raw(javascript_include_merged(:base))
     = csrf_meta_tag
     
 

@@ -3,7 +3,7 @@ javascripts:
   app:
     - public/javascripts/jquery_ujs.js
     - public/javascripts/application.js
-  admin:
+  admin_package:
     - public/javascripts/jquery_ujs.js
     - public/javascripts/admin.js
 stylesheets:
@@ -11,6 +11,6 @@ stylesheets:
     - public/stylesheets/screen.css
     - public/stylesheets/print.css
     - public/stylesheets/jquery-ui.css
-  admin:
+  admin_package:
     - public/stylesheets/jquery-ui.css
     - public/stylesheets/admin.css
