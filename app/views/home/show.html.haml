@@ -1,7 +1,22 @@
-= image_tag 'banner.png', :class => 'banner_home'
-.citizen_comments.home_box
-  %h3 Ciudadanos
-  = render :partial => 'shared/comment', :collection => @citizens
-.goverment_comment.home_box
-  %h3 Gobierno
-  = render :partial => 'shared/comment', :collection => @government
+#banner
+  = image_tag 'mide.png'
+  = image_tag 'accelerometer.png'
+  
+
+#vp_title
+  %h1 Vox Populi
+#od_title
+  %h1 Declaraciones Oficiales
+#peru_title
+  %h1 Peru
+
+#vox_populi
+  = render :partial => 'comment', :collection => @citizens
+
+#official_declaration
+  = render :partial => 'comment', :collection => @government
+
+#peru
+  = image_tag 'peru_home.png'
+  .encuentra
+    encuentra tus representantes y mide sus promesas

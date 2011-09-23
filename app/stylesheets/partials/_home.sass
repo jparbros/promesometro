@@ -1,0 +1,81 @@
+body.home
+  background: url('../images/home_bg.png') repeat-x, url('../images/background-bottom.png') repeat-x bottom
+    
+  #search_box
+    border: 0
+    margin-bottom: 10px
+    
+  #banner
+    img
+      margin-right: 15px
+      
+  #vp_title
+    +column(10)
+    margin: 80px 30px 10px 0
+  #od_title
+    +column(8)
+    margin: 80px 30px 10px 0
+  #peru_title
+    +column(5, true)
+    margin: 80px 0 10px 0
+    
+  h1
+    border-bottom: 1px dashed #666666
+  
+  #vox_populi
+    +column(9)
+    background: url('../images/vox_pupuli.png') no-repeat
+    min-height: 420px
+    margin-right: 30px
+    padding: 10px 20px
+    
+  #official_declaration
+    +column(7)
+    background: url('../images/official_dec.png') no-repeat
+    min-height: 420px
+    margin-right: 30px
+    padding: 10px 20px
+    
+  #peru
+    +column(5, true)
+    overflow: visible
+    img
+      margin: -45px 0 0 -45px
+      position: absolute
+    .encuentra
+      border-bottom: 1px dashed #666666
+      border-top: 1px dashed #666666
+      color: #7a95a4
+      font-family: 'Oswald', sans-serif
+      font-size: 18px
+      margin-top: 250px
+      text-transform: uppercase
+      
+  .comment
+    border-bottom: 1px dashed #666
+    display: inline-block
+    margin-bottom: 15px
+    padding-bottom: 10px
+    width: 100%
+    p.top
+      border-bottom: 1px dashed #666
+      display: inline-block
+      text-align: right
+      padding-bottom: 5px
+      width: 100%
+      span.title 
+        color: #7a95a4
+        font-family: 'Open Sans Condensed', sans-serif
+        font-size: 14px
+        float: left
+      span.region
+        color: #333333
+        margin-right: 25px
+      span.gobierno
+        color: #333333
+        float: left
+    p.comment_content
+      text-align: center
+      padding: 20px
+    span.compartir
+      float: right

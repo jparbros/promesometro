@@ -13,7 +13,7 @@
     = csrf_meta_tag
     
 
-  %body
+  %body{:class => "#{controller.controller_name}"}
     #container
       %header
         = image_tag 'logo.png', :id => 'logo'
@@ -29,11 +29,12 @@
             %li= image_tag 'twitter.png'
             %li= image_tag 'plus.png'
         #search_box
-          #breadcums
-            %span.estas_en Estas en:
-            %span.breadcums= render_crumbs :links => false
-          #search
-            = render :partial => 'shared/search'
+          - unless controller.controller_name == 'home'
+            #breadcums
+              %span.estas_en Estas en:
+              %span.breadcums= render_crumbs :links => false
+            #search
+              = render :partial => 'shared/search'  
       .content
         = yield
 
