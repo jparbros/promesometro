@@ -23,6 +23,10 @@ class Comment < ActiveRecord::Base
     def new_government(args)
       self.new args.merge({:kind => 'government', :approved => true})
     end
+    
+    def available_comments
+      citizens_approved + government_approved
+    end
   end
   
   def approve

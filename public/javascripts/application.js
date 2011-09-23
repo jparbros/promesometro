@@ -9,9 +9,17 @@ $.extend({
        content.slideDown(600);
      }
    })
+ },
+ 
+ do_comment: function() {
+   $('#do_comment').click(function(){
+     $('.post_comment').toggle();
+     return false;
+   });
  }
 });
 
 $(document).ready(function(){
   $.show_milestone_comments();
+  $.do_comment();
 });

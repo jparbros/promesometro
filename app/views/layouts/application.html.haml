@@ -35,16 +35,6 @@
           #search
             = render :partial => 'shared/search'
       .content
-        
-        - if alert
-          .alert-message.error
-            = link_to 'x','#', :class => 'close'
-            %p= alert
-        - if notice
-          .alert-message.info
-            = link_to 'x','#', :class => 'close'
-            %p= notice
-
         = yield
 
       %footer

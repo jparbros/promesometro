@@ -48,11 +48,18 @@
     
     .share
       - comentarios_count(@promise)
+  
+      %span.ver_mas= link_to 'COMENTAR >>', '#', :id => 'do_comment'
+
       %span.compartir 
         Compartir
-        = image_tag 'share.png'
-      
-  
+        = image_tag 'share.png'      
+
+    .post_comment
+      = render :partial => 'comment_form', :locals => {:promise => @promise}
+    
+    = render :partial => 'comment', :collection => @promise.comments.available_comments
+
   .promesas_candidato
     - @promise.official_promises.each do |promise|
       .representante_promesa
@@ -68,17 +75,7 @@
         
         .share
           - comentarios_count(promise)
-          %span.ver_mas= link_to 'VER MÁS >>', promesa_path(promise.slug)
-  
-  .sidebar-box
-    %h2 Comentarios
-    .citizen_comments
-      %h3 Ciudadanos
-      = render :partial => 'shared/comment', :collection => @promise.comments_citizens_approved
-    .goverment_comment
-      %h3 Gobierno
-      = render :partial => 'shared/comment', :collection => @promise.comments_government
-    = render :partial => 'comment_form', :locals => {:promise => @promise}
+          %span.ver_mas= link_to 'VER MÁS >>', promesa_path(promise.slug)    
     
 %script
   $(document).ready(function(){

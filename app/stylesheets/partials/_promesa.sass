@@ -21,10 +21,60 @@
       border-bottom: 1px dashed #666666
     p.descripcion
       +column(6)
-    span.ver_mas a
+
+  span.ver_mas 
+    float: right
+    margin-left: 15px
+    a
       color: #662d91
-      float: right
   
+  .nombre, .titulo
+    +column-base(true)
+    width: 290px
+    input
+      width: 280px
+  .nombre
+    margin-right: 10px
+  
+  .ta_comment, .actions
+    +column(15,true)
+    margin: 10px 0
+    
+    textarea
+      height: 80px
+      width: 580px
+  
+  .post_comment
+    display: none
+    
+  .comment
+    +column(15, true)
+    background: url('../images/comment_arrow.png') no-repeat 37px bottom
+    border-bottom: 1px dashed #666666
+    margin: 10px 0
+    padding-bottom: 18px
+    .comment_content
+      +border-radius(5px)
+      background: url('../images/comment_bg.png') repeat
+      padding: 15px
+      span.author
+        color: #7a95a4
+        font-size: 14px
+        float: left
+      p.title
+        border-bottom: 1px dashed #666666
+        color: #333333
+      p.the_comment
+        margin: 20px 0
+        text-align: center
+
+  .government
+    background: url('../images/comment_gov_arrow.png') no-repeat 37px bottom !important
+    .comment_content
+      background: url('../images/comment_gov_bg.png') repeat !important
+    span.author
+      color: #b69ad0 !important
+
   .representante
     +column(15, true)
     

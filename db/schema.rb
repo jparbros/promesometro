@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110919063003) do
+ActiveRecord::Schema.define(:version => 20110923061126) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(:version => 20110919063003) do
     t.boolean  "approved",         :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.integer  "parent_id"
   end
 
   create_table "milestones", :force => true do |t|

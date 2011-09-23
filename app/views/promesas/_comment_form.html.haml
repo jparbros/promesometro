@@ -1,17 +1,22 @@
-.page-header
-  %h4 Agrega tu comentario
+%span.estado Agrega tu comentario
 
 = form_for promise.comments.build, :url => hito_comentario_path(@promise) do |form|
-  .clearfix
+  .nombre
     = form.label :nombre
     .input
       = form.text_field :author, :class => 'xlarge'
+
+  .titulo
+    = form.label :titulo
+    .input
+      = form.text_field :title, :class => 'xlarge'
+  
       
-  .clearfix
+  .ta_comment
     = form.label :commentario
     .input
       = form.text_area :comment, :class => 'xlarge', :rows => 7
       
   .actions
-    = form.submit 'Crear', :class => 'btn primary'
-    %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}
+    = form.submit 'Crear', :class => 'button'
+    %input{:type => 'reset', :class => 'button', :value => 'Limpiar'}

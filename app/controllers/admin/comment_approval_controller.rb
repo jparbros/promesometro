@@ -3,7 +3,6 @@ class Admin::CommentApprovalController < ApplicationController
   def create
     comment = Comment.find(params[:comment_id])
     comment.approve
-    debugger
     redirect_to admin_comments_url
   end
   

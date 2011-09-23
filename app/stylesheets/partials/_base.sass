@@ -19,6 +19,22 @@ html
     font-size: 12px
     font-weight: bold
     
+    
+    input, textarea
+      +border-radius(3px)
+      background-color: #f2f2f2
+      border: 1px solid #c7c7c7
+  
+    input.button
+      +border-radius(3px)
+      background-color: #c2abd7
+      color: #ffffff
+      height: 28px
+      width: 80px
+
+    input.hidden
+      display: none
+      
     a
       color: $link_color
       text-decoration: none
@@ -49,21 +65,6 @@ html
         #search
           +column(12, true)
           +prepend(2)
-          input
-            +border-radius(3px)
-            background-color: #f2f2f2
-            border: 1px solid #c7c7c7
-        
-          input.button_search
-            +border-radius(3px)
-            background-color: #c2abd7
-            color: #ffffff
-            height: 28px
-            width: 80px
-          
-        
-          input.hidden_field
-            display: none
           
           select.buscar_por
             +border-radius(3px)
