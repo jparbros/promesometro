@@ -33,11 +33,11 @@
           %ul.follow_us
             %li Siguenos en:
             %li
-              %span.st_sharethis_custom
-                =image_tag 'facebook.png', :class => 'st_twitter_large'
+              %span
+                = link_to image_tag('facebook.png'), 'http://www.facebook.com', :target => '_blank'
             %li
-              %span.st_sharethis_custom
-                = image_tag 'twitter.png', :class => 'st_twitter_large'
+              %span
+                = link_to image_tag('twitter.png'), 'http://www.twitter.com', :target => '_blank'
         #search_box
           - unless controller.controller_name == 'home'
             #breadcums
