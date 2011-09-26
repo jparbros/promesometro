@@ -31,7 +31,7 @@
  html body nav ul {display: inline-block; float: left; list-style-type: none; margin: 38px 0 0 65px}
  html body nav ul li {border-left: 1px solid #363636; float: left; margin: 0 15px 0 0; padding: 0 0 0 15px}
  html body nav ul li.no-border {border: 0; padding: 0}
- html body nav .follow_us {font-size: 14px; float: right; margin-left: 0}
+ html body nav .follow_us {font-size: 14px; float: right; margin-left: 0; margin-right: 10px}
  html body nav .follow_us li {border: 0; margin: 0; padding: 0 5px}
  html body #container {width: 950px; margin: 0 auto; overflow: hidden; *zoom: 1}
  html body .content {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; padding: 0 0 20px}
@@ -44,7 +44,7 @@
  html body footer nav ul {margin: 0}
  #promesas .promesa_titulo, #show-promesa .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {overflow-x: hidden}
- #promesas span.title, #show-promesa span.title {color: #7a95a4; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
+ #promesas span.title a, #show-promesa span.title a {color: #7a95a4; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
  #promesas p.topic, #show-promesa p.topic {color: #959595}
  #promesas span.region, #show-promesa span.region {color: #333333; margin-right: 25px}
  #promesas span.etiqueta, #show-promesa span.etiqueta {color: #464646}
@@ -62,10 +62,10 @@
  #promesas span.estado, #show-promesa span.estado {color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 14px}
  #promesas .promesa_estado_titulo {display: inline; float: left; margin-right: 0; width: 310px}
  * html #promesas .promesa_estado_titulo {overflow-x: hidden}
- #promesas .promesa_status {display: inline; float: left; margin-right: 0; width: 310px; margin-top: -10px}
+ #promesas .promesa_status {display: inline; float: left; margin-right: 0; width: 190px; margin-top: -10px; padding-left: 40px}
  * html #promesas .promesa_status {overflow-x: hidden}
  #promesas .promesa_status .progreso {color: #898989}
- #promesas .promesa_status .hito {display: inline; float: left; margin-right: 10px; width: 70px; margin: 0 25px}
+ #promesas .promesa_status .hito {display: inline; float: left; margin-right: 10px; width: 70px; margin: 0 0 0 25px}
  * html #promesas .promesa_status .hito {overflow-x: hidden}
  #promesas .promesa_status .hito img {margin: 11px 0}
  #promesas .promesa_status .estado_contenedor {display: inline; float: left; margin-right: 0; width: 110px; margin-top: 10px}
