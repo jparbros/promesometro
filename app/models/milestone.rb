@@ -38,6 +38,8 @@ class Milestone < ActiveRecord::Base
   #
   default_scope :order => 'id ASC'
   scope :completed, where('state = ?','finished')
+  scope :started, where('state = ?','in_progress')
+  scope :not_started, where('state = ?','new')
   
   def start_milestone
     self.started_at = Time.now
@@ -53,5 +55,13 @@ class Milestone < ActiveRecord::Base
   
   def days_started
     ((Time.now - (started_at || Time.now))/86400).to_i.abs
+  end
+  
+  def state_scaped
+    case state
+    when 'new' then 'Nuevo'
+    when 'in_progress' then 'Progreso'
+    when 'finished' then 'Completado'
+    end
   end
 end

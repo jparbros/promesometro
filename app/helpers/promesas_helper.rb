@@ -45,7 +45,7 @@ module PromesasHelper
       div2 = []
       div2 << content_tag('span', 'Status', :class => 'etiqueta')
       div2 << tag(:br)
-      div2 << content_tag('span', milestone.state.upcase, :class => 'estado')
+      div2 << content_tag('span', milestone.state_scaped.upcase, :class => 'estado')
       container << content_tag(:div, raw(div2.join), :class => 'estado_hito')
       content << content_tag(:div, raw(container.join), :class => 'hito_status')
       concat raw(content.join(''))
