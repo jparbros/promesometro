@@ -7,9 +7,10 @@
     <!--[if IE]>
     %link{:href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     <![endif]-->
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
-    
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.7/underscore-min.js'
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js'
     = raw(javascript_include_merged(:base))
     = csrf_meta_tag
     

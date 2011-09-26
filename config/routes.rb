@@ -23,13 +23,14 @@ Promesometro::Application.routes.draw do
   end
   
   root :to => "home#show"
-  
-  resources :temas, :only => [:show]
+
   resources :promesas, :only => [:index] do
     resource :comments, :only => :create
   end
-  resources :presidentes_regionales, :only => [:index, :show]
-  resources :alcaldes, :only => [:index, :show]
+  
+  match "/estados/:estado/provincias", :to => "provincias#index"
+  
+  match "/representantes/:lugar", :to => "representantes#show"
   
   match "promesas/hito/:milestone_id/comentario", :to => "comments#create", :as => "hito_comentario"
   match "promesas/:slug", :to => "promesas#show", :as => "promesa"

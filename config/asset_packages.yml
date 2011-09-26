@@ -3,6 +3,7 @@ javascripts:
 - base: 
   - jquery_ujs
   - application
+  - directorio
 - admin_package:
   - jquery_ujs
   - admin

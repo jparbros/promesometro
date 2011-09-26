@@ -37,6 +37,8 @@ class Official < ActiveRecord::Base
   #
   delegate :name, :to => :political_party, :allow_nil => true, :prefix => true
   delegate :name, :to => :state, :allow_nil => true, :prefix => true
+  delegate :url, :to => :avatar, :allow_nil => true, :prefix => true
+  delegate :name, :to => :province, :allow_nil => true, :prefix => true
   
   def position_name
     POSITIONS[position]
@@ -48,5 +50,17 @@ class Official < ActiveRecord::Base
     else
       avatar.url(type)
     end
+  end
+  
+  def as_json(options = {})
+    super(options.merge(:methods => [:avatar_url, :political_party_name, :place, :promise_count]))
+  end
+  
+  def promise_count
+    promises.count
+  end
+  
+  def place
+    (province.nil?)? state.name : province.name
   end
 end

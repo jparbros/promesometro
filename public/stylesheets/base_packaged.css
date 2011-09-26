@@ -168,6 +168,21 @@
  #directory h1 {border-bottom: 1px dashed #666666}
  #directory .mapa {display: inline; float: left; margin-right: 10px; width: 310px}
  * html #directory .mapa {overflow-x: hidden}
+ #directory .mapa img {margin-left: -10px}
+ #directory .region {display: inline; float: left; margin-right: 10px; width: 270px}
+ * html #directory .region {overflow-x: hidden}
+ #directory .region ul.provincias {list-style-type: none}
+ #directory .region ul.provincias li {border-left: 1px dashed #666666; float: left; font-family: "Open Sans Condensed", sans-serif; font-size: 14px; font-weight: normal; height: 21px; padding: 5px 0px 5px 5px; margin: 5px 0px 5px 5px; text-transform: uppercase; width: 124px}
+ #directory .region ul.provincias li.estado {background-color: #7a95a4}
+ #directory .region ul.provincias li.estado a {color: white; font-family: "Oswald", sans-serif}
+ #directory .representante {display: inline; float: left; margin-right: 0; width: 350px}
+ * html #directory .representante {overflow-x: hidden}
+ #directory .representante .representante_bar {border-bottom: 1px dashed #666666; margin-bottom: 5px; padding-bottom: 5px; text-transform: capitalize}
+ #directory .representante .representante_bar img.foto_representante {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; height: 68px; margin-right: 10px; width: 68px}
+ #directory .representante .representante_bar span.representante_nombre {color: #7a95a4; font-size: 14px}
+ #directory .representante .representante_bar h2 {color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 14px; font-weight: normal; text-transform: uppercase}
+ #directory .representante .representante_bar p {margin: 20px}
+ #directory .representante .representante_bar a {color: #7a95a4}
  body.bp {line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333333; font-size: 75%}
  body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {font-weight: normal; color: #222222}
  body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {margin: 0}

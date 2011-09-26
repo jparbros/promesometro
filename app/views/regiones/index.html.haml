@@ -7,3 +7,32 @@
     %h1 Representante
   .mapa
     = render :partial => 'shared/mapa'
+  .region
+    &nbsp;
+  .representante
+    &nbsp;
+  
+%script{:type => "text/template", :id => "provincia-template"}
+  <a href="#representante/<%= name %>/alcalde"><%= name %></a>
+  
+%script{:type => "text/template", :id => "estado-template"}
+  <a href="#representante/<%= name %>/gobernador"><%= name %> &gt;&gt;</a>
+
+%script{:type => "text/template", :id => "representante-template"}
+  .representante_bar
+    <img src="<%= avatar_url %>" class="foto_representante">
+    %span.representante_nombre
+      <%= name %>
+  .representante_bar
+    <%= political_party_name %>
+    <br/>
+    <%= place %>
+  .representante_bar
+    %h2
+      Información Suplementaria
+    %p
+      "<%= supplementary_data %>"
+  .representante_bar
+    <a href="<%= resume %>" target="_blank">Perfil</a>
+  .representante_bar
+    <a href="/promesas?search[official_name_contains]=<%= name %>"><%= promise_count %> Promesas</a>
