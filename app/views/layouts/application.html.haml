@@ -1,7 +1,9 @@
 !!! 5
 %html
   %head
-    %title= Promesometro
+    %title
+      Promesometro
+      =h yield(:title)
     = raw(stylesheet_link_merged(:base))
     %link{:href => 'http://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300|Anton', :rel => 'stylesheet', :type => 'text/css'}
     <!--[if IE]>

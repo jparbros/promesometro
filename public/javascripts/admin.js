@@ -69,8 +69,8 @@ $.extend({
       $('select#official_province_id option').remove();
       $.getJSON('/admin/officials/provinces/' + state_id ,function(data){
         $.each(data, function(key, val) {
-          option = $('<option>'+ val.province.name+'</option>')
-            .attr('value',val.province.id)
+          option = $('<option>'+ val.name+'</option>')
+            .attr('value',val.id)
             .appendTo('select#official_province_id');
         });
       });
