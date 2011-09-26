@@ -14,7 +14,12 @@
     = raw(javascript_include_merged(:base))
     = csrf_meta_tag
     
-
+    %script{:type => "text/javascript"}
+      var switchTo5x=true; 
+    %script{:type => "text/javascript", :src => "http://w.sharethis.com/button/buttons.js"}
+    %script{:type => "text/javascript"}
+      stLight.options({publisher:'b5802b77-9845-4a65-b000-ac9254f908c5'});
+    
   %body{:class => "#{controller.controller_name}"}
     #container
       %header
@@ -27,9 +32,12 @@
             %li= link_to 'Contacto', directorio_path
           %ul.follow_us
             %li Siguenos en:
-            %li= image_tag 'facebook.png'
-            %li= image_tag 'twitter.png'
-            %li= image_tag 'plus.png'
+            %li
+              %span.st_sharethis_custom
+                =image_tag 'facebook.png', :class => 'st_twitter_large'
+            %li
+              %span.st_sharethis_custom
+                = image_tag 'twitter.png', :class => 'st_twitter_large'
         #search_box
           - unless controller.controller_name == 'home'
             #breadcums

@@ -2,7 +2,7 @@
   .promesa_titulo
     +column(16)
     
-  span.title
+  span.title a
     color: #7a95a4
     font-family: 'Open Sans Condensed', sans-serif
     font-size: 14px
@@ -71,13 +71,14 @@
     +column(8, true)
   
   .promesa_status
-    +column(8, true)
+    +column(5, true)
     margin-top: -10px
+    +prepend(1)
     .progreso
       color: #898989
     .hito
       +column(2)
-      margin: 0 25px
+      margin: 0 0 0 25px
       img
         margin: 11px 0
     .estado_contenedor

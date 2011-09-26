@@ -5,15 +5,14 @@
     %span.fecha
       = promesa.created_at.to_s(:date)
   %p
-    %span.title= promesa.title_scaped.humanize
+    %span.title= link_to promesa.title_scaped.humanize, promesa_path(promesa.slug)
   %p.topic
     Promesa de 
     - promesa.topics.each do |topic|
       =  topic.name.humanize
   %p.descripcion= promesa.description_scaped 
   %p
-    %span.ver_mas= link_to 'VER MÁS >>', promesa_path(promesa.slug)
-    %span.compartir 
+    %span.compartir.st_sharethis_custom
       Compartir
       = image_tag 'share.png'
 .arrow
@@ -31,7 +30,3 @@
     .hito
       = image_tag hito_actual(promesa)
       %span.progreso Etapa/Hito
-    .estado_contenedor
-      %span.etiqueta Status:
-      %br
-      %span.estado= promesa_state(promesa)
