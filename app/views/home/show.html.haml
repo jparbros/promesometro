@@ -17,6 +17,5 @@
   = render :partial => 'comment', :collection => @government
 
 #peru
-  = image_tag 'peru_home.png'
-  .encuentra
-    encuentra tus representantes y mide sus promesas
+  = link_to (image_tag('peru_home.png') + content_tag('div','encuentra tus representantes y mide sus promesas', :class => 'encuentra')), directorio_path
+    

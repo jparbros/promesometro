@@ -878,11 +878,15 @@ body.home #search_box {
   border: 0;
   margin-bottom: 10px;
 }
-/* line 9, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
-body.home #banner img {
-  margin-right: 15px;
+/* line 8, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+body.home #banner {
+  text-align: center;
 }
-/* line 12, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 10, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+body.home #banner img {
+  margin-right: 30px;
+}
+/* line 13, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #vp_title {
   display: inline;
   float: left;
@@ -894,7 +898,7 @@ body.home #vp_title {
 * html body.home #vp_title {
   overflow-x: hidden;
 }
-/* line 15, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 16, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #od_title {
   display: inline;
   float: left;
@@ -906,7 +910,7 @@ body.home #od_title {
 * html body.home #od_title {
   overflow-x: hidden;
 }
-/* line 18, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 19, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru_title {
   display: inline;
   float: left;
@@ -918,11 +922,11 @@ body.home #peru_title {
 * html body.home #peru_title {
   overflow-x: hidden;
 }
-/* line 22, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 23, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home h1 {
   border-bottom: 1px dashed #666666;
 }
-/* line 25, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 26, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #vox_populi {
   display: inline;
   float: left;
@@ -937,7 +941,7 @@ body.home #vox_populi {
 * html body.home #vox_populi {
   overflow-x: hidden;
 }
-/* line 32, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 33, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #official_declaration {
   display: inline;
   float: left;
@@ -952,7 +956,7 @@ body.home #official_declaration {
 * html body.home #official_declaration {
   overflow-x: hidden;
 }
-/* line 39, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 40, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru {
   display: inline;
   float: left;
@@ -964,12 +968,12 @@ body.home #peru {
 * html body.home #peru {
   overflow-x: hidden;
 }
-/* line 42, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 43, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru img {
   margin: -45px 0 0 -45px;
   position: absolute;
 }
-/* line 45, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 46, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru .encuentra {
   border-bottom: 1px dashed #666666;
   border-top: 1px dashed #666666;
@@ -979,7 +983,7 @@ body.home #peru .encuentra {
   margin-top: 250px;
   text-transform: uppercase;
 }
-/* line 54, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 55, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment {
   border-bottom: 1px dashed #666666;
   display: inline-block;
@@ -987,7 +991,7 @@ body.home .comment {
   padding-bottom: 10px;
   width: 100%;
 }
-/* line 60, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 61, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top {
   border-bottom: 1px dashed #666666;
   display: inline-block;
@@ -995,29 +999,29 @@ body.home .comment p.top {
   padding-bottom: 5px;
   width: 100%;
 }
-/* line 66, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 67, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.title {
   color: #7a95a4;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
   float: left;
 }
-/* line 71, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 72, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.region {
   color: #333333;
   margin-right: 25px;
 }
-/* line 74, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 75, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.gobierno {
   color: #333333;
   float: left;
 }
-/* line 77, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 78, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.comment_content {
   text-align: center;
   padding: 20px;
 }
-/* line 80, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
+/* line 81, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment span.compartir {
   float: right;
 }

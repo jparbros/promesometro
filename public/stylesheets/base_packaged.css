@@ -15,20 +15,17 @@
  html body header {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; min-height: 40px}
  * html html body header {overflow-x: hidden}
  html body header #logo {margin: 30px 0 0 0; float: left}
- html body header #search_box {display: inline; float: left; margin-right: 0; width: 950px; border-bottom: 1px dashed #666666; height: 35px; margin-bottom: 60px}
+ html body header #search_box {display: inline; float: left; margin-right: 0; width: 470px; padding-left: 480px; border-bottom: 1px dashed #666666; height: 35px; margin-bottom: 60px}
  * html html body header #search_box {overflow-x: hidden}
- html body header #search_box #breadcums {display: inline; float: left; margin-right: 10px; width: 390px}
- * html html body header #search_box #breadcums {overflow-x: hidden}
- html body header #search_box #breadcums span.estas_en {color: #c2abd7; display: inline; float: left; margin-right: 10px; width: 70px}
- * html html body header #search_box #breadcums span.estas_en {overflow-x: hidden}
- html body header #search_box #breadcums span.breadcums {display: inline; float: left; margin-right: 0; width: 310px; color: #898989; font-style: italic}
- * html html body header #search_box #breadcums span.breadcums {overflow-x: hidden}
- html body header #search_box #search {display: inline; float: left; margin-right: 0; width: 470px; padding-left: 80px}
- * html html body header #search_box #search {overflow-x: hidden}
- html body header #search_box #search select.buscar_por {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7; height: 28px; width: 140px}
+ html body header #search_box select.buscar_por {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7; height: 28px; width: 140px}
+ html body nav.pagination {display: inline; float: left; margin-right: 0; width: 950px; background: none; margin: 0; padding: 0; text-align: center}
+ * html html body nav.pagination {overflow-x: hidden}
+ html body nav.pagination ul {display: inline-block; margin: 20px auto}
+ html body nav.pagination .no-border {border: 0}
+ html body nav.pagination .active a {color: #7a95a4}
  html body nav {display: inline; float: left; margin-right: 10px; width: 670px; margin-right: 0; padding-left: 40px; color: #363636; font-family: "Open Sans Condensed", sans-serif; font-size: 18px; background: url("../images/menu_nav.png") no-repeat 68px 0; height: 90px; margin: 50px 0 0 0}
  * html html body nav {overflow-x: hidden}
- html body nav ul {display: inline-block; float: left; list-style-type: none; margin: 38px 0 0 65px}
+ html body nav ul {display: inline-block; list-style-type: none; margin: 38px 0 0 65px}
  html body nav ul li {border-left: 1px solid #363636; float: left; margin: 0 15px 0 0; padding: 0 0 0 15px}
  html body nav ul li.no-border {border: 0; padding: 0}
  html body nav .follow_us {font-size: 14px; float: right; margin-left: 0; margin-right: 10px}
@@ -109,7 +106,6 @@
  #show-promesa .ta_comment, #show-promesa .actions {display: inline; float: left; margin-right: 0; width: 590px; margin: 10px 0}
  * html #show-promesa .ta_comment, * html #show-promesa .actions {overflow-x: hidden}
  #show-promesa .ta_comment textarea, #show-promesa .actions textarea {height: 80px; width: 580px}
- #show-promesa .post_comment {display: none}
  #show-promesa .comment {display: inline; float: left; margin-right: 0; width: 590px; background: url("../images/comment_arrow.png") no-repeat 37px bottom; border-bottom: 1px dashed #666666; margin: 10px 0; padding-bottom: 18px}
  * html #show-promesa .comment {overflow-x: hidden}
  #show-promesa .comment .comment_content {-moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background: url("../images/comment_bg.png") repeat; padding: 15px}
@@ -136,7 +132,8 @@
  #show-promesa .share .comentarios_counter {color: #7a95a4}
  body.home {background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom}
  body.home #search_box {border: 0; margin-bottom: 10px}
- body.home #banner img {margin-right: 15px}
+ body.home #banner {text-align: center}
+ body.home #banner img {margin-right: 30px}
  body.home #vp_title {display: inline; float: left; margin-right: 10px; width: 390px; margin: 80px 30px 10px 0}
  * html body.home #vp_title {overflow-x: hidden}
  body.home #od_title {display: inline; float: left; margin-right: 10px; width: 310px; margin: 80px 30px 10px 0}
