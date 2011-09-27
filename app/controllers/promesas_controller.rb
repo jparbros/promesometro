@@ -4,7 +4,7 @@ class PromesasController < ApplicationController
   
   def index
     @search = Promise.search(params[:search])
-    @promises = @search.all
+    @promises = @search.page(params[:page])
     @topics = Topic.grouped_by_first_letter
   end
   

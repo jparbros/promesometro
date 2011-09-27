@@ -7,9 +7,7 @@
   %p
     %span.title= link_to promesa.title_scaped.humanize, promesa_path(promesa.slug)
   %p.topic
-    Promesa de 
-    - promesa.topics.each do |topic|
-      =  topic.name.humanize
+    - promesas_temas(promesa)
   %p.descripcion= promesa.description_scaped 
   %p
     %span.compartir.st_sharethis_custom

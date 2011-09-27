@@ -9,16 +9,16 @@
   .promesa
     %p.promesa_top
       %span.region
+        Region:
         = @promise.official_state_name.humanize
       %span.fecha
+        Fecha:
         = @promise.created_at.to_s(:date)
         
     %span.title= @promise.title
     
     %p.topic
-      Promesa de 
-      - @promise.topics.each do |topic|
-        =  topic.name.humanize
+      - promesas_temas(@promise)
     
     .representante
       = image_tag @promise.official_avatar_url, :class => 'foto_representante'
@@ -49,8 +49,6 @@
     
     .share
       - comentarios_count(@promise)
-  
-      %span.ver_mas= link_to 'COMENTAR >>', '#', :id => 'do_comment'
 
       %span.compartir.st_sharethis_custom
         Compartir

@@ -5,18 +5,12 @@
     = form.label :nombre
     .input
       = form.text_field :author, :class => 'xlarge'
-
-  .titulo
-    = form.label :titulo
-    .input
-      = form.text_field :title, :class => 'xlarge'
-  
       
   .ta_comment
     = form.label :commentario
     .input
       = form.text_area :comment, :class => 'xlarge', :rows => 7
+    = hidden_field_tag :email
       
   .actions
-    = form.submit 'Crear', :class => 'button'
-    %input{:type => 'reset', :class => 'button', :value => 'Limpiar'}
+    = form.submit 'Publicar', :class => 'button'

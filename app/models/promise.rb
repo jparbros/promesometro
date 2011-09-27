@@ -38,6 +38,11 @@ class Promise < ActiveRecord::Base
   #
   before_save :set_slug
   
+  #
+  # Pagination
+  #
+  paginates_per 10
+  
   def start
     self.started_at = Time.now
     self.save
@@ -81,11 +86,7 @@ class Promise < ActiveRecord::Base
   end
   
   def description_scaped
-    if description.size > 300
-      description[0,297] + "..."
-    else
-      description
-    end
+    description[0,140] + "..."
   end
   
   def state_scaped

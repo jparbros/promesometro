@@ -57,4 +57,8 @@ module PromesasHelper
   def comentarios_count(promesa)
     concat(content_tag(:span, promesa.comments.available_comments.count.to_s + " Comentarios", :class => 'comentarios_counter'))
   end
+  
+  def promesas_temas(promesa)
+    concat 'Promesa de ' + promesa.topics.collect {|topic| topic.name}.join(', ')
+  end
 end

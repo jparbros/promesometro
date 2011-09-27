@@ -25,7 +25,7 @@
   %body{:class => "#{controller.controller_name}"}
     #container
       %header
-        = image_tag 'logo.png', :id => 'logo'
+        = link_to image_tag('logo.png', :id => 'logo'), root_path
         %nav
           %ul
             %li.no-border= link_to 'Inicio', root_path
@@ -42,11 +42,7 @@
                 = link_to image_tag('twitter.png'), 'http://www.twitter.com', :target => '_blank'
         #search_box
           - unless controller.controller_name == 'home'
-            #breadcums
-              %span.estas_en Estas en:
-              %span.breadcums= render_crumbs :links => false
-            #search
-              = render :partial => 'shared/search'  
+            = render :partial => 'shared/search'  
       .content
         = yield
 

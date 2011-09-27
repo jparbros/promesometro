@@ -49,29 +49,35 @@ html
         float: left
         
       #search_box
-        +column(24, true)
+        +column(12, true)
+        +prepend(12)
         border-bottom: 1px dashed #666666
         height: 35px
         margin-bottom: 60px
-        #breadcums
-          +column(10)
-          span.estas_en
-            color: #c2abd7
-            +column(2)
-          span.breadcums
-            +column(8,true)
-            color: #898989
-            font-style: italic
-        #search
-          +column(12, true)
-          +prepend(2)
+        
+        select.buscar_por
+          +border-radius(3px)
+          background-color: #f2f2f2
+          border: 1px solid #c7c7c7
+          height: 28px
+          width: 140px
           
-          select.buscar_por
-            +border-radius(3px)
-            background-color: #f2f2f2
-            border: 1px solid #c7c7c7
-            height: 28px
-            width: 140px
+    nav.pagination
+      +column(24, true)
+      background: none
+      margin: 0
+      padding: 0
+      text-align: center
+      
+      ul
+        display: inline-block
+        margin: 20px auto
+      
+      .no-border
+        border: 0
+      
+      .active a
+        color: #7a95a4
 
     nav
       +column(17)
@@ -84,7 +90,6 @@ html
 
       ul
         display: inline-block
-        float: left
         list-style-type: none
         margin: 38px 0 0 65px
 
