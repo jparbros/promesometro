@@ -36,7 +36,7 @@ Promesometro::Application.routes.draw do
   match "promesas/:slug", :to => "promesas#show", :as => "promesa"
   
   match "directorio", :to => "regiones#index", :as => "directorio"
-  match "contacto/new", :to => "contacto#new", :as => "contacto"
+  match "contacto/new", :to => "contacto#new", :as => "new_contacto"
   match "contacto", :to => "contacto#create", :as => "contacto", :via => :post
   match "regiones/:region_name", :to => "regiones#show", :as => "region"
   
