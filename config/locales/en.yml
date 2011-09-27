@@ -151,3 +151,16 @@ en:
       create: 'Creado %{model}'
       update: 'Actualizado %{model}'
       submit: 'Grabado %{model}'
+      
+  activerecord:
+    attributes:
+      tran:
+        description: "Description"
+    errors:
+      models:
+        tran:
+          attributes:
+            description:
+  errors:
+    messages:
+      blank: "no puede estar vacio!"

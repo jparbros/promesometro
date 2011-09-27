@@ -1,0 +1,23 @@
+%h1 Contacto
+
+= render "admin/shared/error_messages", :target => @contact_form
+
+= form_for @contact_form, :url => '/contacto', :method => :post do |form|
+  .nombre
+    = form.label :nombre
+    .input
+      = form.text_field :nombre, :class => 'xlarge'
+
+  .nombre
+    = form.label :email
+    .input
+      = form.text_field :email, :class => 'xlarge'
+
+  .ta_comment
+    = form.label :comentario
+    .input
+      = form.text_area :comentario, :class => 'xlarge', :rows => 7
+    = hidden_field_tag :other_email
+      
+  .actions
+    = form.submit 'Enviar', :class => 'button'

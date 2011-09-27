@@ -81,6 +81,7 @@
  .input-prepend .add-on, .input-append .add-on {-moz-border-radius: 3px 0px 0px 3px; -webkit-border-radius: 3px 0px 0px 3px; -o-border-radius: 3px 0px 0px 3px; -ms-border-radius: 3px 0px 0px 3px; -khtml-border-radius: 3px 0px 0px 3px; border-radius: 3px 0px 0px 3px; background: #f5f5f5; border: 1px solid #cccccc; display: block; float: left; font-weight: normal; height: 18px; line-height: 18px; min-width: 16px; padding: 4px 4px 4px 5px; text-align: center; text-shadow: 0 1px 0 white; width: auto}
  .input-medium, input.medium, textarea.medium, select.medium {width: 150px}
  input, textarea, select, .uneditable-input {-moz-border-radius: 3px 3px 3px 3px; -webkit-border-radius: 3px 3px 3px 3px; -o-border-radius: 3px 3px 3px 3px; -ms-border-radius: 3px 3px 3px 3px; -khtml-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px; border: 1px solid #cccccc; color: gray; display: inline-block; font-size: 13px; height: 18px; line-height: 18px; padding: 4px; width: 210px}
+ textarea {height: 80px; width: 580px}
  #official_photo {display: inline; float: left; margin-right: 10px; width: 150px; margin-bottom: 20px}
  * html #official_photo {overflow-x: hidden}
  #official_info {display: inline; float: left; margin-right: 10px; width: 790px; margin-right: 0; margin-bottom: 20px}
@@ -108,7 +109,6 @@
  #show-promesa .nombre {margin-right: 10px}
  #show-promesa .ta_comment, #show-promesa .actions {display: inline; float: left; margin-right: 0; width: 590px; margin: 10px 0}
  * html #show-promesa .ta_comment, * html #show-promesa .actions {overflow-x: hidden}
- #show-promesa .ta_comment textarea, #show-promesa .actions textarea {height: 80px; width: 580px}
  #show-promesa .comment {display: inline; float: left; margin-right: 0; width: 590px; background: url("../images/comment_arrow.png") no-repeat 37px bottom; border-bottom: 1px dashed #666666; margin: 10px 0; padding-bottom: 18px}
  * html #show-promesa .comment {overflow-x: hidden}
  #show-promesa .comment .comment_content {-moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background: url("../images/comment_bg.png") repeat; padding: 15px}

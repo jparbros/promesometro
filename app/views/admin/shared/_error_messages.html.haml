@@ -2,7 +2,5 @@
   .alert-message.block-message.error
     %p
       %strong
-        = pluralize(target.errors.count, "error") 
-        prohibited this record from being saved:
       - target.errors.full_messages.each do |msg|
         %br= msg
