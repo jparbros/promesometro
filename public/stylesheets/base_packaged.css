@@ -26,8 +26,10 @@
  html body nav {display: inline; float: left; margin-right: 10px; width: 670px; margin-right: 0; padding-left: 40px; color: #363636; font-family: "Open Sans Condensed", sans-serif; font-size: 18px; background: url("../images/menu_nav.png") no-repeat 68px 0; height: 90px; margin: 50px 0 0 0}
  * html html body nav {overflow-x: hidden}
  html body nav ul {display: inline-block; list-style-type: none; margin: 38px 0 0 65px}
- html body nav ul li {border-left: 1px solid #363636; float: left; margin: 0 15px 0 0; padding: 0 0 0 15px}
+ html body nav ul li {border-left: 1px solid #363636; float: left; font-family: "Open Sans Condensed", sans-serif; font-size: 18px; font-weight: normal; margin: 0 15px 0 0; padding: 0 0 0 15px}
+ html body nav ul li a {font-family: "Open Sans Condensed", sans-serif; font-size: 18px; font-weight: normal}
  html body nav ul li.no-border {border: 0; padding: 0}
+ html body nav ul li.logo {margin-left: 25px; margin-right: 25px}
  html body nav .follow_us {font-size: 14px; float: right; margin-left: 0; margin-right: 10px}
  html body nav .follow_us li {border: 0; margin: 0; padding: 0 5px}
  html body #container {width: 950px; margin: 0 auto; overflow: hidden; *zoom: 1}
@@ -37,7 +39,8 @@
  html body h3 {font-size: 18px; font-weight: bold; margin: 0 auto; margin-bottom: 15px}
  html body footer {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; height: 110px}
  * html html body footer {overflow-x: hidden}
- html body footer nav {background: none; margin: 25px 0 0 0; padding: 0}
+ html body footer nav {display: inline; float: left; margin-right: 0; width: 950px; background: none; margin: 25px 0 0 0; padding: 0}
+ * html html body footer nav {overflow-x: hidden}
  html body footer nav ul {margin: 0}
  #promesas .promesa_titulo, #show-promesa .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {overflow-x: hidden}
