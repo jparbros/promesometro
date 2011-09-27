@@ -96,12 +96,25 @@ html
         li
           border-left: 1px solid #363636
           float: left
+          font-family: 'Open Sans Condensed', sans-serif
+          font-size: 18px
+          font-weight: normal
           margin: 0 15px 0 0
           padding: 0 0 0 15px
+          
+          
+          a
+            font-family: 'Open Sans Condensed', sans-serif
+            font-size: 18px
+            font-weight: normal
         
         li.no-border
           border: 0
           padding: 0
+        
+        li.logo
+          margin-left: 25px
+          margin-right: 25px
       
       .follow_us
         font-size: 14px
@@ -141,6 +154,7 @@ html
       height: 110px
       
       nav
+        +column(24, true)
         background: none
         margin: 25px 0 0 0
         padding: 0
