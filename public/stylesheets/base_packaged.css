@@ -126,7 +126,7 @@
  #show-promesa ul#hito {background-color: #f3f3f3; border: 1px dashed #666666; display: inline-block; float: left; height: 90px; list-style-type: none; width: 100%}
  #show-promesa ul#hito li.no-border {border: 0; padding: 0}
  #show-promesa ul#hito div.hito_status {float: left; margin: 0 0 0 10px; width: 175px}
- #show-promesa ul#hito div.hito_status span.estado {font-size: 18px}
+ #show-promesa ul#hito div.hito_status span.estado {font-size: 14px}
  #show-promesa ul#hito div.hito_status div.tiempo_hito {width: 115px; float: left}
  #show-promesa ul#hito div.hito_status div.estado_hito {width: 55px; float: left; margin-left: 5px}
  #show-promesa ul#hito img {float: left}

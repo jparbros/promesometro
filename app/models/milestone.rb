@@ -54,6 +54,7 @@ class Milestone < ActiveRecord::Base
   end
   
   def days_started
+    puts started_at
     ((Time.now - (started_at || Time.now))/86400).to_i.abs
   end
   
