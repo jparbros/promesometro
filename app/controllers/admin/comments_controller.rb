@@ -1,7 +1,7 @@
 class Admin::CommentsController < Admin::BaseController
   
   def index
-    @comments = Comment.all
+    @comments = Comment.page(params[:page]).order('created_at DESC')
   end
   
   def create

@@ -25,14 +25,11 @@
   .page-header
     %h3 Comentarios
 
-  .government_comments.span8.columns
+  .comments
     %h3 Gobierno
-    = render :partial => 'comment', :collection => @promise.comments.government
+    = render :partial => 'comment', :collection => @comments
   
-  .citizens_comments.span8.columns
-    %h3 Ciudadanos
-    = render :partial => 'comment', :collection => @promise.comments.citizens_approved
-  
+  = paginate @comments
   = render :partial => 'comment_form', :locals => { :promise => @promise }
   
 %script

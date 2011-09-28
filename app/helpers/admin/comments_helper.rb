@@ -1,6 +1,6 @@
 module Admin::CommentsHelper
   
-  def comment_kind(kind)
+  def comment_kind_base(kind)
     case kind
     when 'citizens'
       'Ciudadanos'

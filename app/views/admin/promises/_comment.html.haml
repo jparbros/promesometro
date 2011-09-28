@@ -1,5 +1,14 @@
-%p
-  = comment.author if comment.citizen?
-  %br
-  = comment.comment
+.comment
+  .labels
+    - comment_kind(comment)
+    - status_label(comment)
+  = content_tag :strong, comment.author if comment.citizen?
+  %p
+    = comment.comment
+    
+  - if comment.citizen?
+    .buttons
+      = link_to image_tag('like.gif'), admin_comment_comment_approval_path(comment), :method => :post
+      = link_to image_tag('dislike.gif'), admin_comment_comment_approval_path(comment), :method => :delete
+      = image_tag 'delete.gif'
 %hr

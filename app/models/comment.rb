@@ -6,7 +6,6 @@ class Comment < ActiveRecord::Base
   scope :citizens, where(:kind => 'citizen')
   scope :approved, where(:approved => true)
   
-  
   class << self
     def government_approved
       government.approved
