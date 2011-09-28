@@ -383,13 +383,13 @@ html body footer nav ul {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 30px;
+  width: 40px;
 }
 /* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status .dias_progreso, * html #show-promesa .promesa_status .dias_progreso {
   overflow-x: hidden;
 }
-/* line 53, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 54, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .dias_progreso .numero, #show-promesa .promesa_status .dias_progreso .numero {
   display: inline;
   float: left;
@@ -403,21 +403,21 @@ html body footer nav ul {
 * html #promesas .promesa_status .dias_progreso .numero, * html #show-promesa .promesa_status .dias_progreso .numero {
   overflow-x: hidden;
 }
-/* line 58, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 59, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {
   color: #7a95a4;
   display: inline-block;
   font-family: "Oswald", sans-serif;
   margin-top: 10px;
 }
-/* line 64, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 65, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.estado, #show-promesa span.estado {
   color: #7a95a4;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
 }
 
-/* line 70, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 71, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_estado_titulo {
   display: inline;
   float: left;
@@ -428,12 +428,12 @@ html body footer nav ul {
 * html #promesas .promesa_estado_titulo {
   overflow-x: hidden;
 }
-/* line 73, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 74, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 190px;
+  width: 230px;
   margin-top: -10px;
   padding-left: 40px;
 }
@@ -441,11 +441,11 @@ html body footer nav ul {
 * html #promesas .promesa_status {
   overflow-x: hidden;
 }
-/* line 77, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 78, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .progreso {
   color: #898989;
 }
-/* line 79, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 80, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito {
   display: inline;
   float: left;
@@ -457,11 +457,11 @@ html body footer nav ul {
 * html #promesas .promesa_status .hito {
   overflow-x: hidden;
 }
-/* line 82, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 83, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito img {
   margin: 11px 0;
 }
-/* line 84, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 85, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .estado_contenedor {
   display: inline;
   float: left;
@@ -473,7 +473,7 @@ html body footer nav ul {
 * html #promesas .promesa_status .estado_contenedor {
   overflow-x: hidden;
 }
-/* line 88, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 89, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas p.descripcion {
   display: inline;
   float: left;
@@ -492,12 +492,12 @@ html body footer nav ul {
 * html #promesas p.descripcion {
   overflow-x: hidden;
 }
-/* line 99, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 100, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.ver_mas a {
   color: #662d91;
   float: left;
 }
-/* line 103, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 104, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa {
   display: inline;
   float: left;
@@ -512,7 +512,7 @@ html body footer nav ul {
 * html #promesas .promesa {
   overflow-x: hidden;
 }
-/* line 110, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 111, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .arrow {
   background: url("../images/arrow.png");
   display: inline;
@@ -520,7 +520,7 @@ html body footer nav ul {
   height: 179px;
   width: 50px;
 }
-/* line 117, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
+/* line 118, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .status {
   display: inline;
   float: left;
