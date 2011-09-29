@@ -7,7 +7,6 @@
   });
 
   window.provincias = new Provincias();
-  window.representante = new Representante();
 
   window.ProvinciaView = Backbone.View.extend({
     tagName: 'li',
@@ -105,9 +104,13 @@
     },
 
     representante: function(lugar, posicion) {
+      representante = new Representante();
       representante.url = '/representantes/'+ lugar + '?posicion='+ posicion;
       representante.fetch();
       representanteVista = new RepresentanteView({model: representante});
+      if(representante.get('name') == undefined) {
+         $('.representante').html('La información no se enuentra disponible');
+      }
     }
   });
 
