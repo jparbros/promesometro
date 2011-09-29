@@ -45,6 +45,7 @@
  html body .content {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; padding: 0 0 20px}
  * html html body .content {overflow-x: hidden}
  html body h1 {font-family: "Oswald", sans-serif; font-size: 18px; font-weight: normal; margin-bottom: 15px; text-transform: uppercase}
+ html body h2 {font-family: "Oswald", sans-serif; font-size: 14px; font-weight: normal; margin-bottom: 15px; text-transform: uppercase}
  html body h3 {font-size: 18px; font-weight: bold; margin: 0 auto; margin-bottom: 15px}
  html body footer {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; height: 110px}
  * html html body footer {overflow-x: hidden}

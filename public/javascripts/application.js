@@ -16,10 +16,31 @@ $.extend({
      $('.post_comment').toggle();
      return false;
    });
+ },
+
+ search_select: function() {
+   $('#buscar_por').change(function(){
+     $('#promise_search').find('input:text').hide();
+     switch($(this).attr('value')){
+       case 'promesa':
+         $('#search_title_contains').show();
+         break;
+       case 'representante':
+         $('#search_official_name_contains').show();
+         break;
+       case 'region':
+         $('#search_official_state_name_contains').show();
+         break;
+       case 'partido':
+         $('#search_official_political_party_name_contains').show();
+         break;
+      };
+   });
  }
 });
 
 $(document).ready(function(){
   $.show_milestone_comments();
   $.do_comment();
+  $.search_select();
 });

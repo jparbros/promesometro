@@ -316,13 +316,21 @@ html body h1 {
   text-transform: uppercase;
 }
 /* line 169, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+/* line 176, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 175, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 182, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
@@ -335,7 +343,7 @@ html body footer {
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 180, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 187, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav {
   display: inline;
   float: left;
@@ -349,7 +357,7 @@ html body footer nav {
 * html html body footer nav {
   overflow-x: hidden;
 }
-/* line 186, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 193, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }

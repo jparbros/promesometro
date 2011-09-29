@@ -16,7 +16,11 @@ module PromesasHelper
   end
   
   def titulo_filtro_promesas(filtro)
-    concat ' - ' +  filtro['topics_name_equals'].humanize if filtro.include? 'topics_name_equals'
+    concat content_tag(:h2, "Filtrado por tema: #{filtro['topics_name_contains'].humanize}") unless filtro['topics_name_contains'].blank?
+    concat content_tag(:h2, "Busqueda por promesa: #{filtro['title_contains'].humanize}") unless filtro['title_contains'].blank?
+    concat content_tag(:h2, "Busqueda por representante: #{filtro['official_name_contains'].humanize}") unless filtro['official_name_contains'].blank?
+    concat content_tag(:h2, "Busqueda por region: #{filtro['official_state_name_contains'].humanize}") unless filtro['official_state_name_contains'].blank?
+    concat content_tag(:h2, "Busqueda por partido politico: #{filtro['official_political_party_name_contains'].humanize}") unless filtro['official_political_party_name_contains'].blank?
   end
   
   def hito_actual(promesa)
