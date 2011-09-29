@@ -41,7 +41,7 @@ class Admin::PromisesController < Admin::BaseController
   
   def show
     @promise = @official.promises.find(params[:id])
-    @comments = @promise.comments.page(params[:page]).per(5).order('created_at desc')
+    @comments = @promise.comments.page(params[:page]).per(5)
   end
   
   def get_official

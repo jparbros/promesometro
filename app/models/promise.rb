@@ -43,6 +43,11 @@ class Promise < ActiveRecord::Base
   #
   paginates_per 10
   
+  #
+  # Scopes
+  #
+  default_scope order('created_at desc')
+  
   def start
     self.started_at = Time.now
     self.save

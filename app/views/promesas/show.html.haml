@@ -57,8 +57,9 @@
     .post_comment
       = render :partial => 'comment_form', :locals => {:promise => @promise}
     
-    = render :partial => 'comment', :collection => @promise.comments.available_comments
-
+    = render :partial => 'comment', :collection => @comments
+    = paginate @comments
+    
   .promesas_candidato
     - @promise.official_promises.each do |promise|
       .representante_promesa

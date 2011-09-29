@@ -16,7 +16,7 @@ class Comment < ActiveRecord::Base
     end
 
     def new_citizen(args)
-      self.new args.merge(:kind => 'citizen')
+      self.new args.merge({:kind => 'citizen', :approved => true})
     end
 
     def new_government(args)
