@@ -49,11 +49,35 @@ html
         float: left
         
       #search_box
-        +column(12, true)
-        +prepend(12)
+        +column(24, true)
         border-bottom: 1px dashed #666666
         height: 35px
         margin-bottom: 60px
+          
+        .promise_search
+          +column(12, true)
+        ul#filter-topic
+          +column(12)
+          a
+            color: #662D91
+            
+          li ul
+            display: none
+          
+          li:hover ul
+            display: block
+            
+          ul#filter-topic-bottom-nav
+            background: url("../images/promesas_candidato-bg.png") repeat-x transparent
+            padding: 10px
+            position: absolute
+            text-transform: capitalize
+            width: 691px
+          
+            a
+              display: inline-block
+              margin: 5px 0
+              width: 170px
         
         select.buscar_por
           +border-radius(3px)

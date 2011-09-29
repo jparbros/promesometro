@@ -125,8 +125,7 @@ html body header #search_box {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 470px;
-  padding-left: 480px;
+  width: 950px;
   border-bottom: 1px dashed #666666;
   height: 35px;
   margin-bottom: 60px;
@@ -135,7 +134,55 @@ html body header #search_box {
 * html html body header #search_box {
   overflow-x: hidden;
 }
-/* line 58, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 57, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box .promise_search {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+}
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html body header #search_box .promise_search {
+  overflow-x: hidden;
+}
+/* line 59, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+}
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html body header #search_box ul#filter-topic {
+  overflow-x: hidden;
+}
+/* line 61, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic a {
+  color: #662d91;
+}
+/* line 64, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic li ul {
+  display: none;
+}
+/* line 67, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic li:hover ul {
+  display: block;
+}
+/* line 70, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav {
+  background: url("../images/promesas_candidato-bg.png") repeat-x transparent;
+  padding: 10px;
+  position: absolute;
+  text-transform: capitalize;
+  width: 691px;
+}
+/* line 77, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav a {
+  display: inline-block;
+  margin: 5px 0;
+  width: 170px;
+}
+/* line 82, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box select.buscar_por {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -148,7 +195,7 @@ html body header #search_box select.buscar_por {
   height: 28px;
   width: 140px;
 }
-/* line 65, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 89, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination {
   display: inline;
   float: left;
@@ -163,20 +210,20 @@ html body nav.pagination {
 * html html body nav.pagination {
   overflow-x: hidden;
 }
-/* line 72, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 96, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination ul {
   display: inline-block;
   margin: 20px auto;
 }
-/* line 76, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 100, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination .no-border {
   border: 0;
 }
-/* line 79, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 103, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination .active a {
   color: #7a95a4;
 }
-/* line 82, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 106, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav {
   display: inline;
   float: left;
@@ -195,13 +242,13 @@ html body nav {
 * html html body nav {
   overflow-x: hidden;
 }
-/* line 91, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 115, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul {
   display: inline-block;
   list-style-type: none;
   margin: 38px 0 0 65px;
 }
-/* line 96, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 120, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li {
   border-left: 1px solid #363636;
   float: left;
@@ -211,43 +258,43 @@ html body nav ul li {
   margin: 0 15px 0 0;
   padding: 0 0 0 15px;
 }
-/* line 106, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 130, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li a {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 111, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 135, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li.no-border {
   border: 0;
   padding: 0;
 }
-/* line 115, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 139, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li.logo {
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 119, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 143, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav .follow_us {
   font-size: 14px;
   float: right;
   margin-left: 0;
   margin-right: 10px;
 }
-/* line 125, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 149, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav .follow_us li {
   border: 0;
   margin: 0;
   padding: 0 5px;
 }
-/* line 130, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 154, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 133, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 157, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body .content {
   display: inline;
   float: left;
@@ -260,7 +307,7 @@ html body .content {
 * html html body .content {
   overflow-x: hidden;
 }
-/* line 138, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 162, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h1 {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -268,14 +315,14 @@ html body h1 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 145, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 169, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 151, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 175, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
@@ -288,7 +335,7 @@ html body footer {
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 156, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 180, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav {
   display: inline;
   float: left;
@@ -302,7 +349,7 @@ html body footer nav {
 * html html body footer nav {
   overflow-x: hidden;
 }
-/* line 162, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
+/* line 186, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }
