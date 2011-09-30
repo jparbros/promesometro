@@ -33,6 +33,9 @@ Promesometro::Application.routes.draw do
   
   match "/representantes/:lugar", :to => "representantes#show"
   
+  match "/facebook", :to => "home#facebook"
+  match "/oauth", :to => "home#oauth"
+  
   match "promesas/hito/:milestone_id/comentario", :to => "comments#create", :as => "hito_comentario"
   match "promesas/:slug", :to => "promesas#show", :as => "promesa"
   
