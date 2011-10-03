@@ -6,7 +6,7 @@
       - if comment.government?
         = official.name
       - else
-        - promesas_temas(promesa)
+        - promesas_temas(comment.commentable)
     %span.region= state unless comment.government?
     %span.date= comment.created_at.to_s(:date)
     - if comment.government?
