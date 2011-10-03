@@ -7,5 +7,6 @@ TWITTER_CREDENTIALS = {
 
 FACEBOOK_CREDENTIAL = {
   :client_id => '287374454607456', 
-  :secret_id => '043c565d98f4dceef9700aeaaf18c3da'
+  :secret_id => '043c565d98f4dceef9700aeaaf18c3da',
+  :token => 'AAAEFXZARIzmABAJWxZBL1P3CqdRinI77f44SbMVdkGE5UZBejXgJwWNthQsDJJiVIC2qpOKxlkgSNv7Mmx0josurF1CZCoU8XHNygZBHnkgZDZD'
 }

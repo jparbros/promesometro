@@ -6,8 +6,7 @@
       - if comment.government?
         = official.name
       - else
-        Promesa de 
-        - comment.commentable.topics.first.name.humanize
+        - promesas_temas(promesa)
     %span.region= state unless comment.government?
     %span.date= comment.created_at.to_s(:date)
     - if comment.government?
