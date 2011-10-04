@@ -34,6 +34,13 @@ html
 
     input.hidden
       display: none
+    
+    select
+      +border-radius(3px)
+      background-color: #f2f2f2
+      border: 1px solid #c7c7c7
+      height: 28px
+      width: 140px
       
     a
       color: $link_color
@@ -56,6 +63,7 @@ html
           
         .promise_search
           +column(12, true)
+          +prepend(12)
         ul#filter-topic
           +column(12)
           a
@@ -78,13 +86,6 @@ html
               display: inline-block
               margin: 5px 0
               width: 170px
-        
-        select.buscar_por
-          +border-radius(3px)
-          background-color: #f2f2f2
-          border: 1px solid #c7c7c7
-          height: 28px
-          width: 140px
           
     nav.pagination
       +column(24, true)

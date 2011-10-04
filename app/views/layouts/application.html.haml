@@ -42,12 +42,6 @@
                 = link_to image_tag('twitter.png'), 'http://www.twitter.com', :target => '_blank'
 
         #search_box
-          %ul#filter-topic
-            %li
-              = link_to 'TEMAS','#', :id => 'filter-topic-top-nav'
-              %ul#filter-topic-bottom-nav
-                - Topic.all.each do |topic|
-                  = link_to topic.name, promesas_path('search[topics_name_contains]' => topic.name)
           - unless controller.controller_name == 'home'
             = render :partial => 'shared/search'  
       .content

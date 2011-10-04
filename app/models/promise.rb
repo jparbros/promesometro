@@ -46,7 +46,15 @@ class Promise < ActiveRecord::Base
   #
   # Scopes
   #
-  default_scope order('created_at desc')
+  default_scope order('promises.created_at desc')
+  scope :topics_contains, lambda {|topic| includes('topics').where('topics.name like ?',"%#{topic}%") }
+  scope :dias_progreso_contains, lambda {|days| where('started_at > ?', days.to_i.day.ago.strftime('%m/%d/%y')) }
+  
+  
+  #
+  # Search Methods
+  #
+  search_methods :topics_contains, :dias_progreso_contains
   
   def start
     self.started_at = Time.now

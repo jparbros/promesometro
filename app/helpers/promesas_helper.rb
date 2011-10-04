@@ -21,6 +21,8 @@ module PromesasHelper
     concat content_tag(:h2, "Busqueda por representante: #{filtro['official_name_contains'].humanize}") unless filtro['official_name_contains'].blank?
     concat content_tag(:h2, "Busqueda por region: #{filtro['official_state_name_contains'].humanize}") unless filtro['official_state_name_contains'].blank?
     concat content_tag(:h2, "Busqueda por partido politico: #{filtro['official_political_party_name_contains'].humanize}") unless filtro['official_political_party_name_contains'].blank?
+    concat content_tag(:h2, "Busqueda por tema: #{filtro['topics_contains'].humanize}") unless filtro['topics_contains'].blank?
+    concat content_tag(:h2, "Busqueda por dias de progreso: #{filtro['dias_progreso_contains'].humanize}") unless filtro['dias_progreso_contains'].blank?
   end
   
   def hito_actual(promesa)

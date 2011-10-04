@@ -20,19 +20,25 @@ $.extend({
 
  search_select: function() {
    $('#buscar_por').change(function(){
-     $('#promise_search').find('input:text').hide();
+     $('#promise_search').find('input:text').attr('disabled','disabled').hide();
      switch($(this).attr('value')){
        case 'promesa':
-         $('#search_title_contains').show();
+         $('#search_title_contains').removeAttr('disabled').show();
          break;
        case 'representante':
-         $('#search_official_name_contains').show();
+         $('#search_official_name_contains').removeAttr('disabled').show();
          break;
        case 'region':
-         $('#search_official_state_name_contains').show();
+         $('#search_official_state_name_contains').removeAttr('disabled').show();
          break;
        case 'partido':
-         $('#search_official_political_party_name_contains').show();
+         $('#search_official_political_party_name_contains').removeAttr('disabled').show();
+         break;
+       case 'tema':
+         $('#search_topics_contains').removeAttr('disabled').show();
+         break;
+      case 'dias_progreso':
+         $('#search_dias_progreso_contains').removeAttr('disabled').show();
          break;
       };
    });
