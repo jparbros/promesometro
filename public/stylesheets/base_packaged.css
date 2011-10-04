@@ -11,13 +11,14 @@
  html body input, html body textarea {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7}
  html body input.button {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #c2abd7; color: white; height: 28px; width: 80px}
  html body input.hidden {display: none}
+ html body select {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7; height: 28px; width: 140px}
  html body a {color: #363636; text-decoration: none}
  html body header {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; min-height: 40px}
  * html html body header {overflow-x: hidden}
  html body header #logo {margin: 30px 0 0 0; float: left}
  html body header #search_box {display: inline; float: left; margin-right: 0; width: 950px; border-bottom: 1px dashed #666666; height: 35px; margin-bottom: 60px}
  * html html body header #search_box {overflow-x: hidden}
- html body header #search_box .promise_search {display: inline; float: left; margin-right: 0; width: 470px}
+ html body header #search_box .promise_search {display: inline; float: left; margin-right: 0; width: 470px; padding-left: 480px}
  * html html body header #search_box .promise_search {overflow-x: hidden}
  html body header #search_box ul#filter-topic {display: inline; float: left; margin-right: 10px; width: 470px}
  * html html body header #search_box ul#filter-topic {overflow-x: hidden}
@@ -26,7 +27,6 @@
  html body header #search_box ul#filter-topic li:hover ul {display: block}
  html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav {background: url("../images/promesas_candidato-bg.png") repeat-x transparent; padding: 10px; position: absolute; text-transform: capitalize; width: 691px}
  html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav a {display: inline-block; margin: 5px 0; width: 170px}
- html body header #search_box select.buscar_por {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7; height: 28px; width: 140px}
  html body nav.pagination {display: inline; float: left; margin-right: 0; width: 950px; background: none; margin: 0; padding: 0; text-align: center}
  * html html body nav.pagination {overflow-x: hidden}
  html body nav.pagination ul {display: inline-block; margin: 20px auto}
