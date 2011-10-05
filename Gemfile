@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'bitly'
 gem 'carrierwave'
 gem 'compass'
 gem "crummy"

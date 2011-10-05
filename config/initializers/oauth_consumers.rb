@@ -10,3 +10,8 @@ FACEBOOK_CREDENTIAL = {
   :secret_id => '043c565d98f4dceef9700aeaaf18c3da',
   :token => 'AAAEFXZARIzmABAJWxZBL1P3CqdRinI77f44SbMVdkGE5UZBejXgJwWNthQsDJJiVIC2qpOKxlkgSNv7Mmx0josurF1CZCoU8XHNygZBHnkgZDZD'
 }
+
+BITLY_CREDENTIALS = {
+  :username => 'jparbros',
+  :api_key => 'R_159f99efa9e55225fc9f0b1f6966f517'
+}

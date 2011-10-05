@@ -1,10 +1,21 @@
 class Comment < ActiveRecord::Base
   
+  #
+  # Associations
+  #
   belongs_to :commentable, :polymorphic => true
   
+  #
+  # Scopes
+  #
   scope :government, where(:kind => 'government')
   scope :citizens, where(:kind => 'citizen')
   scope :approved, where(:approved => true)
+  
+  #
+  # Callbacks
+  #
+  after_create :publish
   
   class << self
     def government_approved
@@ -44,5 +55,10 @@ class Comment < ActiveRecord::Base
   
   def government?
     self.kind == 'government'
+  end
+  
+  def publish
+    publisher = Publisher.new(self.comment, self.commentable.slug)
+    publisher.publish
   end
 end
