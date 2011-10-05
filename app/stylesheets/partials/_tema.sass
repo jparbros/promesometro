@@ -1,0 +1,47 @@
+#temas
+  +column(24, true)
+  
+  #topics
+    +column(24, true)
+    margin-bottom: 10px
+    .topic
+      +column(4)
+      margin-bottom: 5px
+    .last
+      margin-right: 0
+      
+  .temas-container
+    +column(24, true)
+    
+  .tema-sidebar
+    +column-base
+    background: url('../images/seguridad_bg.png') no-repeat
+    min-height: 250px
+    padding: 10px
+    width: 170px
+    
+    span.tema-title
+      border-bottom: 1px dashed #666
+      color: #7a95a4
+      display: block
+      font-family: 'Oswald', sans-serif
+      font-size: 24px
+      text-transform: uppercase
+      margin-bottom: 10px
+  
+  #promesas
+    +column(19, true)
+    .promesa
+      +column(10, true)
+      
+      p.descripcion
+        +column(8, true)
+    .status
+      +column(7, true)
+      
+      span.nombre_representante  
+        width: 90px
+        
+      span.partido_representante
+        width: 100px
+  

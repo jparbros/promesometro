@@ -1,0 +1,19 @@
+#temas
+  %h1 TEMAS
+  
+  #topics
+    - @temas.each_with_index do |tema, index|
+      .topic{:class => "#{(index%6 == 0)? "last" : ""}"}
+        = link_to tema.name.humanize, temas_path(:name_eq => tema.name)
+
+  - @temas.each do |tema|
+    -unless tema.promises.blank?
+      .temas-container
+        .tema-sidebar
+          Propuestas de:
+          %span.tema-title
+            = tema.name.humanize
+          = tema.promises.count
+          Propuestas presentadas
+        #promesas
+          = render :partial => 'promesas/promesa', :collection => tema.promises

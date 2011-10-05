@@ -214,6 +214,28 @@
  * html #acerca-de #informacion p#proetica {overflow-x: hidden}
  #acerca-de #promesometro {padding-right: 160px; display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; color: #815ca3; font-family: "Open Sans Condensed", sans-serif; font-size: 24px; text-align: center}
  * html #acerca-de #promesometro {overflow-x: hidden}
+ #temas {display: inline; float: left; margin-right: 0; width: 950px}
+ * html #temas {overflow-x: hidden}
+ #temas #topics {display: inline; float: left; margin-right: 0; width: 950px; margin-bottom: 10px}
+ * html #temas #topics {overflow-x: hidden}
+ #temas #topics .topic {display: inline; float: left; margin-right: 10px; width: 150px; margin-bottom: 5px}
+ * html #temas #topics .topic {overflow-x: hidden}
+ #temas #topics .last {margin-right: 0}
+ #temas .temas-container {display: inline; float: left; margin-right: 0; width: 950px}
+ * html #temas .temas-container {overflow-x: hidden}
+ #temas .tema-sidebar {display: inline; float: left; margin-right: 10px; background: url("../images/seguridad_bg.png") no-repeat; min-height: 250px; padding: 10px; width: 170px}
+ * html #temas .tema-sidebar {overflow-x: hidden}
+ #temas .tema-sidebar span.tema-title {border-bottom: 1px dashed #666666; color: #7a95a4; display: block; font-family: "Oswald", sans-serif; font-size: 24px; text-transform: uppercase; margin-bottom: 10px}
+ #temas #promesas {display: inline; float: left; margin-right: 0; width: 750px}
+ * html #temas #promesas {overflow-x: hidden}
+ #temas #promesas .promesa {display: inline; float: left; margin-right: 0; width: 390px}
+ * html #temas #promesas .promesa {overflow-x: hidden}
+ #temas #promesas .promesa p.descripcion {display: inline; float: left; margin-right: 0; width: 310px}
+ * html #temas #promesas .promesa p.descripcion {overflow-x: hidden}
+ #temas #promesas .status {display: inline; float: left; margin-right: 0; width: 270px}
+ * html #temas #promesas .status {overflow-x: hidden}
+ #temas #promesas .status span.nombre_representante {width: 90px}
+ #temas #promesas .status span.partido_representante {width: 100px}
  body.bp {line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333333; font-size: 75%}
  body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {font-weight: normal; color: #222222}
  body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {margin: 0}
