@@ -1,0 +1,53 @@
+#acerca-de
+
+  #banner
+    +column(24, true)
+    border-top: 1px dashed #666
+    border-bottom: 1px dashed #666
+    padding: 10px 0
+    margin: 10px 0
+    #conoce
+      +column(6)
+    #dialoga
+      +column(9)
+    #sigue
+      +column(9, true)
+      margin-top: 20px
+  
+  #informacion
+    +column(23, true)
+    background: url('../images/acerca_de_bg.png')
+    border-top: 1px dashed #999
+    font-family: trebuchet MS
+    font-size: 14px
+    padding: 20px
+    margin-top: 20px
+    min-height: 550px
+    h2
+      color: #7a95a4
+      border-bottom: 1px dashed #666
+      font-family: 'Oswald', sans-serif
+      font-size: 30px
+      text-transform: uppercase
+    p#autoridad
+      +column(11)
+      margin: 20px 0
+    p#ciudadano
+      +column(11, true)
+      +prepend(1)
+      margin: 20px 0
+    #logo
+      +column(6)
+    p#proetica
+      +column(16, true)
+      +prepend(1)
+      margin-top: 10px
+  
+  #promesometro
+    +append(4)
+    +column(16)
+    +prepend(4)
+    color: #815ca3
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 24px
+    text-align: center

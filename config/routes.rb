@@ -29,7 +29,7 @@ Promesometro::Application.routes.draw do
     resource :comments, :only => :create
   end
   
-  resources :temas, :only => [:index]
+  resources :acerca_de, :only => [:index]
   
   match "/estados/:estado/provincias", :to => "provincias#index"
   

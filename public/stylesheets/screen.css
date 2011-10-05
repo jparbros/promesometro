@@ -1246,7 +1246,149 @@ body.home .comment span.compartir {
   color: #7a95a4;
 }
 
-/* line 26, ../../app/stylesheets/screen.sass */
+/* line 3, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #banner {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  border-top: 1px dashed #666666;
+  border-bottom: 1px dashed #666666;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #banner {
+  overflow-x: hidden;
+}
+/* line 9, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #banner #conoce {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #banner #conoce {
+  overflow-x: hidden;
+}
+/* line 11, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #banner #dialoga {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #banner #dialoga {
+  overflow-x: hidden;
+}
+/* line 13, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #banner #sigue {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 350px;
+  margin-top: 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #banner #sigue {
+  overflow-x: hidden;
+}
+/* line 17, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 910px;
+  background: url("../images/acerca_de_bg.png");
+  border-top: 1px dashed #999999;
+  font-family: trebuchet MS;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 550px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #informacion {
+  overflow-x: hidden;
+}
+/* line 26, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion h2 {
+  color: #7a95a4;
+  border-bottom: 1px dashed #666666;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 32, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion p#autoridad {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px;
+  margin: 20px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #informacion p#autoridad {
+  overflow-x: hidden;
+}
+/* line 35, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion p#ciudadano {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+  padding-left: 40px;
+  margin: 20px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #informacion p#ciudadano {
+  overflow-x: hidden;
+}
+/* line 39, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion #logo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #informacion #logo {
+  overflow-x: hidden;
+}
+/* line 41, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #informacion p#proetica {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #informacion p#proetica {
+  overflow-x: hidden;
+}
+/* line 46, ../../app/stylesheets/partials/_acerca_de.sass */
+#acerca-de #promesometro {
+  padding-right: 160px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+  padding-left: 160px;
+  color: #815ca3;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #acerca-de #promesometro {
+  overflow-x: hidden;
+}
+
+/* line 27, ../../app/stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1682,14 +1824,14 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 41, ../../app/stylesheets/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 42, ../../app/stylesheets/screen.sass */
+/* line 43, ../../app/stylesheets/screen.sass */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -1700,7 +1842,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 44, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -1711,7 +1853,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 48, ../../app/stylesheets/screen.sass */
+/* line 49, ../../app/stylesheets/screen.sass */
 body.two-col #content {
   display: inline;
   float: left;

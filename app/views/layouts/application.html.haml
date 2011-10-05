@@ -36,10 +36,10 @@
             %li Siguenos en:
             %li
               %span
-                = link_to image_tag('facebook.png'), 'http://www.facebook.com', :target => '_blank'
+                = link_to image_tag('facebook.png'), 'http://www.facebook.com/pages/Promesometro/219767341418599', :target => '_blank'
             %li
               %span
-                = link_to image_tag('twitter.png'), 'http://www.twitter.com', :target => '_blank'
+                = link_to image_tag('twitter.png'), 'http://www.twitter.com/promesometroPE', :target => '_blank'
 
         #search_box
           - unless controller.controller_name == 'home'
@@ -50,10 +50,10 @@
       %footer
         %nav
           %ul
-            %li.no-border= link_to 'Inicio', root_path
-            %li= link_to 'Promesas', promesas_path
+            %li.no-border= link_to 'Promesas', promesas_path
             %li= link_to 'Directorio', directorio_path
-            %li= link_to 'Contacto', ''
+            %li= link_to 'Contacto', new_contacto_path
+            %li= link_to 'Acerca De', acerca_de_index_path
             %li.no-border.logo= image_tag 'citivox.png'
             %li.no-border.logo= image_tag 'proetica.png'
             %li.no-border &copy; Todos los derechos reservados
