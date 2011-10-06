@@ -42,6 +42,14 @@ $.extend({
          break;
       };
    });
+ },
+ 
+ topics_filter: function() {
+   $('select#tema').change(function(){
+     host = window.location.host;
+     value = $(this).attr('value');
+     window.location = 'http://' + host + '/temas?search[name_contains]=' + value;
+   });
  }
 });
 
@@ -49,4 +57,5 @@ $(document).ready(function(){
   $.show_milestone_comments();
   $.do_comment();
   $.search_select();
+  $.topics_filter();
 });

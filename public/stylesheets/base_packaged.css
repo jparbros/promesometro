@@ -236,6 +236,12 @@
  * html #temas #promesas .status {overflow-x: hidden}
  #temas #promesas .status span.nombre_representante {width: 90px}
  #temas #promesas .status span.partido_representante {width: 100px}
+ #temas select {display: inline; float: left; margin-right: 0; width: 150px; text-transform: capitalize}
+ * html #temas select {overflow-x: hidden}
+ #temas h1 {display: inline; float: left; margin-right: 10px; width: 790px}
+ * html #temas h1 {overflow-x: hidden}
+ #temas h2 {display: inline; float: left; margin-right: 0; width: 950px}
+ * html #temas h2 {overflow-x: hidden}
  body.bp {line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333333; font-size: 75%}
  body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {font-weight: normal; color: #222222}
  body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {margin: 0}

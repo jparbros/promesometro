@@ -1514,6 +1514,40 @@ body.home .comment span.compartir {
 #temas #promesas .status span.partido_representante {
   width: 100px;
 }
+/* line 47, ../../app/stylesheets/partials/_tema.sass */
+#temas select {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 150px;
+  text-transform: capitalize;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #temas select {
+  overflow-x: hidden;
+}
+/* line 51, ../../app/stylesheets/partials/_tema.sass */
+#temas h1 {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #temas h1 {
+  overflow-x: hidden;
+}
+/* line 53, ../../app/stylesheets/partials/_tema.sass */
+#temas h2 {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #temas h2 {
+  overflow-x: hidden;
+}
 
 /* line 28, ../../app/stylesheets/screen.sass */
 body.bp {

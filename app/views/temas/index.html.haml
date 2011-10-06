@@ -1,10 +1,7 @@
 #temas
   %h1 TEMAS
   
-  #topics
-    - @temas.each_with_index do |tema, index|
-      .topic{:class => "#{(index%6 == 0)? "last" : ""}"}
-        = link_to tema.name.humanize, temas_path(:name_eq => tema.name)
+  = select_tag :tema, options_from_collection_for_select(Topic.all, 'name','name', ((params[:search].nil?)? "" :  params[:search][:name_contains])), :include_blank => 'temas'
 
   - @temas.each do |tema|
     -unless tema.promises.blank?
@@ -17,3 +14,9 @@
           Propuestas presentadas
         #promesas
           = render :partial => 'promesas/promesa', :collection => tema.promises
+  - puts "=============="
+  - puts @temas.inspect
+  - if params[:search] and params[:search][:name_contains] and @temas.first.promises.blank?
+    %h2 
+      No existen promesas con el tema
+      = params[:search][:name_contains]
