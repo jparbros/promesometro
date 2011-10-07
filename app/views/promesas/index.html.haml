@@ -2,6 +2,8 @@
 #promesas
   .promesa_titulo
     %h1 Promesas
+  .filtro-temas
+    = select_tag :tema, options_from_collection_for_select(Topic.all, 'name','name', ((params[:search].nil?)? "" :  params[:search][:topics_contains])), :include_blank => 'temas'
   .promesa_estado_titulo
     %h1 Estado de la Promesa
 

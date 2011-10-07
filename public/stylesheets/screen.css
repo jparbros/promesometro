@@ -473,7 +473,30 @@ html body footer nav ul {
   font-size: 14px;
 }
 
-/* line 71, ../../app/stylesheets/partials/_promesas.sass */
+/* line 72, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .promesa_titulo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .promesa_titulo {
+  overflow-x: hidden;
+}
+/* line 75, ../../app/stylesheets/partials/_promesas.sass */
+#promesas .filtro-temas {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  text-transform: capitalize;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #promesas .filtro-temas {
+  overflow-x: hidden;
+}
+/* line 79, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_estado_titulo {
   display: inline;
   float: left;
@@ -484,7 +507,7 @@ html body footer nav ul {
 * html #promesas .promesa_estado_titulo {
   overflow-x: hidden;
 }
-/* line 74, ../../app/stylesheets/partials/_promesas.sass */
+/* line 82, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status {
   display: inline;
   float: left;
@@ -497,11 +520,11 @@ html body footer nav ul {
 * html #promesas .promesa_status {
   overflow-x: hidden;
 }
-/* line 78, ../../app/stylesheets/partials/_promesas.sass */
+/* line 86, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .progreso {
   color: #898989;
 }
-/* line 80, ../../app/stylesheets/partials/_promesas.sass */
+/* line 88, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito {
   display: inline;
   float: left;
@@ -513,11 +536,11 @@ html body footer nav ul {
 * html #promesas .promesa_status .hito {
   overflow-x: hidden;
 }
-/* line 83, ../../app/stylesheets/partials/_promesas.sass */
+/* line 91, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito img {
   margin: 11px 0;
 }
-/* line 85, ../../app/stylesheets/partials/_promesas.sass */
+/* line 93, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .estado_contenedor {
   display: inline;
   float: left;
@@ -529,7 +552,7 @@ html body footer nav ul {
 * html #promesas .promesa_status .estado_contenedor {
   overflow-x: hidden;
 }
-/* line 89, ../../app/stylesheets/partials/_promesas.sass */
+/* line 97, ../../app/stylesheets/partials/_promesas.sass */
 #promesas p.descripcion {
   display: inline;
   float: left;
@@ -548,12 +571,12 @@ html body footer nav ul {
 * html #promesas p.descripcion {
   overflow-x: hidden;
 }
-/* line 100, ../../app/stylesheets/partials/_promesas.sass */
+/* line 108, ../../app/stylesheets/partials/_promesas.sass */
 #promesas span.ver_mas a {
   color: #662d91;
   float: left;
 }
-/* line 104, ../../app/stylesheets/partials/_promesas.sass */
+/* line 112, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .promesa {
   display: inline;
   float: left;
@@ -568,7 +591,7 @@ html body footer nav ul {
 * html #promesas .promesa {
   overflow-x: hidden;
 }
-/* line 111, ../../app/stylesheets/partials/_promesas.sass */
+/* line 119, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .arrow {
   background: url("../images/arrow.png");
   display: inline;
@@ -576,7 +599,7 @@ html body footer nav ul {
   height: 179px;
   width: 50px;
 }
-/* line 118, ../../app/stylesheets/partials/_promesas.sass */
+/* line 126, ../../app/stylesheets/partials/_promesas.sass */
 #promesas .status {
   display: inline;
   float: left;

@@ -45,10 +45,10 @@ $.extend({
  },
  
  topics_filter: function() {
-   $('select#tema').change(function(){
+   $('.filtro-temas select#tema').change(function(){
      host = window.location.host;
      value = $(this).attr('value');
-     window.location = 'http://' + host + '/temas?search[name_contains]=' + value;
+     window.location = 'http://' + host + '/promesas?search[topics_contains]=' + value;
    });
  }
 });

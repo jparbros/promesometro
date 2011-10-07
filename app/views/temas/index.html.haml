@@ -14,8 +14,6 @@
           Propuestas presentadas
         #promesas
           = render :partial => 'promesas/promesa', :collection => tema.promises
-  - puts "=============="
-  - puts @temas.inspect
   - if params[:search] and params[:search][:name_contains] and @temas.first.promises.blank?
     %h2 
       No existen promesas con el tema

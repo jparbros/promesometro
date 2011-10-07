@@ -70,6 +70,10 @@
  * html #promesas .promesa_status .dias_progreso .numero, * html #show-promesa .promesa_status .dias_progreso .numero {overflow-x: hidden}
  #promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {color: #7a95a4; display: inline-block; font-family: "Oswald", sans-serif; margin-top: 10px}
  #promesas span.estado, #show-promesa span.estado {color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 14px}
+ #promesas .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 470px}
+ * html #promesas .promesa_titulo {overflow-x: hidden}
+ #promesas .filtro-temas {display: inline; float: left; margin-right: 10px; width: 150px; text-transform: capitalize}
+ * html #promesas .filtro-temas {overflow-x: hidden}
  #promesas .promesa_estado_titulo {display: inline; float: left; margin-right: 0; width: 310px}
  * html #promesas .promesa_estado_titulo {overflow-x: hidden}
  #promesas .promesa_status {display: inline; float: left; margin-right: 0; width: 230px; margin-top: -10px; padding-left: 40px}
