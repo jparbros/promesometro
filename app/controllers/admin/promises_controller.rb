@@ -44,6 +44,12 @@ class Admin::PromisesController < Admin::BaseController
     @comments = @promise.comments.page(params[:page]).per(5)
   end
   
+  def destroy
+    @promise = @official.promises.find(params[:id])
+    @promise.destroy
+     redirect_to admin_official_promises_url(@official)
+  end
+  
   def get_official
     @official = Official.find(params[:official_id])
   end
