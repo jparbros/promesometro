@@ -50,11 +50,10 @@ class Promise < ActiveRecord::Base
   scope :topics_contains, lambda {|topic| includes('topics').where('topics.name like ?',"%#{topic}%") }
   scope :dias_progreso_contains, lambda {|days| where('started_at > ?', days.to_i.day.ago.strftime('%m/%d/%y')) }
   
-  
   #
   # Search Methods
   #
-  search_methods :topics_contains, :dias_progreso_contains
+  search_methods :topics_contains, :dias_progreso_contains, :general_search
   
   def start
     self.started_at = Time.now
@@ -106,5 +105,14 @@ class Promise < ActiveRecord::Base
     return 'Nuevo' if milestones.started.count == 0 and milestones.completed.count == 0
     return 'En Progreso' if milestones.started.count > 0
     return 'Terminado' if milestones.started.count > 0 and milestones.not_started.count == 0
+  end
+  
+  def self.general_search(query)
+    # @results = @results.joins(:official).where("officials.name LIKE ?","%#{query}%")
+    #     @results = @results.joins(:official => :state).where("states.name LIKE ?","%#{query}%").all
+    #     @results = @results.joins(:official => :province).where("provinces.name LIKE ?","%#{query}%").all
+    #     @results = @results.joins(:official => :political_party).where("political_parties.name LIKE ?","%#{query}%").all
+    #     @results = @results.joins(:topics).where("topics.name LIKE ?","%#{query}%").all
+    #     @results
   end
 end

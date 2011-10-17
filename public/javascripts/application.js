@@ -45,7 +45,7 @@ $.extend({
  },
  
  topics_filter: function() {
-   $('.filtro-temas select#tema').change(function(){
+   $('select#tema').change(function(){
      host = window.location.host;
      value = $(this).attr('value');
      window.location = 'http://' + host + '/promesas?search[topics_contains]=' + value;
