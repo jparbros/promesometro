@@ -3,16 +3,6 @@
   - if params[:controller] == 'promesas'
     = select_tag :tema, options_from_collection_for_select(Topic.all, 'name','name', ((params[:search].nil?)? "" :  params[:search][:topics_contains])), :include_blank => 'temas'
 
-  = form.text_field :title_contains
-
-  = form.text_field :official_name_contains, :class => 'hidden', :disabled => :disabled
-
-  = form.text_field :official_state_name_contains, :class => 'hidden', :disabled => :disabled
-  
-  = form.text_field :official_political_party_name_contains, :class => 'hidden', :disabled => :disabled
-  
-  = form.text_field :topics_contains, :class => 'hidden', :disabled => :disabled
-  
-  = form.text_field :dias_progreso_contains, :class => 'hidden', :disabled => :disabled
+  = form.text_field :general_search
 
   = form.submit 'Buscar', :class => 'button'

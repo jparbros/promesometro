@@ -108,11 +108,12 @@ class Promise < ActiveRecord::Base
   end
   
   def self.general_search(query)
-    # @results = @results.joins(:official).where("officials.name LIKE ?","%#{query}%")
-    #     @results = @results.joins(:official => :state).where("states.name LIKE ?","%#{query}%").all
-    #     @results = @results.joins(:official => :province).where("provinces.name LIKE ?","%#{query}%").all
-    #     @results = @results.joins(:official => :political_party).where("political_parties.name LIKE ?","%#{query}%").all
-    #     @results = @results.joins(:topics).where("topics.name LIKE ?","%#{query}%").all
-    #     @results
+    @results = self.where("title LIKE ?","%#{query}%").all
+    @results = @results | self.joins(:official).where("officials.name LIKE ?","%#{query}%").all
+    @results = @results | self.joins(:official => :state).where("states.name LIKE ?","%#{query}%").all
+    @results = @results | self.joins(:official => :province).where("provinces.name LIKE ?","%#{query}%").all
+    @results = @results | self.joins(:official => :political_party).where("political_parties.name LIKE ?","%#{query}%").all
+    @results = @results | self.joins(:topics).where("topics.name LIKE ?","%#{query}%").all
+    @results
   end
 end

@@ -3,8 +3,13 @@ class PromesasController < ApplicationController
   add_crumb "Promesas", '/promesas'
   
   def index
-    @search = Promise.search(params[:search])
-    @promises = @search.page(params[:page])
+    unless params[:search].nil? || params[:search][:general_search].nil?
+      @search = Promise.search()
+      @promises = Promise.general_search(params[:search][:general_search])
+    else
+      @search = Promise.search(params[:search])
+      @promises = @search.page(params[:page])
+    end
   end
   
   def show
