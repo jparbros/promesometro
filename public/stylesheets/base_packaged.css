@@ -59,7 +59,8 @@
  #promesas span.region, #show-promesa span.region {color: #333333; margin-right: 25px}
  #promesas span.etiqueta, #show-promesa span.etiqueta {color: #464646}
  #promesas p.promesa_top, #show-promesa p.promesa_top {text-align: right; margin-bottom: 5px}
- #promesas span.compartir, #show-promesa span.compartir {float: right}
+ #promesas .compartir, #show-promesa .compartir {float: right; margin-top: -5px}
+ #promesas .compartir .share-tw, #promesas .compartir .share-fb, #show-promesa .compartir .share-tw, #show-promesa .compartir .share-fb {float: right; margin-right: 5px}
  #promesas .representante, #show-promesa .representante {border-bottom: 1px dashed #999999; float: left; margin-bottom: 10px; padding-bottom: 10px}
  #promesas .representante img.foto_representante, #show-promesa .representante img.foto_representante {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; height: 37px; margin-right: 10px; width: 41px}
  #promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {color: #7a95a4; display: inline-block; font-size: 14px; margin-right: 10px; width: 110px}

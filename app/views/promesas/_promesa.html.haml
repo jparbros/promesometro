@@ -10,9 +10,11 @@
     - promesas_temas(promesa)
   %p.descripcion= promesa.description_scaped 
   %p
-    %span.compartir.st_sharethis_custom
-      Compartir
-      = image_tag 'share.png'
+    .compartir
+      .share-fb
+        <div class="fb-send" data-href="http://www.promesometro.pe"></div>
+      .share-tw
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
 .arrow
 .status
   .representante
