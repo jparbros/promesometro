@@ -27,12 +27,12 @@ module PromesasHelper
   
   def hito_actual(promesa)
     case promesa.milestones.completed.size
-      when 0 then 'hito_1_azul.png'  
-      when 1 then 'hito_2_azul.png'
-      when 2 then 'hito_3_azul.png'
-      when 3 then 'hito_4_azul.png'
-      when 4 then 'hito_5_azul.png'
-      when 5 then 'hito_5_azul.png'
+      when 0 then 'hito_1_rojo.png'  
+      when 1 then 'hito_2_rojo.png'
+      when 2 then 'hito_3_rojo.png'
+      when 3 then 'hito_4_rojo.png'
+      when 4 then 'hito_5_rojo.png'
+      when 5 then 'hito_5_rojo.png'
     end
   end
   
@@ -41,7 +41,7 @@ module PromesasHelper
     if (hito == hito_actual) || (hito == 1 && hito_actual == 0)
       milestone = promesa.milestones[hito-1]
       content = []
-      content << image_tag("hito_#{hito}_azul.png")
+      content << image_tag("hito_#{hito}_rojo.png")
       container = []
       div1 = []
       div1 << content_tag('span', 'Tiempo transcurrido', :class => 'etiqueta')
