@@ -217,7 +217,7 @@
  * html #acerca-de #informacion #logo {overflow-x: hidden}
  #acerca-de #informacion p#proetica {display: inline; float: left; margin-right: 0; width: 630px; padding-left: 40px; margin-top: 10px}
  * html #acerca-de #informacion p#proetica {overflow-x: hidden}
- #acerca-de #promesometro {padding-right: 160px; display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 24px; text-align: center}
+ #acerca-de #promesometro {padding-right: 160px; display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; background: url("../images/banner_acerca_de.png") no-repeat; color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 24px; padding-top: 160px; text-align: center}
  * html #acerca-de #promesometro {overflow-x: hidden}
  #temas {display: inline; float: left; margin-right: 0; width: 950px}
  * html #temas {overflow-x: hidden}
