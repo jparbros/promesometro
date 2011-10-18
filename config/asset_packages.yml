@@ -9,8 +9,8 @@ javascripts:
   - admin
 stylesheets: 
 - base: 
-  - ../../tmp/stylesheets/screen
-  - ../../tmp/stylesheets/print
+  - screen
+  - print
   - jquery-ui
 - admin_package:
   - jquery-ui

@@ -22,7 +22,7 @@
  * html html body header #search_box .promise_search {overflow-x: hidden}
  html body header #search_box ul#filter-topic {display: inline; float: left; margin-right: 10px; width: 470px}
  * html html body header #search_box ul#filter-topic {overflow-x: hidden}
- html body header #search_box ul#filter-topic a {color: #662d91}
+ html body header #search_box ul#filter-topic a {color: #cc6666}
  html body header #search_box ul#filter-topic li ul {display: none}
  html body header #search_box ul#filter-topic li:hover ul {display: block}
  html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav {background: url("../images/promesas_candidato-bg.png") repeat-x transparent; padding: 10px; position: absolute; text-transform: capitalize; width: 691px}
@@ -31,7 +31,7 @@
  * html html body nav.pagination {overflow-x: hidden}
  html body nav.pagination ul {display: inline-block; margin: 20px auto}
  html body nav.pagination .no-border {border: 0}
- html body nav.pagination .active a {color: #7a95a4}
+ html body nav.pagination .active a {color: #cc6666}
  html body nav {display: inline; float: left; margin-right: 10px; width: 670px; margin-right: 0; padding-left: 40px; color: #363636; font-family: "Open Sans Condensed", sans-serif; font-size: 18px; background: url("../images/menu_nav.png") no-repeat 68px 0; height: 90px; margin: 50px 0 0 0}
  * html html body nav {overflow-x: hidden}
  html body nav ul {display: inline-block; list-style-type: none; margin: 38px 0 0 65px}
@@ -54,7 +54,7 @@
  html body footer nav ul {margin: 0}
  #promesas .promesa_titulo, #show-promesa .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {overflow-x: hidden}
- #promesas span.title a, #show-promesa span.title a {color: #7a95a4; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
+ #promesas span.title a, #show-promesa span.title a {color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
  #promesas p.topic, #show-promesa p.topic {color: #959595}
  #promesas span.region, #show-promesa span.region {color: #333333; margin-right: 25px}
  #promesas span.etiqueta, #show-promesa span.etiqueta {color: #464646}
@@ -63,14 +63,14 @@
  #promesas .compartir .share-tw, #promesas .compartir .share-fb, #show-promesa .compartir .share-tw, #show-promesa .compartir .share-fb {float: right; margin-right: 5px}
  #promesas .representante, #show-promesa .representante {border-bottom: 1px dashed #999999; float: left; margin-bottom: 10px; padding-bottom: 10px}
  #promesas .representante img.foto_representante, #show-promesa .representante img.foto_representante {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; height: 37px; margin-right: 10px; width: 41px}
- #promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {color: #7a95a4; display: inline-block; font-size: 14px; margin-right: 10px; width: 110px}
+ #promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {color: #cc6666; display: inline-block; font-size: 14px; margin-right: 10px; width: 110px}
  #promesas .representante span.partido_representante, #show-promesa .representante span.partido_representante {display: inline-block; width: 120px}
  #promesas .promesa_status .dias_progreso, #show-promesa .promesa_status .dias_progreso {display: inline; float: left; margin-right: 10px; width: 40px}
  * html #promesas .promesa_status .dias_progreso, * html #show-promesa .promesa_status .dias_progreso {overflow-x: hidden}
- #promesas .promesa_status .dias_progreso .numero, #show-promesa .promesa_status .dias_progreso .numero {display: inline; float: left; margin-right: 0; width: 30px; color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 54px}
+ #promesas .promesa_status .dias_progreso .numero, #show-promesa .promesa_status .dias_progreso .numero {display: inline; float: left; margin-right: 0; width: 30px; color: #cc6666; font-family: "Oswald", sans-serif; font-size: 54px}
  * html #promesas .promesa_status .dias_progreso .numero, * html #show-promesa .promesa_status .dias_progreso .numero {overflow-x: hidden}
- #promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {color: #7a95a4; display: inline-block; font-family: "Oswald", sans-serif; margin-left: 10px; margin-top: 10px}
- #promesas span.estado, #show-promesa span.estado {color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 14px}
+ #promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {color: #cc6666; display: inline-block; font-family: "Oswald", sans-serif; margin-left: 10px; margin-top: 10px}
+ #promesas span.estado, #show-promesa span.estado {color: #cc6666; font-family: "Oswald", sans-serif; font-size: 14px}
  #promesas .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo {overflow-x: hidden}
  #promesas .filtro-temas {display: inline; float: left; margin-right: 10px; width: 150px; text-transform: capitalize}
@@ -87,7 +87,7 @@
  * html #promesas .promesa_status .estado_contenedor {overflow-x: hidden}
  #promesas p.descripcion {display: inline; float: left; margin-right: 0; width: 470px; padding-left: 40px; padding-right: 40px; border-bottom: 1px dashed #999999; height: 55px; text-align: center; margin-top: 10px; margin-bottom: 10px; padding-bottom: 10px}
  * html #promesas p.descripcion {overflow-x: hidden}
- #promesas span.ver_mas a {color: #662d91; float: left}
+ #promesas span.ver_mas a {color: #cc6666; float: left}
  #promesas .promesa {display: inline; float: left; margin-right: 10px; width: 550px; background: url("../images/promesa-bg.png"); height: 164px; margin: 0 0 10px 0; padding: 15px 0 0 20px}
  * html #promesas .promesa {overflow-x: hidden}
  #promesas .arrow {background: url("../images/arrow.png"); display: inline; float: left; height: 179px; width: 50px}
@@ -117,7 +117,7 @@
  #show-promesa .promesas_candidato p.descripcion {display: inline; float: left; margin-right: 10px; width: 230px}
  * html #show-promesa .promesas_candidato p.descripcion {overflow-x: hidden}
  #show-promesa span.ver_mas {float: right; margin-left: 15px}
- #show-promesa span.ver_mas a {color: #662d91}
+ #show-promesa span.ver_mas a {color: #cc6666}
  #show-promesa .nombre, #show-promesa .titulo {display: inline; float: left; margin-right: 0; width: 290px}
  * html #show-promesa .nombre, * html #show-promesa .titulo {overflow-x: hidden}
  #show-promesa .nombre input, #show-promesa .titulo input {width: 280px}
@@ -127,7 +127,7 @@
  #show-promesa .comment {display: inline; float: left; margin-right: 0; width: 590px; background: url("../images/comment_arrow.png") no-repeat 37px bottom; border-bottom: 1px dashed #666666; margin: 10px 0; padding-bottom: 18px}
  * html #show-promesa .comment {overflow-x: hidden}
  #show-promesa .comment .comment_content {-moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background: url("../images/comment_bg.png") repeat; padding: 15px}
- #show-promesa .comment .comment_content span.author {color: #7a95a4; font-size: 14px; float: left}
+ #show-promesa .comment .comment_content span.author {color: #cc6666; font-size: 14px; float: left}
  #show-promesa .comment .comment_content p.title {border-bottom: 1px dashed #666666; color: #333333}
  #show-promesa .comment .comment_content p.the_comment {margin: 20px 0; text-align: center}
  #show-promesa .government {background: url("../images/comment_gov_arrow.png") no-repeat 37px bottom !important}
@@ -147,7 +147,7 @@
  #show-promesa ul#hito img {float: left}
  #show-promesa ul#hito li {float: left; border-left: 1px dashed #666666; margin: 15px 0 0 15px; max-width: 250px; padding-left: 15px}
  #show-promesa .share {border: 1px dashed #666666; border-left: 0; border-right: 0; display: inline-block; margin: 20px 0; padding: 5px 0; width: 100%}
- #show-promesa .share .comentarios_counter {color: #7a95a4}
+ #show-promesa .share .comentarios_counter {color: #cc6666}
  body.home {background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom}
  body.home #search_box {border: 0; margin-bottom: 10px}
  body.home #banner {text-align: center}
@@ -166,10 +166,10 @@
  body.home #peru {display: inline; float: left; margin-right: 0; width: 190px; overflow: visible}
  * html body.home #peru {overflow-x: hidden}
  body.home #peru img {margin: -45px 0 0 -45px; position: absolute}
- body.home #peru .encuentra {border-bottom: 1px dashed #666666; border-top: 1px dashed #666666; color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 18px; margin-top: 250px; text-transform: uppercase}
+ body.home #peru .encuentra {border-bottom: 1px dashed #666666; border-top: 1px dashed #666666; color: #cc6666; font-family: "Oswald", sans-serif; font-size: 18px; margin-top: 250px; text-transform: uppercase}
  body.home .comment {border-bottom: 1px dashed #666666; display: inline-block; margin-bottom: 15px; padding-bottom: 10px; width: 100%}
  body.home .comment p.top {border-bottom: 1px dashed #666666; display: inline-block; text-align: right; padding-bottom: 5px; width: 100%}
- body.home .comment p.top span.title {color: #7a95a4; font-family: "Open Sans Condensed", sans-serif; font-size: 14px; float: left}
+ body.home .comment p.top span.title {color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 14px; float: left}
  body.home .comment p.top span.region {color: #333333; margin-right: 25px}
  body.home .comment p.top span.gobierno {color: #333333; float: left}
  body.home .comment p.comment_content {text-align: center; padding: 20px}
@@ -188,16 +188,16 @@
  * html #directory .region {overflow-x: hidden}
  #directory .region ul.provincias {list-style-type: none}
  #directory .region ul.provincias li {border-left: 1px dashed #666666; float: left; font-family: "Open Sans Condensed", sans-serif; font-size: 14px; font-weight: normal; height: 21px; padding: 5px 0px 5px 5px; margin: 5px 0px 5px 5px; text-transform: uppercase; width: 124px}
- #directory .region ul.provincias li.estado {background-color: #7a95a4}
+ #directory .region ul.provincias li.estado {background-color: #cc6666}
  #directory .region ul.provincias li.estado a {color: white; font-family: "Oswald", sans-serif}
  #directory .representante {display: inline; float: left; margin-right: 0; width: 350px}
  * html #directory .representante {overflow-x: hidden}
  #directory .representante .representante_bar {border-bottom: 1px dashed #666666; margin-bottom: 5px; padding-bottom: 5px; text-transform: capitalize}
  #directory .representante .representante_bar img.foto_representante {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; height: 68px; margin-right: 10px; width: 68px}
- #directory .representante .representante_bar span.representante_nombre {color: #7a95a4; font-size: 14px}
- #directory .representante .representante_bar h2 {color: #7a95a4; font-family: "Oswald", sans-serif; font-size: 14px; font-weight: normal; text-transform: uppercase}
+ #directory .representante .representante_bar span.representante_nombre {color: #cc6666; font-size: 14px}
+ #directory .representante .representante_bar h2 {color: #cc6666; font-family: "Oswald", sans-serif; font-size: 14px; font-weight: normal; text-transform: uppercase}
  #directory .representante .representante_bar p {margin: 20px}
- #directory .representante .representante_bar a {color: #7a95a4}
+ #directory .representante .representante_bar a {color: #cc6666}
  #acerca-de #banner {display: inline; float: left; margin-right: 0; width: 950px; border-top: 1px dashed #666666; border-bottom: 1px dashed #666666; padding: 10px 0; margin: 10px 0}
  * html #acerca-de #banner {overflow-x: hidden}
  #acerca-de #banner #conoce {display: inline; float: left; margin-right: 10px; width: 230px}
@@ -208,7 +208,7 @@
  * html #acerca-de #banner #sigue {overflow-x: hidden}
  #acerca-de #informacion {display: inline; float: left; margin-right: 0; width: 910px; background: url("../images/acerca_de_bg.png"); border-top: 1px dashed #999999; font-family: trebuchet MS; font-size: 14px; padding: 20px; margin-top: 20px; min-height: 550px}
  * html #acerca-de #informacion {overflow-x: hidden}
- #acerca-de #informacion h2 {color: #7a95a4; border-bottom: 1px dashed #666666; font-family: "Oswald", sans-serif; font-size: 30px; text-transform: uppercase}
+ #acerca-de #informacion h2 {color: #cc6666; border-bottom: 1px dashed #666666; font-family: "Oswald", sans-serif; font-size: 30px; text-transform: uppercase}
  #acerca-de #informacion p#autoridad {display: inline; float: left; margin-right: 10px; width: 430px; margin: 20px 0}
  * html #acerca-de #informacion p#autoridad {overflow-x: hidden}
  #acerca-de #informacion p#ciudadano {display: inline; float: left; margin-right: 0; width: 430px; padding-left: 40px; margin: 20px 0}
@@ -230,7 +230,7 @@
  * html #temas .temas-container {overflow-x: hidden}
  #temas .tema-sidebar {display: inline; float: left; margin-right: 10px; background: url("../images/seguridad_bg.png") no-repeat; min-height: 250px; padding: 10px; width: 170px}
  * html #temas .tema-sidebar {overflow-x: hidden}
- #temas .tema-sidebar span.tema-title {border-bottom: 1px dashed #666666; color: #7a95a4; display: block; font-family: "Oswald", sans-serif; font-size: 24px; text-transform: uppercase; margin-bottom: 10px}
+ #temas .tema-sidebar span.tema-title {border-bottom: 1px dashed #666666; color: #cc6666; display: block; font-family: "Oswald", sans-serif; font-size: 24px; text-transform: uppercase; margin-bottom: 10px}
  #temas #promesas {display: inline; float: left; margin-right: 0; width: 750px}
  * html #temas #promesas {overflow-x: hidden}
  #temas #promesas .promesa {display: inline; float: left; margin-right: 0; width: 390px}
