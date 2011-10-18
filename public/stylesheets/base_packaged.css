@@ -9,14 +9,14 @@
  html {background: url("../images/patron_bg.jpg") repeat}
  html body {background: url("../images/background.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom; color: #666666; font-family: Trebuchet MS, sans-serif; font-size: 12px; font-weight: bold}
  html body input, html body textarea {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7}
- html body input.button {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #c2abd7; color: white; height: 28px; width: 80px}
+ html body input.button {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #cc6666; color: white; height: 28px; width: 80px}
  html body input.hidden {display: none}
  html body select {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-color: #f2f2f2; border: 1px solid #c7c7c7; height: 28px; width: 140px}
  html body a {color: #363636; text-decoration: none}
  html body header {display: inline; float: left; margin-right: 10px; width: 950px; margin-right: 0; min-height: 40px}
  * html html body header {overflow-x: hidden}
  html body header #logo {margin: 30px 0 0 0; float: left}
- html body header #search_box {display: inline; float: left; margin-right: 0; width: 950px; border-bottom: 1px dashed #666666; height: 35px; margin-bottom: 60px}
+ html body header #search_box {display: inline; float: left; margin-right: 0; width: 950px; border-bottom: 1px dashed #666666; height: 35px; margin-bottom: 60px; text-align: right}
  * html html body header #search_box {overflow-x: hidden}
  html body header #search_box .promise_search {display: inline; float: left; margin-right: 0; width: 470px; padding-left: 480px}
  * html html body header #search_box .promise_search {overflow-x: hidden}
@@ -217,7 +217,7 @@
  * html #acerca-de #informacion #logo {overflow-x: hidden}
  #acerca-de #informacion p#proetica {display: inline; float: left; margin-right: 0; width: 630px; padding-left: 40px; margin-top: 10px}
  * html #acerca-de #informacion p#proetica {overflow-x: hidden}
- #acerca-de #promesometro {padding-right: 160px; display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; color: #815ca3; font-family: "Open Sans Condensed", sans-serif; font-size: 24px; text-align: center}
+ #acerca-de #promesometro {padding-right: 160px; display: inline; float: left; margin-right: 10px; width: 630px; padding-left: 160px; color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 24px; text-align: center}
  * html #acerca-de #promesometro {overflow-x: hidden}
  #temas {display: inline; float: left; margin-right: 0; width: 950px}
  * html #temas {overflow-x: hidden}
