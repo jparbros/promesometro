@@ -7,9 +7,9 @@
   .directory_title
     %h1 Directorio
   .region_title
-    %h1 Ciudades
+    %h1 Provincias
   .official_title
-    %h1 Representante
+    %h1 Autoridad
   .mapa
     = render :partial => 'shared/mapa'
   .region
@@ -33,11 +33,6 @@
     <br/>
     <%= place %>
   .representante_bar
-    %h2
-      Información Suplementaria
-    %p
-      "<%= supplementary_data %>"
-  .representante_bar
-    <a href="<%= resume %>" target="_blank">Perfil</a>
+    <a href="<%= resume %>" target="_blank">Hoja de vida</a>
   .representante_bar
     <a href="/promesas?search[official_name_contains]=<%= name %>"><%= promise_count %> Promesas</a>
