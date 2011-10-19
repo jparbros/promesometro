@@ -80,6 +80,11 @@
           model: provincia,
           collection: collection
         });
+        if(_.include(['cusco','san martin','chiclayo'], provincia.get('name'))) {
+          $(view.render().el).addClass('underline');
+          console.log($('a',view.render().el)[0]);
+        }
+          
         $provincias.append(view.render().el);
       });
       return this;

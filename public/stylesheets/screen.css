@@ -1,11 +1,11 @@
-/* line 4, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 4, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 18, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 .bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
 div, span, object, iframe, p,
 pre, a, abbr, acronym, address,
@@ -23,21 +23,21 @@ caption, tbody, tfoot, thead, tr {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 20, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 21, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 67, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 67, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 22, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 th, td, caption {
   float: none !important;
   text-align: left;
@@ -45,23 +45,23 @@ th, td, caption {
   vertical-align: middle;
 }
 
-/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 23, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 24, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 12, ../../app/stylesheets/partials/_base.sass */
+/* line 12, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html {
   background: url("../images/patron_bg.jpg") repeat;
 }
-/* line 15, ../../app/stylesheets/partials/_base.sass */
+/* line 15, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body {
   background: url("../images/background.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
   color: #666666;
@@ -69,7 +69,7 @@ html body {
   font-size: 12px;
   font-weight: bold;
 }
-/* line 23, ../../app/stylesheets/partials/_base.sass */
+/* line 23, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body input, html body textarea {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -80,7 +80,7 @@ html body input, html body textarea {
   background-color: #f2f2f2;
   border: 1px solid #c7c7c7;
 }
-/* line 28, ../../app/stylesheets/partials/_base.sass */
+/* line 28, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body input.button {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -93,11 +93,11 @@ html body input.button {
   height: 28px;
   width: 80px;
 }
-/* line 35, ../../app/stylesheets/partials/_base.sass */
+/* line 35, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body input.hidden {
   display: none;
 }
-/* line 38, ../../app/stylesheets/partials/_base.sass */
+/* line 38, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body select {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -110,12 +110,12 @@ html body select {
   height: 28px;
   width: 140px;
 }
-/* line 45, ../../app/stylesheets/partials/_base.sass */
+/* line 45, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body a {
   color: #363636;
   text-decoration: none;
 }
-/* line 49, ../../app/stylesheets/partials/_base.sass */
+/* line 49, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header {
   display: inline;
   float: left;
@@ -124,16 +124,16 @@ html body header {
   margin-right: 0;
   min-height: 40px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body header {
   overflow-x: hidden;
 }
-/* line 54, ../../app/stylesheets/partials/_base.sass */
+/* line 54, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #logo {
   margin: 30px 0 0 0;
   float: left;
 }
-/* line 58, ../../app/stylesheets/partials/_base.sass */
+/* line 58, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box {
   display: inline;
   float: left;
@@ -144,11 +144,11 @@ html body header #search_box {
   margin-bottom: 60px;
   text-align: right;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body header #search_box {
   overflow-x: hidden;
 }
-/* line 65, ../../app/stylesheets/partials/_base.sass */
+/* line 65, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box .promise_search {
   display: inline;
   float: left;
@@ -156,34 +156,34 @@ html body header #search_box .promise_search {
   width: 470px;
   padding-left: 480px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body header #search_box .promise_search {
   overflow-x: hidden;
 }
-/* line 68, ../../app/stylesheets/partials/_base.sass */
+/* line 68, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 470px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body header #search_box ul#filter-topic {
   overflow-x: hidden;
 }
-/* line 70, ../../app/stylesheets/partials/_base.sass */
+/* line 70, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic a {
   color: #cc6666;
 }
-/* line 73, ../../app/stylesheets/partials/_base.sass */
+/* line 73, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic li ul {
   display: none;
 }
-/* line 76, ../../app/stylesheets/partials/_base.sass */
+/* line 76, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic li:hover ul {
   display: block;
 }
-/* line 79, ../../app/stylesheets/partials/_base.sass */
+/* line 79, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav {
   background: url("../images/promesas_candidato-bg.png") repeat-x transparent;
   padding: 10px;
@@ -191,13 +191,13 @@ html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav {
   text-transform: capitalize;
   width: 691px;
 }
-/* line 86, ../../app/stylesheets/partials/_base.sass */
+/* line 86, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body header #search_box ul#filter-topic ul#filter-topic-bottom-nav a {
   display: inline-block;
   margin: 5px 0;
   width: 170px;
 }
-/* line 91, ../../app/stylesheets/partials/_base.sass */
+/* line 91, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination {
   display: inline;
   float: left;
@@ -208,24 +208,24 @@ html body nav.pagination {
   padding: 0;
   text-align: center;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body nav.pagination {
   overflow-x: hidden;
 }
-/* line 98, ../../app/stylesheets/partials/_base.sass */
+/* line 98, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination ul {
   display: inline-block;
   margin: 20px auto;
 }
-/* line 102, ../../app/stylesheets/partials/_base.sass */
+/* line 102, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination .no-border {
   border: 0;
 }
-/* line 105, ../../app/stylesheets/partials/_base.sass */
+/* line 105, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav.pagination .active a {
   color: #cc6666;
 }
-/* line 108, ../../app/stylesheets/partials/_base.sass */
+/* line 108, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav {
   display: inline;
   float: left;
@@ -240,17 +240,17 @@ html body nav {
   height: 90px;
   margin: 50px 0 0 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body nav {
   overflow-x: hidden;
 }
-/* line 117, ../../app/stylesheets/partials/_base.sass */
+/* line 117, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul {
   display: inline-block;
   list-style-type: none;
   margin: 38px 0 0 65px;
 }
-/* line 122, ../../app/stylesheets/partials/_base.sass */
+/* line 122, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li {
   border-left: 1px solid #363636;
   float: left;
@@ -260,43 +260,43 @@ html body nav ul li {
   margin: 0 15px 0 0;
   padding: 0 0 0 15px;
 }
-/* line 132, ../../app/stylesheets/partials/_base.sass */
+/* line 132, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li a {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 137, ../../app/stylesheets/partials/_base.sass */
+/* line 137, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li.no-border {
   border: 0;
   padding: 0;
 }
-/* line 141, ../../app/stylesheets/partials/_base.sass */
+/* line 141, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav ul li.logo {
   margin-left: 25px;
   margin-right: 25px;
 }
-/* line 145, ../../app/stylesheets/partials/_base.sass */
+/* line 145, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav .follow_us {
   font-size: 14px;
   float: right;
   margin-left: 0;
   margin-right: 10px;
 }
-/* line 151, ../../app/stylesheets/partials/_base.sass */
+/* line 151, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body nav .follow_us li {
   border: 0;
   margin: 0;
   padding: 0 5px;
 }
-/* line 156, ../../app/stylesheets/partials/_base.sass */
+/* line 156, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 159, ../../app/stylesheets/partials/_base.sass */
+/* line 159, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body .content {
   display: inline;
   float: left;
@@ -305,11 +305,11 @@ html body .content {
   margin-right: 0;
   padding: 0 0 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body .content {
   overflow-x: hidden;
 }
-/* line 164, ../../app/stylesheets/partials/_base.sass */
+/* line 164, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h1 {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -317,7 +317,7 @@ html body h1 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 171, ../../app/stylesheets/partials/_base.sass */
+/* line 171, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h2 {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
@@ -325,14 +325,14 @@ html body h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 178, ../../app/stylesheets/partials/_base.sass */
+/* line 178, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 184, ../../app/stylesheets/partials/_base.sass */
+/* line 184, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer {
   display: inline;
   float: left;
@@ -341,11 +341,11 @@ html body footer {
   margin-right: 0;
   height: 110px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body footer {
   overflow-x: hidden;
 }
-/* line 189, ../../app/stylesheets/partials/_base.sass */
+/* line 189, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav {
   display: inline;
   float: left;
@@ -355,68 +355,68 @@ html body footer nav {
   margin: 25px 0 0 0;
   padding: 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html html body footer nav {
   overflow-x: hidden;
 }
-/* line 195, ../../app/stylesheets/partials/_base.sass */
+/* line 195, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_base.sass */
 html body footer nav ul {
   margin: 0;
 }
 
-/* line 2, ../../app/stylesheets/partials/_promesas.sass */
+/* line 2, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_titulo, #show-promesa .promesa_titulo {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 630px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {
   overflow-x: hidden;
 }
-/* line 5, ../../app/stylesheets/partials/_promesas.sass */
+/* line 5, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.title a, #show-promesa span.title a {
   color: #cc6666;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
 }
-/* line 10, ../../app/stylesheets/partials/_promesas.sass */
+/* line 10, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas p.topic, #show-promesa p.topic {
   color: #959595;
 }
-/* line 13, ../../app/stylesheets/partials/_promesas.sass */
+/* line 13, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.region, #show-promesa span.region {
   color: #333333;
   margin-right: 25px;
 }
-/* line 17, ../../app/stylesheets/partials/_promesas.sass */
+/* line 17, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.etiqueta, #show-promesa span.etiqueta {
   color: #464646;
 }
-/* line 20, ../../app/stylesheets/partials/_promesas.sass */
+/* line 20, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas p.promesa_top, #show-promesa p.promesa_top {
   text-align: right;
   margin-bottom: 5px;
 }
-/* line 24, ../../app/stylesheets/partials/_promesas.sass */
+/* line 24, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .compartir, #show-promesa .compartir {
   float: right;
   margin-top: -5px;
 }
-/* line 27, ../../app/stylesheets/partials/_promesas.sass */
+/* line 27, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .compartir .share-tw, #promesas .compartir .share-fb, #show-promesa .compartir .share-tw, #show-promesa .compartir .share-fb {
   float: right;
   margin-right: 5px;
 }
-/* line 31, ../../app/stylesheets/partials/_promesas.sass */
+/* line 31, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .representante, #show-promesa .representante {
   border-bottom: 1px dashed #999999;
   float: left;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-/* line 37, ../../app/stylesheets/partials/_promesas.sass */
+/* line 37, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .representante img.foto_representante, #show-promesa .representante img.foto_representante {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -428,7 +428,7 @@ html body footer nav ul {
   margin-right: 10px;
   width: 41px;
 }
-/* line 43, ../../app/stylesheets/partials/_promesas.sass */
+/* line 43, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {
   color: #cc6666;
   display: inline-block;
@@ -436,23 +436,23 @@ html body footer nav ul {
   margin-right: 10px;
   width: 110px;
 }
-/* line 50, ../../app/stylesheets/partials/_promesas.sass */
+/* line 50, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .representante span.partido_representante, #show-promesa .representante span.partido_representante {
   display: inline-block;
   width: 120px;
 }
-/* line 55, ../../app/stylesheets/partials/_promesas.sass */
+/* line 55, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .dias_progreso, #show-promesa .promesa_status .dias_progreso {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 40px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status .dias_progreso, * html #show-promesa .promesa_status .dias_progreso {
   overflow-x: hidden;
 }
-/* line 58, ../../app/stylesheets/partials/_promesas.sass */
+/* line 58, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .dias_progreso .numero, #show-promesa .promesa_status .dias_progreso .numero {
   display: inline;
   float: left;
@@ -462,11 +462,11 @@ html body footer nav ul {
   font-family: "Oswald", sans-serif;
   font-size: 54px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status .dias_progreso .numero, * html #show-promesa .promesa_status .dias_progreso .numero {
   overflow-x: hidden;
 }
-/* line 63, ../../app/stylesheets/partials/_promesas.sass */
+/* line 63, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .dias_progreso .dias, #show-promesa .promesa_status .dias_progreso .dias {
   color: #cc6666;
   display: inline-block;
@@ -474,25 +474,25 @@ html body footer nav ul {
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 70, ../../app/stylesheets/partials/_promesas.sass */
+/* line 70, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.estado, #show-promesa span.estado {
   color: #cc6666;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
 }
 
-/* line 77, ../../app/stylesheets/partials/_promesas.sass */
+/* line 77, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_titulo {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 630px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_titulo {
   overflow-x: hidden;
 }
-/* line 80, ../../app/stylesheets/partials/_promesas.sass */
+/* line 80, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .filtro-temas {
   display: inline;
   float: left;
@@ -500,22 +500,22 @@ html body footer nav ul {
   width: 150px;
   text-transform: capitalize;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .filtro-temas {
   overflow-x: hidden;
 }
-/* line 84, ../../app/stylesheets/partials/_promesas.sass */
+/* line 84, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_estado_titulo {
   display: inline;
   float: left;
   margin-right: 0;
   width: 310px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_estado_titulo {
   overflow-x: hidden;
 }
-/* line 87, ../../app/stylesheets/partials/_promesas.sass */
+/* line 87, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status {
   display: inline;
   float: left;
@@ -524,15 +524,15 @@ html body footer nav ul {
   margin-top: -10px;
   padding-left: 40px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status {
   overflow-x: hidden;
 }
-/* line 91, ../../app/stylesheets/partials/_promesas.sass */
+/* line 91, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .progreso {
   color: #898989;
 }
-/* line 93, ../../app/stylesheets/partials/_promesas.sass */
+/* line 93, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito {
   display: inline;
   float: left;
@@ -540,15 +540,15 @@ html body footer nav ul {
   width: 70px;
   margin: 0 0 0 25px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status .hito {
   overflow-x: hidden;
 }
-/* line 96, ../../app/stylesheets/partials/_promesas.sass */
+/* line 96, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .hito img {
   margin: 11px 0;
 }
-/* line 98, ../../app/stylesheets/partials/_promesas.sass */
+/* line 98, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa_status .estado_contenedor {
   display: inline;
   float: left;
@@ -556,11 +556,11 @@ html body footer nav ul {
   width: 110px;
   margin-top: 10px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa_status .estado_contenedor {
   overflow-x: hidden;
 }
-/* line 102, ../../app/stylesheets/partials/_promesas.sass */
+/* line 102, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas p.descripcion {
   display: inline;
   float: left;
@@ -575,16 +575,16 @@ html body footer nav ul {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas p.descripcion {
   overflow-x: hidden;
 }
-/* line 113, ../../app/stylesheets/partials/_promesas.sass */
+/* line 113, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas span.ver_mas a {
   color: #cc6666;
   float: left;
 }
-/* line 117, ../../app/stylesheets/partials/_promesas.sass */
+/* line 117, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .promesa {
   display: inline;
   float: left;
@@ -595,11 +595,11 @@ html body footer nav ul {
   margin: 0 0 10px 0;
   padding: 15px 0 0 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .promesa {
   overflow-x: hidden;
 }
-/* line 124, ../../app/stylesheets/partials/_promesas.sass */
+/* line 124, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .arrow {
   background: url("../images/arrow.png");
   display: inline;
@@ -607,7 +607,7 @@ html body footer nav ul {
   height: 179px;
   width: 50px;
 }
-/* line 131, ../../app/stylesheets/partials/_promesas.sass */
+/* line 131, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesas.sass */
 #promesas .status {
   display: inline;
   float: left;
@@ -617,12 +617,12 @@ html body footer nav ul {
   height: 164px;
   padding: 15px 0 0 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #promesas .status {
   overflow-x: hidden;
 }
 
-/* line 1, ../../app/stylesheets/partials/_form.sass */
+/* line 1, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_form.sass */
 .input-prepend .add-on, .input-append .add-on {
   -moz-border-radius: 3px 0px 0px 3px;
   -webkit-border-radius: 3px 0px 0px 3px;
@@ -644,12 +644,12 @@ html body footer nav ul {
   width: auto;
 }
 
-/* line 16, ../../app/stylesheets/partials/_form.sass */
+/* line 16, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_form.sass */
 .input-medium, input.medium, textarea.medium, select.medium {
   width: 150px;
 }
 
-/* line 19, ../../app/stylesheets/partials/_form.sass */
+/* line 19, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_form.sass */
 input, textarea, select, .uneditable-input {
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -667,13 +667,13 @@ input, textarea, select, .uneditable-input {
   width: 210px;
 }
 
-/* line 30, ../../app/stylesheets/partials/_form.sass */
+/* line 30, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_form.sass */
 textarea {
   height: 80px;
   width: 580px;
 }
 
-/* line 1, ../../app/stylesheets/partials/_official.sass */
+/* line 1, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_official.sass */
 #official_photo {
   display: inline;
   float: left;
@@ -681,12 +681,12 @@ textarea {
   width: 150px;
   margin-bottom: 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #official_photo {
   overflow-x: hidden;
 }
 
-/* line 4, ../../app/stylesheets/partials/_official.sass */
+/* line 4, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_official.sass */
 #official_info {
   display: inline;
   float: left;
@@ -695,12 +695,12 @@ textarea {
   margin-right: 0;
   margin-bottom: 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #official_info {
   overflow-x: hidden;
 }
 
-/* line 9, ../../app/stylesheets/partials/_official.sass */
+/* line 9, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_official.sass */
 .flecha_promesa {
   display: inline;
   float: left;
@@ -708,12 +708,12 @@ textarea {
   width: 30px;
   padding-top: 10px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .flecha_promesa {
   overflow-x: hidden;
 }
 
-/* line 12, ../../app/stylesheets/partials/_official.sass */
+/* line 12, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_official.sass */
 .promesa_link {
   display: inline;
   float: left;
@@ -721,12 +721,12 @@ textarea {
   width: 790px;
   margin-right: 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .promesa_link {
   overflow-x: hidden;
 }
 
-/* line 2, ../../app/stylesheets/partials/_promesa.sass */
+/* line 2, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesa_estado_titulo {
   display: inline;
   float: left;
@@ -734,22 +734,22 @@ textarea {
   width: 270px;
   padding-left: 40px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesa_estado_titulo {
   overflow-x: hidden;
 }
-/* line 6, ../../app/stylesheets/partials/_promesa.sass */
+/* line 6, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .sidebar-box {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .sidebar-box {
   overflow-x: hidden;
 }
-/* line 9, ../../app/stylesheets/partials/_promesa.sass */
+/* line 9, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesa {
   display: inline;
   float: left;
@@ -760,11 +760,11 @@ textarea {
   min-height: 750px;
   padding: 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesa {
   overflow-x: hidden;
 }
-/* line 16, ../../app/stylesheets/partials/_promesa.sass */
+/* line 16, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesas_candidato {
   display: inline;
   float: left;
@@ -774,54 +774,54 @@ textarea {
   min-height: 750px;
   width: 250px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesas_candidato {
   overflow-x: hidden;
 }
-/* line 22, ../../app/stylesheets/partials/_promesa.sass */
+/* line 22, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesas_candidato p.topic {
   border-bottom: 1px dashed #666666;
 }
-/* line 24, ../../app/stylesheets/partials/_promesa.sass */
+/* line 24, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .promesas_candidato p.descripcion {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 230px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .promesas_candidato p.descripcion {
   overflow-x: hidden;
 }
-/* line 27, ../../app/stylesheets/partials/_promesa.sass */
+/* line 27, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa span.ver_mas {
   float: right;
   margin-left: 15px;
 }
-/* line 30, ../../app/stylesheets/partials/_promesa.sass */
+/* line 30, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa span.ver_mas a {
   color: #cc6666;
 }
-/* line 33, ../../app/stylesheets/partials/_promesa.sass */
+/* line 33, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .nombre, #show-promesa .titulo {
   display: inline;
   float: left;
   margin-right: 0;
   width: 290px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .nombre, * html #show-promesa .titulo {
   overflow-x: hidden;
 }
-/* line 36, ../../app/stylesheets/partials/_promesa.sass */
+/* line 36, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .nombre input, #show-promesa .titulo input {
   width: 280px;
 }
-/* line 38, ../../app/stylesheets/partials/_promesa.sass */
+/* line 38, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .nombre {
   margin-right: 10px;
 }
-/* line 41, ../../app/stylesheets/partials/_promesa.sass */
+/* line 41, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .ta_comment, #show-promesa .actions {
   display: inline;
   float: left;
@@ -829,11 +829,11 @@ textarea {
   width: 590px;
   margin: 10px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .ta_comment, * html #show-promesa .actions {
   overflow-x: hidden;
 }
-/* line 45, ../../app/stylesheets/partials/_promesa.sass */
+/* line 45, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .comment {
   display: inline;
   float: left;
@@ -844,11 +844,11 @@ textarea {
   margin: 10px 0;
   padding-bottom: 18px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .comment {
   overflow-x: hidden;
 }
-/* line 51, ../../app/stylesheets/partials/_promesa.sass */
+/* line 51, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .comment .comment_content {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -859,51 +859,51 @@ textarea {
   background: url("../images/comment_bg.png") repeat;
   padding: 15px;
 }
-/* line 55, ../../app/stylesheets/partials/_promesa.sass */
+/* line 55, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .comment .comment_content span.author {
   color: #cc6666;
   font-size: 14px;
   float: left;
 }
-/* line 59, ../../app/stylesheets/partials/_promesa.sass */
+/* line 59, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .comment .comment_content p.title {
   border-bottom: 1px dashed #666666;
   color: #333333;
 }
-/* line 62, ../../app/stylesheets/partials/_promesa.sass */
+/* line 62, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .comment .comment_content p.the_comment {
   margin: 20px 0;
   text-align: center;
 }
-/* line 66, ../../app/stylesheets/partials/_promesa.sass */
+/* line 66, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .government {
   background: url("../images/comment_gov_arrow.png") no-repeat 37px bottom !important;
 }
-/* line 68, ../../app/stylesheets/partials/_promesa.sass */
+/* line 68, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .government .comment_content {
   background: url("../images/comment_gov_bg.png") repeat !important;
 }
-/* line 70, ../../app/stylesheets/partials/_promesa.sass */
+/* line 70, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .government span.author {
   color: #b69ad0 !important;
 }
-/* line 73, ../../app/stylesheets/partials/_promesa.sass */
+/* line 73, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .representante {
   display: inline;
   float: left;
   margin-right: 0;
   width: 590px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa .representante {
   overflow-x: hidden;
 }
-/* line 76, ../../app/stylesheets/partials/_promesa.sass */
+/* line 76, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .representante .promesa_status {
   float: right;
   margin-top: -25px;
 }
-/* line 80, ../../app/stylesheets/partials/_promesa.sass */
+/* line 80, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa p.descripcion {
   display: inline;
   float: left;
@@ -912,11 +912,11 @@ textarea {
   margin: 10px 0;
   text-align: center;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #show-promesa p.descripcion {
   overflow-x: hidden;
 }
-/* line 85, ../../app/stylesheets/partials/_promesa.sass */
+/* line 85, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito {
   background-color: #f3f3f3;
   border: 1px dashed #666666;
@@ -926,37 +926,37 @@ textarea {
   list-style-type: none;
   width: 100%;
 }
-/* line 94, ../../app/stylesheets/partials/_promesa.sass */
+/* line 94, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito li.no-border {
   border: 0;
   padding: 0;
 }
-/* line 98, ../../app/stylesheets/partials/_promesa.sass */
+/* line 98, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status {
   float: left;
   margin: 0 0 0 10px;
   width: 175px;
 }
-/* line 103, ../../app/stylesheets/partials/_promesa.sass */
+/* line 103, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status span.estado {
   font-size: 14px;
 }
-/* line 106, ../../app/stylesheets/partials/_promesa.sass */
+/* line 106, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status div.tiempo_hito {
   width: 115px;
   float: left;
 }
-/* line 111, ../../app/stylesheets/partials/_promesa.sass */
+/* line 111, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito div.hito_status div.estado_hito {
   width: 55px;
   float: left;
   margin-left: 5px;
 }
-/* line 116, ../../app/stylesheets/partials/_promesa.sass */
+/* line 116, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito img {
   float: left;
 }
-/* line 119, ../../app/stylesheets/partials/_promesa.sass */
+/* line 119, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa ul#hito li {
   float: left;
   border-left: 1px dashed #666666;
@@ -964,7 +964,7 @@ textarea {
   max-width: 250px;
   padding-left: 15px;
 }
-/* line 126, ../../app/stylesheets/partials/_promesa.sass */
+/* line 126, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .share {
   border: 1px dashed #666666;
   border-left: 0;
@@ -974,29 +974,29 @@ textarea {
   padding: 5px 0;
   width: 100%;
 }
-/* line 135, ../../app/stylesheets/partials/_promesa.sass */
+/* line 135, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_promesa.sass */
 #show-promesa .share .comentarios_counter {
   color: #cc6666;
 }
 
-/* line 1, ../../app/stylesheets/partials/_home.sass */
+/* line 1, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home {
   background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
 }
-/* line 4, ../../app/stylesheets/partials/_home.sass */
+/* line 4, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #search_box {
   border: 0;
   margin-bottom: 10px;
 }
-/* line 8, ../../app/stylesheets/partials/_home.sass */
+/* line 8, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #banner {
   text-align: center;
 }
-/* line 10, ../../app/stylesheets/partials/_home.sass */
+/* line 10, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #banner img {
   margin-right: 30px;
 }
-/* line 13, ../../app/stylesheets/partials/_home.sass */
+/* line 13, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #vp_title {
   display: inline;
   float: left;
@@ -1004,11 +1004,11 @@ body.home #vp_title {
   width: 390px;
   margin: 80px 30px 10px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #vp_title {
   overflow-x: hidden;
 }
-/* line 16, ../../app/stylesheets/partials/_home.sass */
+/* line 16, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #od_title {
   display: inline;
   float: left;
@@ -1016,11 +1016,11 @@ body.home #od_title {
   width: 310px;
   margin: 80px 30px 10px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #od_title {
   overflow-x: hidden;
 }
-/* line 19, ../../app/stylesheets/partials/_home.sass */
+/* line 19, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru_title {
   display: inline;
   float: left;
@@ -1028,15 +1028,15 @@ body.home #peru_title {
   width: 190px;
   margin: 80px 0 10px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #peru_title {
   overflow-x: hidden;
 }
-/* line 23, ../../app/stylesheets/partials/_home.sass */
+/* line 23, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home h1 {
   border-bottom: 1px dashed #666666;
 }
-/* line 26, ../../app/stylesheets/partials/_home.sass */
+/* line 26, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #vox_populi {
   display: inline;
   float: left;
@@ -1047,11 +1047,11 @@ body.home #vox_populi {
   margin-right: 30px;
   padding: 10px 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #vox_populi {
   overflow-x: hidden;
 }
-/* line 33, ../../app/stylesheets/partials/_home.sass */
+/* line 33, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #official_declaration {
   display: inline;
   float: left;
@@ -1062,11 +1062,11 @@ body.home #official_declaration {
   margin-right: 30px;
   padding: 10px 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #official_declaration {
   overflow-x: hidden;
 }
-/* line 40, ../../app/stylesheets/partials/_home.sass */
+/* line 40, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru {
   display: inline;
   float: left;
@@ -1074,16 +1074,16 @@ body.home #peru {
   width: 190px;
   overflow: visible;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.home #peru {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/partials/_home.sass */
+/* line 43, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru img {
   margin: -45px 0 0 -45px;
   position: absolute;
 }
-/* line 46, ../../app/stylesheets/partials/_home.sass */
+/* line 46, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home #peru .encuentra {
   border-bottom: 1px dashed #666666;
   border-top: 1px dashed #666666;
@@ -1093,7 +1093,7 @@ body.home #peru .encuentra {
   margin-top: 250px;
   text-transform: uppercase;
 }
-/* line 55, ../../app/stylesheets/partials/_home.sass */
+/* line 55, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment {
   border-bottom: 1px dashed #666666;
   display: inline-block;
@@ -1101,7 +1101,7 @@ body.home .comment {
   padding-bottom: 10px;
   width: 100%;
 }
-/* line 61, ../../app/stylesheets/partials/_home.sass */
+/* line 61, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top {
   border-bottom: 1px dashed #666666;
   display: inline-block;
@@ -1109,101 +1109,101 @@ body.home .comment p.top {
   padding-bottom: 5px;
   width: 100%;
 }
-/* line 67, ../../app/stylesheets/partials/_home.sass */
+/* line 67, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.title {
   color: #cc6666;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
   float: left;
 }
-/* line 72, ../../app/stylesheets/partials/_home.sass */
+/* line 72, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.region {
   color: #333333;
   margin-right: 25px;
 }
-/* line 75, ../../app/stylesheets/partials/_home.sass */
+/* line 75, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.top span.gobierno {
   color: #333333;
   float: left;
 }
-/* line 78, ../../app/stylesheets/partials/_home.sass */
+/* line 78, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment p.comment_content {
   text-align: center;
   padding: 20px;
 }
-/* line 81, ../../app/stylesheets/partials/_home.sass */
+/* line 81, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_home.sass */
 body.home .comment span.compartir {
   float: right;
 }
 
-/* line 2, ../../app/stylesheets/partials/_directorio.sass */
+/* line 2, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .directory_title {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 310px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .directory_title {
   overflow-x: hidden;
 }
-/* line 4, ../../app/stylesheets/partials/_directorio.sass */
+/* line 4, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region_title {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 270px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .region_title {
   overflow-x: hidden;
 }
-/* line 6, ../../app/stylesheets/partials/_directorio.sass */
+/* line 6, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .official_title {
   display: inline;
   float: left;
   margin-right: 0;
   width: 350px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .official_title {
   overflow-x: hidden;
 }
-/* line 9, ../../app/stylesheets/partials/_directorio.sass */
+/* line 9, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory h1 {
   border-bottom: 1px dashed #666666;
 }
-/* line 12, ../../app/stylesheets/partials/_directorio.sass */
+/* line 12, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .mapa {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 310px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .mapa {
   overflow-x: hidden;
 }
-/* line 14, ../../app/stylesheets/partials/_directorio.sass */
+/* line 14, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .mapa img {
   margin-left: -10px;
 }
-/* line 17, ../../app/stylesheets/partials/_directorio.sass */
+/* line 17, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 270px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .region {
   overflow-x: hidden;
 }
-/* line 19, ../../app/stylesheets/partials/_directorio.sass */
+/* line 19, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region ul.provincias {
   list-style-type: none;
 }
-/* line 21, ../../app/stylesheets/partials/_directorio.sass */
+/* line 21, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region ul.provincias li {
   border-left: 1px dashed #666666;
   float: left;
@@ -1216,34 +1216,34 @@ body.home .comment span.compartir {
   text-transform: uppercase;
   width: 124px;
 }
-/* line 33, ../../app/stylesheets/partials/_directorio.sass */
+/* line 33, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region ul.provincias li.estado {
   background-color: #cc6666;
 }
-/* line 35, ../../app/stylesheets/partials/_directorio.sass */
+/* line 35, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .region ul.provincias li.estado a {
   color: white;
   font-family: "Oswald", sans-serif;
 }
-/* line 38, ../../app/stylesheets/partials/_directorio.sass */
+/* line 38, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante {
   display: inline;
   float: left;
   margin-right: 0;
   width: 350px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #directory .representante {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/partials/_directorio.sass */
+/* line 41, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar {
   border-bottom: 1px dashed #666666;
   margin-bottom: 5px;
   padding-bottom: 5px;
   text-transform: capitalize;
 }
-/* line 46, ../../app/stylesheets/partials/_directorio.sass */
+/* line 46, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar img.foto_representante {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1255,12 +1255,12 @@ body.home .comment span.compartir {
   margin-right: 10px;
   width: 68px;
 }
-/* line 51, ../../app/stylesheets/partials/_directorio.sass */
+/* line 51, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar span.representante_nombre {
   color: #cc6666;
   font-size: 14px;
 }
-/* line 54, ../../app/stylesheets/partials/_directorio.sass */
+/* line 54, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar h2 {
   color: #cc6666;
   font-family: "Oswald", sans-serif;
@@ -1268,16 +1268,22 @@ body.home .comment span.compartir {
   font-weight: normal;
   text-transform: uppercase;
 }
-/* line 60, ../../app/stylesheets/partials/_directorio.sass */
+/* line 60, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar p {
   margin: 20px;
 }
-/* line 62, ../../app/stylesheets/partials/_directorio.sass */
+/* line 62, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
 #directory .representante .representante_bar a {
   color: #cc6666;
 }
 
-/* line 3, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 67, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_directorio.sass */
+.provincia.underline a {
+  color: #cc6666;
+  text-decoration: underline;
+}
+
+/* line 3, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #banner {
   display: inline;
   float: left;
@@ -1288,33 +1294,33 @@ body.home .comment span.compartir {
   padding: 10px 0;
   margin: 10px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #banner {
   overflow-x: hidden;
 }
-/* line 9, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 9, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #banner #conoce {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 230px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #banner #conoce {
   overflow-x: hidden;
 }
-/* line 11, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 11, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #banner #dialoga {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 350px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #banner #dialoga {
   overflow-x: hidden;
 }
-/* line 13, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 13, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #banner #sigue {
   display: inline;
   float: left;
@@ -1322,11 +1328,11 @@ body.home .comment span.compartir {
   width: 350px;
   margin-top: 20px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #banner #sigue {
   overflow-x: hidden;
 }
-/* line 17, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 17, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion {
   display: inline;
   float: left;
@@ -1340,11 +1346,11 @@ body.home .comment span.compartir {
   margin-top: 20px;
   min-height: 550px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #informacion {
   overflow-x: hidden;
 }
-/* line 26, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 26, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion h2 {
   color: #cc6666;
   border-bottom: 1px dashed #666666;
@@ -1352,7 +1358,7 @@ body.home .comment span.compartir {
   font-size: 30px;
   text-transform: uppercase;
 }
-/* line 32, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 32, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion p#autoridad {
   display: inline;
   float: left;
@@ -1360,11 +1366,11 @@ body.home .comment span.compartir {
   width: 430px;
   margin: 20px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #informacion p#autoridad {
   overflow-x: hidden;
 }
-/* line 35, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 35, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion p#ciudadano {
   display: inline;
   float: left;
@@ -1373,22 +1379,22 @@ body.home .comment span.compartir {
   padding-left: 40px;
   margin: 20px 0;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #informacion p#ciudadano {
   overflow-x: hidden;
 }
-/* line 39, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 39, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion #logo {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 230px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #informacion #logo {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 41, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #informacion p#proetica {
   display: inline;
   float: left;
@@ -1397,11 +1403,11 @@ body.home .comment span.compartir {
   padding-left: 40px;
   margin-top: 10px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #informacion p#proetica {
   overflow-x: hidden;
 }
-/* line 46, ../../app/stylesheets/partials/_acerca_de.sass */
+/* line 46, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_acerca_de.sass */
 #acerca-de #promesometro {
   padding-right: 160px;
   display: inline;
@@ -1416,23 +1422,23 @@ body.home .comment span.compartir {
   padding-top: 160px;
   text-align: center;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #acerca-de #promesometro {
   overflow-x: hidden;
 }
 
-/* line 1, ../../app/stylesheets/partials/_tema.sass */
+/* line 1, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas {
   overflow-x: hidden;
 }
-/* line 4, ../../app/stylesheets/partials/_tema.sass */
+/* line 4, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #topics {
   display: inline;
   float: left;
@@ -1440,11 +1446,11 @@ body.home .comment span.compartir {
   width: 950px;
   margin-bottom: 10px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #topics {
   overflow-x: hidden;
 }
-/* line 7, ../../app/stylesheets/partials/_tema.sass */
+/* line 7, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #topics .topic {
   display: inline;
   float: left;
@@ -1452,26 +1458,26 @@ body.home .comment span.compartir {
   width: 150px;
   margin-bottom: 5px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #topics .topic {
   overflow-x: hidden;
 }
-/* line 10, ../../app/stylesheets/partials/_tema.sass */
+/* line 10, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #topics .last {
   margin-right: 0;
 }
-/* line 13, ../../app/stylesheets/partials/_tema.sass */
+/* line 13, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas .temas-container {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas .temas-container {
   overflow-x: hidden;
 }
-/* line 16, ../../app/stylesheets/partials/_tema.sass */
+/* line 16, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas .tema-sidebar {
   display: inline;
   float: left;
@@ -1481,11 +1487,11 @@ body.home .comment span.compartir {
   padding: 10px;
   width: 170px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas .tema-sidebar {
   overflow-x: hidden;
 }
-/* line 23, ../../app/stylesheets/partials/_tema.sass */
+/* line 23, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas .tema-sidebar span.tema-title {
   border-bottom: 1px dashed #666666;
   color: #cc6666;
@@ -1495,59 +1501,59 @@ body.home .comment span.compartir {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 32, ../../app/stylesheets/partials/_tema.sass */
+/* line 32, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas {
   display: inline;
   float: left;
   margin-right: 0;
   width: 750px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #promesas {
   overflow-x: hidden;
 }
-/* line 34, ../../app/stylesheets/partials/_tema.sass */
+/* line 34, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas .promesa {
   display: inline;
   float: left;
   margin-right: 0;
   width: 390px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #promesas .promesa {
   overflow-x: hidden;
 }
-/* line 37, ../../app/stylesheets/partials/_tema.sass */
+/* line 37, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas .promesa p.descripcion {
   display: inline;
   float: left;
   margin-right: 0;
   width: 310px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #promesas .promesa p.descripcion {
   overflow-x: hidden;
 }
-/* line 39, ../../app/stylesheets/partials/_tema.sass */
+/* line 39, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas .status {
   display: inline;
   float: left;
   margin-right: 0;
   width: 270px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas #promesas .status {
   overflow-x: hidden;
 }
-/* line 42, ../../app/stylesheets/partials/_tema.sass */
+/* line 42, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas .status span.nombre_representante {
   width: 90px;
 }
-/* line 45, ../../app/stylesheets/partials/_tema.sass */
+/* line 45, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas #promesas .status span.partido_representante {
   width: 100px;
 }
-/* line 47, ../../app/stylesheets/partials/_tema.sass */
+/* line 47, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas select {
   display: inline;
   float: left;
@@ -1555,29 +1561,29 @@ body.home .comment span.compartir {
   width: 150px;
   text-transform: capitalize;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas select {
   overflow-x: hidden;
 }
-/* line 51, ../../app/stylesheets/partials/_tema.sass */
+/* line 51, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas h1 {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 790px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas h1 {
   overflow-x: hidden;
 }
-/* line 53, ../../app/stylesheets/partials/_tema.sass */
+/* line 53, /Users/jparbros/Work/promesometro/app/stylesheets/partials/_tema.sass */
 #temas h2 {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas h2 {
   overflow-x: hidden;
 }
@@ -1589,242 +1595,242 @@ body.bp {
   color: #333333;
   font-size: 75%;
 }
-/* line 51, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 51, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
   font-weight: normal;
   color: #222222;
 }
-/* line 52, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 52, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {
   margin: 0;
 }
-/* line 53, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 53, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h1 {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.50em;
 }
-/* line 54, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 54, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
 }
-/* line 55, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 55, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1.00em;
 }
-/* line 56, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 56, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h4 {
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
 }
-/* line 57, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 57, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h5 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.50em;
 }
-/* line 58, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 58, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp h6 {
   font-size: 1em;
   font-weight: bold;
 }
-/* line 59, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 59, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp p {
   margin: 0 0 1.5em;
 }
-/* line 60, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 60, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp p .left {
   display: inline;
   float: left;
   margin: 1.5em 1.5em 1.5em 0;
   padding: 0;
 }
-/* line 61, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 61, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp p .right {
   display: inline;
   float: right;
   margin: 1.5em 0 1.5em 1.5em;
   padding: 0;
 }
-/* line 62, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 62, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp a {
   text-decoration: underline;
   color: #363636;
 }
-/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body.bp a:visited {
   color: #004c99;
 }
-/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body.bp a:focus {
   color: #0099ff;
 }
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body.bp a:hover {
   color: #e32f21;
 }
-/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body.bp a:active {
   color: #bf00ff;
 }
-/* line 63, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 63, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp blockquote {
   margin: 1.5em;
   color: #666666;
   font-style: italic;
 }
-/* line 64, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 64, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp strong, body.bp dfn {
   font-weight: bold;
 }
-/* line 65, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 65, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp em, body.bp dfn {
   font-style: italic;
 }
-/* line 66, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 66, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp sup, body.bp sub {
   line-height: 0;
 }
-/* line 67, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 67, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp abbr, body.bp acronym {
   border-bottom: 1px dotted #666666;
 }
-/* line 68, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 68, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp address {
   margin: 0 0 1.5em;
   font-style: italic;
 }
-/* line 69, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 69, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp del {
   color: #666666;
 }
-/* line 70, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 70, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp pre {
   margin: 1.5em 0;
   white-space: pre;
 }
-/* line 71, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 71, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp pre, body.bp code, body.bp tt {
   font: 1em "andale mono", "lucida console", monospace;
   line-height: 1.5;
 }
-/* line 72, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 72, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp li ul, body.bp li ol {
   margin: 0;
 }
-/* line 73, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 73, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp ul, body.bp ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 1.5em;
 }
-/* line 74, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 74, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp ul {
   list-style-type: disc;
 }
-/* line 75, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 75, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp ol {
   list-style-type: decimal;
 }
-/* line 76, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 76, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp dl {
   margin: 0 0 1.5em 0;
 }
-/* line 77, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 77, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp dl dt {
   font-weight: bold;
 }
-/* line 78, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 78, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp dd {
   margin-left: 1.5em;
 }
-/* line 79, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 79, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp table {
   margin-bottom: 1.4em;
   width: 100%;
 }
-/* line 80, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 80, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp th {
   font-weight: bold;
 }
-/* line 81, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 81, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp thead th {
   background: #c3d9ff;
 }
-/* line 82, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 82, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp th, body.bp td, body.bp caption {
   padding: 4px 10px 4px 5px;
 }
-/* line 85, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 85, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp table.striped tr:nth-child(even) td,
 body.bp table tr.even td {
   background: #e5ecf9;
 }
-/* line 86, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 86, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp tfoot {
   font-style: italic;
 }
-/* line 87, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 87, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp caption {
   background: #eeeeee;
 }
-/* line 88, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 88, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp .quiet {
   color: #666666;
 }
-/* line 89, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 89, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body.bp .loud {
   color: #111111;
 }
-/* line 9, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 9, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .clear {
   clear: both;
 }
-/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 12, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .nowrap {
   white-space: nowrap;
 }
-/* line 16, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 16, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 18, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .small {
   font-size: 0.8em;
   margin-bottom: 1.875em;
   line-height: 1.875em;
 }
-/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 22, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .large {
   font-size: 1.2em;
   line-height: 2.5em;
   margin-bottom: 1.25em;
 }
-/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 26, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .first {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 29, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 29, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .last {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 32, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 32, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .top {
   margin-top: 0;
   padding-top: 0;
 }
-/* line 35, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+/* line 35, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 body.bp .bottom {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
+/* line 25, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 0% 50%, 960 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(3.125%, rgba(100, 100, 225, 0.25)), color-stop(3.125%, rgba(0, 0, 0, 0)), color-stop(4.167%, rgba(0, 0, 0, 0)), color-stop(4.167%, rgba(100, 100, 225, 0.25)), color-stop(7.292%, rgba(100, 100, 225, 0.25)), color-stop(7.292%, rgba(0, 0, 0, 0)), color-stop(8.333%, rgba(0, 0, 0, 0)), color-stop(8.333%, rgba(100, 100, 225, 0.25)), color-stop(11.458%, rgba(100, 100, 225, 0.25)), color-stop(11.458%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(100, 100, 225, 0.25)), color-stop(15.625%, rgba(100, 100, 225, 0.25)), color-stop(15.625%, rgba(0, 0, 0, 0)), color-stop(16.667%, rgba(0, 0, 0, 0)), color-stop(16.667%, rgba(100, 100, 225, 0.25)), color-stop(19.792%, rgba(100, 100, 225, 0.25)), color-stop(19.792%, rgba(0, 0, 0, 0)), color-stop(20.833%, rgba(0, 0, 0, 0)), color-stop(20.833%, rgba(100, 100, 225, 0.25)), color-stop(23.958%, rgba(100, 100, 225, 0.25)), color-stop(23.958%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(100, 100, 225, 0.25)), color-stop(28.125%, rgba(100, 100, 225, 0.25)), color-stop(28.125%, rgba(0, 0, 0, 0)), color-stop(29.167%, rgba(0, 0, 0, 0)), color-stop(29.167%, rgba(100, 100, 225, 0.25)), color-stop(32.292%, rgba(100, 100, 225, 0.25)), color-stop(32.292%, rgba(0, 0, 0, 0)), color-stop(33.333%, rgba(0, 0, 0, 0)), color-stop(33.333%, rgba(100, 100, 225, 0.25)), color-stop(36.458%, rgba(100, 100, 225, 0.25)), color-stop(36.458%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(40.625%, rgba(100, 100, 225, 0.25)), color-stop(40.625%, rgba(0, 0, 0, 0)), color-stop(41.667%, rgba(0, 0, 0, 0)), color-stop(41.667%, rgba(100, 100, 225, 0.25)), color-stop(44.792%, rgba(100, 100, 225, 0.25)), color-stop(44.792%, rgba(0, 0, 0, 0)), color-stop(45.833%, rgba(0, 0, 0, 0)), color-stop(45.833%, rgba(100, 100, 225, 0.25)), color-stop(48.958%, rgba(100, 100, 225, 0.25)), color-stop(48.958%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(100, 100, 225, 0.25)), color-stop(53.125%, rgba(100, 100, 225, 0.25)), color-stop(53.125%, rgba(0, 0, 0, 0)), color-stop(54.167%, rgba(0, 0, 0, 0)), color-stop(54.167%, rgba(100, 100, 225, 0.25)), color-stop(57.292%, rgba(100, 100, 225, 0.25)), color-stop(57.292%, rgba(0, 0, 0, 0)), color-stop(58.333%, rgba(0, 0, 0, 0)), color-stop(58.333%, rgba(100, 100, 225, 0.25)), color-stop(61.458%, rgba(100, 100, 225, 0.25)), color-stop(61.458%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(65.625%, rgba(100, 100, 225, 0.25)), color-stop(65.625%, rgba(0, 0, 0, 0)), color-stop(66.667%, rgba(0, 0, 0, 0)), color-stop(66.667%, rgba(100, 100, 225, 0.25)), color-stop(69.792%, rgba(100, 100, 225, 0.25)), color-stop(69.792%, rgba(0, 0, 0, 0)), color-stop(70.833%, rgba(0, 0, 0, 0)), color-stop(70.833%, rgba(100, 100, 225, 0.25)), color-stop(73.958%, rgba(100, 100, 225, 0.25)), color-stop(73.958%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(100, 100, 225, 0.25)), color-stop(78.125%, rgba(100, 100, 225, 0.25)), color-stop(78.125%, rgba(0, 0, 0, 0)), color-stop(79.167%, rgba(0, 0, 0, 0)), color-stop(79.167%, rgba(100, 100, 225, 0.25)), color-stop(82.292%, rgba(100, 100, 225, 0.25)), color-stop(82.292%, rgba(0, 0, 0, 0)), color-stop(83.333%, rgba(0, 0, 0, 0)), color-stop(83.333%, rgba(100, 100, 225, 0.25)), color-stop(86.458%, rgba(100, 100, 225, 0.25)), color-stop(86.458%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(100, 100, 225, 0.25)), color-stop(90.625%, rgba(100, 100, 225, 0.25)), color-stop(90.625%, rgba(0, 0, 0, 0)), color-stop(91.667%, rgba(0, 0, 0, 0)), color-stop(91.667%, rgba(100, 100, 225, 0.25)), color-stop(94.792%, rgba(100, 100, 225, 0.25)), color-stop(94.792%, rgba(0, 0, 0, 0)), color-stop(95.833%, rgba(0, 0, 0, 0)), color-stop(95.833%, rgba(100, 100, 225, 0.25)), color-stop(98.958%, rgba(100, 100, 225, 0.25)), color-stop(98.958%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 40px, rgba(100, 100, 225, 0.25) 40px, rgba(100, 100, 225, 0.25) 70px, rgba(0, 0, 0, 0) 70px, rgba(0, 0, 0, 0) 80px, rgba(100, 100, 225, 0.25) 80px, rgba(100, 100, 225, 0.25) 110px, rgba(0, 0, 0, 0) 110px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 150px, rgba(0, 0, 0, 0) 150px, rgba(0, 0, 0, 0) 160px, rgba(100, 100, 225, 0.25) 160px, rgba(100, 100, 225, 0.25) 190px, rgba(0, 0, 0, 0) 190px, rgba(0, 0, 0, 0) 200px, rgba(100, 100, 225, 0.25) 200px, rgba(100, 100, 225, 0.25) 230px, rgba(0, 0, 0, 0) 230px, rgba(0, 0, 0, 0) 240px, rgba(100, 100, 225, 0.25) 240px, rgba(100, 100, 225, 0.25) 270px, rgba(0, 0, 0, 0) 270px, rgba(0, 0, 0, 0) 280px, rgba(100, 100, 225, 0.25) 280px, rgba(100, 100, 225, 0.25) 310px, rgba(0, 0, 0, 0) 310px, rgba(0, 0, 0, 0) 320px, rgba(100, 100, 225, 0.25) 320px, rgba(100, 100, 225, 0.25) 350px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0) 360px, rgba(100, 100, 225, 0.25) 360px, rgba(100, 100, 225, 0.25) 390px, rgba(0, 0, 0, 0) 390px, rgba(0, 0, 0, 0) 400px, rgba(100, 100, 225, 0.25) 400px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 470px, rgba(0, 0, 0, 0) 470px, rgba(0, 0, 0, 0) 480px, rgba(100, 100, 225, 0.25) 480px, rgba(100, 100, 225, 0.25) 510px, rgba(0, 0, 0, 0) 510px, rgba(0, 0, 0, 0) 520px, rgba(100, 100, 225, 0.25) 520px, rgba(100, 100, 225, 0.25) 550px, rgba(0, 0, 0, 0) 550px, rgba(0, 0, 0, 0) 560px, rgba(100, 100, 225, 0.25) 560px, rgba(100, 100, 225, 0.25) 590px, rgba(0, 0, 0, 0) 590px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 630px, rgba(0, 0, 0, 0) 630px, rgba(0, 0, 0, 0) 640px, rgba(100, 100, 225, 0.25) 640px, rgba(100, 100, 225, 0.25) 670px, rgba(0, 0, 0, 0) 670px, rgba(0, 0, 0, 0) 680px, rgba(100, 100, 225, 0.25) 680px, rgba(100, 100, 225, 0.25) 710px, rgba(0, 0, 0, 0) 710px, rgba(0, 0, 0, 0) 720px, rgba(100, 100, 225, 0.25) 720px, rgba(100, 100, 225, 0.25) 750px, rgba(0, 0, 0, 0) 750px, rgba(0, 0, 0, 0) 760px, rgba(100, 100, 225, 0.25) 760px, rgba(100, 100, 225, 0.25) 790px, rgba(0, 0, 0, 0) 790px, rgba(0, 0, 0, 0) 800px, rgba(100, 100, 225, 0.25) 800px, rgba(100, 100, 225, 0.25) 830px, rgba(0, 0, 0, 0) 830px, rgba(0, 0, 0, 0) 840px, rgba(100, 100, 225, 0.25) 840px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px, rgba(100, 100, 225, 0.25) 880px, rgba(100, 100, 225, 0.25) 910px, rgba(0, 0, 0, 0) 910px, rgba(0, 0, 0, 0) 920px, rgba(100, 100, 225, 0.25) 920px, rgba(100, 100, 225, 0.25) 950px, rgba(0, 0, 0, 0) 950px, rgba(0, 0, 0, 0) 960px);
@@ -1838,153 +1844,153 @@ body.bp .showgrid {
   background-size: 100% 18px, auto;
   background-position: left top;
 }
-/* line 4, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 4, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .feedback, body.bp .error, body.bp .alert, body.bp .notice, body.bp .success, body.bp .info {
   padding: 0.8em;
   margin-bottom: 1em;
   border: 2px solid #dddddd;
 }
-/* line 5, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 5, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error, body.bp .alert {
   background: #fbe3e4;
   color: #8a1f11;
   border-color: #fbc2c4;
 }
-/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 27, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error a, body.bp .alert a {
   color: #8a1f11;
 }
-/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 7, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .notice {
   background: #fff6bf;
   color: #514721;
   border-color: #ffd324;
 }
-/* line 36, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 36, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .notice a {
   color: #514721;
 }
-/* line 8, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 8, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .success {
   background: #e6efc2;
   color: #264409;
   border-color: #c6d880;
 }
-/* line 45, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 45, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .success a {
   color: #264409;
 }
-/* line 9, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 9, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .info {
   background: #d5edf8;
   color: #205791;
   border-color: #92cae4;
 }
-/* line 54, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 54, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .info a {
   color: #205791;
 }
-/* line 10, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 10, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .hide {
   display: none;
 }
-/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 11, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .highlight {
   background: yellow;
 }
-/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 12, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .added {
   background: #006600;
   color: white;
 }
-/* line 13, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+/* line 13, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .removed {
   background: #990000;
   color: white;
 }
 
-/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 18, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
   font-weight: bold;
 }
-/* line 19, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 19, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp fieldset {
   padding: 1.4em;
   margin: 0 0 1.5em 0;
 }
-/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 20, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp legend {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 26, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
   margin: 0.5em 0;
   background-color: white;
   padding: 5px;
 }
-/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 27, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp input.title {
   font-size: 1.5em;
 }
-/* line 29, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 29, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp textarea {
   margin: 0.5em 0;
   padding: 5px;
 }
-/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 30, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp select {
   margin: 0.5em 0;
 }
-/* line 55, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 55, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp fieldset {
   border: 1px solid #cccccc;
 }
-/* line 58, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 58, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password],
 form.bp textarea {
   background-color: #fff;
   border: 1px solid #bbbbbb;
 }
-/* line 61, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 61, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus,
 form.bp textarea:focus {
   border-color: #666666;
 }
-/* line 65, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 65, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp select {
   background-color: #fff;
   border-width: 1px;
   border-style: solid;
 }
-/* line 44, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 44, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
   width: 300px;
 }
-/* line 46, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 46, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp textarea {
   width: 390px;
   height: 250px;
 }
-/* line 39, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 39, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp .box {
   padding: 1.5em;
   margin-bottom: 1.5em;
   background: #e5ecf9;
 }
-/* line 42, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 42, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp .border {
   padding-right: 4px;
   margin-right: 5px;
   border-right: 1px solid #dddddd;
 }
-/* line 45, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 45, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp .colborder {
   padding-right: 24px;
   margin-right: 25px;
   border-right: 1px solid #dddddd;
 }
-/* line 47, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 47, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp hr {
   background: #dddddd;
   color: #dddddd;
@@ -1995,7 +2001,7 @@ form.bp hr {
   margin: 0 0 1.45em;
   border: none;
 }
-/* line 49, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 49, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp hr.space {
   background: #dddddd;
   color: #dddddd;
@@ -2009,11 +2015,11 @@ form.bp hr.space {
   color: white;
   visibility: hidden;
 }
-/* line 51, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 51, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.bp form.inline {
   line-height: 3;
 }
-/* line 6, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 6, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp form.inline p {
   margin-bottom: 0;
 }
@@ -2032,7 +2038,7 @@ body.two-col #header, body.two-col #footer {
   margin-right: 10px;
   width: 950px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
@@ -2043,7 +2049,7 @@ body.two-col #sidebar {
   margin-right: 10px;
   width: 310px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
@@ -2054,7 +2060,7 @@ body.two-col #content {
   margin-right: 0;
   width: 630px;
 }
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/jparbros/.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {
   overflow-x: hidden;
 }
