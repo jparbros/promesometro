@@ -174,7 +174,8 @@
  body.home .comment p.top span.region {color: #333333; margin-right: 25px}
  body.home .comment p.top span.gobierno {color: #333333; float: left}
  body.home .comment p.comment_content {text-align: center; padding: 20px}
- body.home .comment span.compartir {float: right}
+ body.home .comment .compartir {float: right; margin-top: -5px}
+ body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {float: right; margin-right: 5px}
  #directory .directory_title {display: inline; float: left; margin-right: 10px; width: 310px}
  * html #directory .directory_title {overflow-x: hidden}
  #directory .region_title {display: inline; float: left; margin-right: 10px; width: 270px}

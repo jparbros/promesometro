@@ -1136,8 +1136,14 @@ body.home .comment p.comment_content {
   padding: 20px;
 }
 /* line 81, ../../app/stylesheets/partials/_home.sass */
-body.home .comment span.compartir {
+body.home .comment .compartir {
   float: right;
+  margin-top: -5px;
+}
+/* line 84, ../../app/stylesheets/partials/_home.sass */
+body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {
+  float: right;
+  margin-right: 5px;
 }
 
 /* line 2, ../../app/stylesheets/partials/_directorio.sass */
