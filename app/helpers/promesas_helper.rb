@@ -38,10 +38,10 @@ module PromesasHelper
   
   def hito_imagen(hito, promesa)
     hito_actual = promesa.milestones.completed.size
-    if (hito == hito_actual) || (hito == 1 && hito_actual == 0)
-      milestone = promesa.milestones[hito-1]
+    milestone = promesa.milestones[hito-1]
+    if ((hito == hito_actual) || (hito == 1 && hito_actual == 0)) && hito < promesa.milestones.size
       content = []
-      content << image_tag("hito_#{hito}_rojo.png")
+      content << image_tag("hito_#{hito}_rojo.png", :id => "hito-#{hito}", :title => "Hito #{hito}" , :content => milestone.name)
       container = []
       div1 = []
       div1 << content_tag('span', 'Tiempo transcurrido', :class => 'etiqueta')
@@ -56,7 +56,9 @@ module PromesasHelper
       content << content_tag(:div, raw(container.join), :class => 'hito_status')
       concat raw(content.join(''))
     else
-      concat(image_tag("hito_#{hito}_gris.png"))
+      if hito < promesa.milestones.size
+        concat(image_tag("hito_#{hito}_gris.png", :id => "hito-#{hito}", :title => "Hito #{hito}" , :content => milestone.name))
+      end
     end
   end
   
