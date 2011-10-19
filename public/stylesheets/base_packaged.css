@@ -73,6 +73,7 @@
  #promesas span.estado, #show-promesa span.estado {color: #cc6666; font-family: "Oswald", sans-serif; font-size: 14px}
  #promesas .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo {overflow-x: hidden}
+ #promesas .promesa_titulo h1 {font-size: 30px}
  #promesas .filtro-temas {display: inline; float: left; margin-right: 10px; width: 150px; text-transform: capitalize}
  * html #promesas .filtro-temas {overflow-x: hidden}
  #promesas .promesa_estado_titulo {display: inline; float: left; margin-right: 0; width: 310px}
