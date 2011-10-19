@@ -198,6 +198,7 @@
  #directory .representante .representante_bar h2 {color: #cc6666; font-family: "Oswald", sans-serif; font-size: 14px; font-weight: normal; text-transform: uppercase}
  #directory .representante .representante_bar p {margin: 20px}
  #directory .representante .representante_bar a {color: #cc6666}
+ .provincia.underline a {color: #cc6666; text-decoration: underline}
  #acerca-de #banner {display: inline; float: left; margin-right: 0; width: 950px; border-top: 1px dashed #666666; border-bottom: 1px dashed #666666; padding: 10px 0; margin: 10px 0}
  * html #acerca-de #banner {overflow-x: hidden}
  #acerca-de #banner #conoce {display: inline; float: left; margin-right: 10px; width: 230px}
