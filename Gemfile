@@ -20,3 +20,7 @@ gem "oauth"
 gem 'oauth2'
 gem 'state_machine'
 gem 'twitter_oauth'
+
+group :development do
+  gem "ruby-debug19"
+end
