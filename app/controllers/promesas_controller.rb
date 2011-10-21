@@ -1,7 +1,5 @@
 # encoding: utf-8
-class PromesasController < ApplicationController
-  add_crumb "Promesas", '/promesas'
-  
+class PromesasController < ApplicationController  
   def index
     unless params[:search].nil? || params[:search][:general_search].nil?
       @search = Promise.search()
@@ -15,6 +13,6 @@ class PromesasController < ApplicationController
   def show
     @search = Promise.search(params[:search])
     @promise = Promise.find_by_slug(params[:slug])
-    @comments = @promise.comments.page(params[:page]).per(5)
+    @comments = @promise.comments.approved.page(params[:page]).per(5)
   end
 end
