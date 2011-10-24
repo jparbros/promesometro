@@ -6,7 +6,7 @@ class Promise < ActiveRecord::Base
   has_many :milestones
   belongs_to :official
   has_and_belongs_to_many :topics
-  has_many :comments, :as => :commentable
+  has_many :comments, :as => :commentable, :dependent => :destroy
   
   #
   # Delegates
