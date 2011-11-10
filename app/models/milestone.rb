@@ -42,14 +42,14 @@ class Milestone < ActiveRecord::Base
   scope :not_started, where('state = ?','new')
   
   def start_milestone
-    self.started_at = Time.now
+    #self.started_at = Time.now
     self.save
     self.promise_start unless self.promise_started?
   end
   
   def finish_milestone
     self.promise_finish if self.promise_ready_to_finish?
-    self.ended_at = Time.now
+    #self.ended_at = Time.now
     self.save
   end
   

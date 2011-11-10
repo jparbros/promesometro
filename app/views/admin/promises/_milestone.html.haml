@@ -5,6 +5,16 @@
     .input
       = milestone_form.text_field :name, :class => 'xxlarge'
   .clearfix
+    = milestone_form.label :inicio_en
+    .input
+      = milestone_form.text_field :started_at, :class => 'xxlarge'
+  .clearfix
+    = milestone_form.label :finalizo_en
+    .input
+      = milestone_form.text_field :ended_at, :class => 'xxlarge'
+  .clearfix
     = milestone_form.label :descripcion
     .input
       = milestone_form.text_area :description, :class => 'xxlarge', :rows => '5'
+      
+    

@@ -28,3 +28,8 @@
     = render :partial => 'milestone', :locals => {:milestone_form => milestone_form}
     
 =link_to 'Agregar Hito','', :id => 'nuevo_hito'
+
+<script type="text/javascript">
+$('input[id*=started_at]').datepicker();
+$('input[id*=ended_at]').datepicker()
+</script>
