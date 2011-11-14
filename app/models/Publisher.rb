@@ -21,7 +21,7 @@ private
   end
   
   def page
-    @page ||= Koala::Facebook::API.new(facebook_client.get_connections("me", "accounts").first['access_token'])
+    @page ||= Koala::Facebook::API.new(facebook_client.get_connections("me", "accounts").select {|page| page['id'] == '219767341418599'}.first['access_token'])
   end
   
   def bitly

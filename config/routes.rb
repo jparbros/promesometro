@@ -11,6 +11,7 @@ Promesometro::Application.routes.draw do
         resources :milestones
       end
     end
+    resources :admins
     match "promises/milestones/:milestone_id/comment", :to => "comments#create", :as => "comment_milestone"
     match "promises/milestones/:milestone_id/comment/:id", :to => "comments#destroy", :as => "comment_milestone_destroy", :via =>:delete
     match "promises/milestones/:milestone_id/milestone_state", :to => "milestone_state#create", :as => "milestone_state", :via => :post

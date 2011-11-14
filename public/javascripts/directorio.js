@@ -1,12 +1,17 @@
 (function($) {
   window.Provincia = Backbone.Model.extend({})
+  
   window.Representante = Backbone.Model.extend({})
 
-  window.Provincias = Backbone.Collection.extend({
-    model: Provincia
+  window.ProvinciasList = Backbone.Collection.extend({
+    model: Provincia,
+    state: undefined,
+    url: function() {
+      return '/estados/' + this.state + '/provincias';
+    }
   });
 
-  window.provincias = new Provincias();
+  window.Provincias = new ProvinciasList();
 
   window.ProvinciaView = Backbone.View.extend({
     tagName: 'li',
@@ -17,8 +22,7 @@
     },
 
     render: function() {
-      var renderedContent = this.template(this.model.toJSON());
-      $(this.el).html(renderedContent);
+      $(this.el).html(this.template(this.model.toJSON()));
       return this;
     }
   });
@@ -26,34 +30,32 @@
   window.EstadoView = Backbone.View.extend({
     tagName: 'li',
     className: 'provincia estado',
-
+    
     initialize: function() {
       this.template = _.template($('#estado-template').html());
     },
 
     render: function() {
-      var renderedContent = this.template(this.model.toJSON());
-      $(this.el).html(renderedContent);
+      $(this.el).html(this.template(this.model.toJSON()));
       return this;
     }
   });
   
   window.RepresentanteView = Backbone.View.extend({
+
     initialize: function() {
+      this.template = _.template($('#representante-template').html());
       _.bindAll(this,'render');
       this.model.bind('change', this.render);
-
-      this.template = _.template($('#representante-template').html());
     },
 
     render: function() {
-      var renderedContent = this.template(this.model.toJSON());
-      $('.representante').html(renderedContent);
+      $('.representante').html(this.template(this.model.toJSON()));
       return this;
     }
   });
   
-  window.ProvinciasView = Backbone.View.extend({
+  window.ProvinciasListView = Backbone.View.extend({
     tagName: 'ul',
     className: 'provincias',
 
@@ -62,33 +64,24 @@
       this.collection.bind('reset', this.render);
     },
 
-    li_estado : function() {
-      estado = new Provincia({name: this.estado});
-      var view = new EstadoView({model: estado});
-      $provincias.append(view.render().el);
+    addState : function() {
+      stateModel = new Provincia({name: this.state});
+      var stateView = new EstadoView({model: stateModel});
+      $(this.el).append(stateView.render().el);
     },
 
     render: function() {
-      var provincias,
-      collection = this.collection;
-
-      $provincias = $(this.el);
-      $provincias.html('');
-      this.li_estado();
-      collection.each(function(provincia){
-        var view = new ProvinciaView({
-          model: provincia,
-          collection: collection
-        });
+      this.addState();
+      this.collection.each(function(provincia) {
+        var view = new ProvinciaView({ model: provincia, collection: this.collection });
         if(_.include(['cusco','san martin','chiclayo'], provincia.get('name'))) {
           $(view.render().el).addClass('underline');
-          console.log($('a',view.render().el)[0]);
         }
-          
-        $provincias.append(view.render().el);
+        $(this.el).append(view.el);
       });
+      $('.region').html(this.el)
       return this;
-    }
+    }    
   });
 
   window.Directorio = Backbone.Router.extend({
@@ -101,11 +94,10 @@
     },
 
     provincias: function(estado) {
-      provincias.url = '/estados/' + estado + '/provincias';
-      provincias.fetch();
-      pro_vista =  new ProvinciasView({collection : provincias})
-      pro_vista.estado = estado;
-      $('.region').html(pro_vista.render().el)
+      Provincias.state = estado;
+      pro_vista =  new ProvinciasListView({collection : Provincias})
+      pro_vista.state = estado;
+      Provincias.fetch();
     },
 
     representante: function(lugar, posicion) {

@@ -29,6 +29,7 @@ class Admin::PromisesController < Admin::BaseController
   end
   
   def update
+    debugger
     params[:promise][:topic_ids] ||= []
     @promise = @official.promises.find(params[:id])
     if @promise.update_attributes(params[:promise])
