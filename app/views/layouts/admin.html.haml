@@ -21,7 +21,7 @@
               %li= link_to 'Temas', admin_topics_path
               %li= link_to 'Partidos Politicos', admin_political_parties_path
               %li= link_to 'Comentarios', admin_comments_path
-              %li= link_to 'Usuarios', admin_admins_path if current_admin.super?
+              %li= link_to 'Usuarios', admin_admins_path if current_admin && current_admin.super?
         
     .container
       - if alert
