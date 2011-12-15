@@ -4,20 +4,20 @@
   %p.top
     %span.title 
       - if comment.government?
-        = official.name
+        = link_to official.name, promesas_filters_path(:official, official.name)
       - else
         - promesas_temas(comment.commentable)
-    %span.region= state unless comment.government?
+    %span.region= link_to state, promesas_filters_path(:state, state) unless comment.government?
     %span.date= comment.created_at.to_s(:date)
     - if comment.government?
       %br
       %span.gobierno
         Gobierno de
-        = official.province ? official.province_name : official.state_name
+        = link_to (official.province ? official.province_name : official.state_name), (official.province ? promesas_filters_path(:province, official.province_name) : promesas_filters_path(:state, official.state_name))
   %p.comment_content
     = "\"#{comment.comment}\""
   %span.compartir 
     .share-fb
-      <div class="fb-send" data-href="http://www.promesometro.pe"></div>
+      <a name="fb_share" type="button" share_url="#{promesa_url(comment.commentable.slug)}">Enviar</a>
     .share-tw
       <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>

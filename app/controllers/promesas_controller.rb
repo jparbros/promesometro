@@ -1,13 +1,8 @@
 # encoding: utf-8
 class PromesasController < ApplicationController  
   def index
-    unless params[:search].nil? || params[:search][:general_search].nil?
-      @search = Promise.search()
-      @promises = Promise.general_search(params[:search][:general_search])
-    else
-      @search = Promise.search(params[:search])
-      @promises = @search.page(params[:page])
-    end
+    @search = PromiseSearch.new({params[:search].try(:to_sym) => params[:query]}, params[:page])
+    @promises = @search.promises
   end
   
   def show

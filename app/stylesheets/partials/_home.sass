@@ -64,17 +64,26 @@ body.home
       text-align: right
       padding-bottom: 5px
       width: 100%
-      span.title 
-        color: #cc6666
-        font-family: 'Open Sans Condensed', sans-serif
-        font-size: 14px
-        float: left
-      span.region
-        color: #333333
-        margin-right: 25px
-      span.gobierno
-        color: #333333
-        float: left
+      
+      span
+        &.title
+          float: left
+          
+        &.title, &.title a 
+          color: #cc6666
+          font-family: 'Open Sans Condensed', sans-serif
+          font-size: 14px
+      
+        &.region
+          color: #333333
+          margin-right: 25px
+      
+        &.gobierno
+          color: #333333
+          display: block
+          text-align: left
+          margin-top: 5px
+        
     p.comment_content
       text-align: center
       padding: 20px

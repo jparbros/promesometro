@@ -6,11 +6,11 @@
   .promesa_estado_titulo
     %h1 Estado de la Promesa
 
-  - titulo_filtro_promesas(@search.search_attributes)
+  - titulo_filtro_promesas({})
 
   = render :partial => 'promesa', :collection => @promises
   - if @promises.empty?
     %h3
       No existen coincidencias para su busqueda
 
-  = paginate @promises if params[:search].nil? || params[:search][:general_search].nil?
+  = paginate @promises

@@ -10,7 +10,7 @@
     %p.promesa_top
       %span.region
         Region:
-        = @promise.official_state_name.humanize
+        = link_to @promise.official_state_name.humanize, promesas_filters_path(:state, @promise.official_state_name.humanize)
       %span.fecha
         Fecha:
         = @promise.created_at.to_s(:date)
@@ -22,7 +22,7 @@
     
     .representante
       = image_tag @promise.official_avatar_url, :class => 'foto_representante'
-      %span.nombre_representante= @promise.official_name
+      %span.nombre_representante= link_to @promise.official_name, promesas_filters_path(:official, @promise.official_name)
       %span.partido_representante= @promise.official_political_party_name
       
       .promesa_status

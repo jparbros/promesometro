@@ -382,7 +382,7 @@ html body footer nav ul {
   font-size: 14px;
 }
 /* line 10, ../../app/stylesheets/partials/_promesas.sass */
-#promesas p.topic, #show-promesa p.topic {
+#promesas p.topic, #promesas p.topic a, #show-promesa p.topic, #show-promesa p.topic a {
   color: #959595;
 }
 /* line 13, ../../app/stylesheets/partials/_promesas.sass */
@@ -429,7 +429,7 @@ html body footer nav ul {
   width: 41px;
 }
 /* line 43, ../../app/stylesheets/partials/_promesas.sass */
-#promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {
+#promesas .representante span.nombre_representante, #promesas .representante span.nombre_representante a, #show-promesa .representante span.nombre_representante, #show-promesa .representante span.nombre_representante a {
   color: #cc6666;
   display: inline-block;
   font-size: 14px;
@@ -983,169 +983,6 @@ textarea {
   color: #cc6666;
 }
 
-/* line 1, ../../app/stylesheets/partials/_home.sass */
-body.home {
-  background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
-}
-/* line 4, ../../app/stylesheets/partials/_home.sass */
-body.home #search_box {
-  border: 0;
-  margin-bottom: 10px;
-}
-/* line 8, ../../app/stylesheets/partials/_home.sass */
-body.home #banner {
-  text-align: center;
-}
-/* line 10, ../../app/stylesheets/partials/_home.sass */
-body.home #banner img {
-  margin-right: 30px;
-}
-/* line 13, ../../app/stylesheets/partials/_home.sass */
-body.home #vp_title {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 390px;
-  margin: 80px 30px 10px 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #vp_title {
-  overflow-x: hidden;
-}
-/* line 16, ../../app/stylesheets/partials/_home.sass */
-body.home #od_title {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px;
-  margin: 80px 30px 10px 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #od_title {
-  overflow-x: hidden;
-}
-/* line 19, ../../app/stylesheets/partials/_home.sass */
-body.home #peru_title {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 190px;
-  margin: 80px 0 10px 0;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #peru_title {
-  overflow-x: hidden;
-}
-/* line 23, ../../app/stylesheets/partials/_home.sass */
-body.home h1 {
-  border-bottom: 1px dashed #666666;
-}
-/* line 26, ../../app/stylesheets/partials/_home.sass */
-body.home #vox_populi {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 350px;
-  background: url("../images/vox_pupuli.png") no-repeat;
-  min-height: 420px;
-  margin-right: 30px;
-  padding: 10px 20px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #vox_populi {
-  overflow-x: hidden;
-}
-/* line 33, ../../app/stylesheets/partials/_home.sass */
-body.home #official_declaration {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 270px;
-  background: url("../images/official_dec.png") no-repeat;
-  min-height: 420px;
-  margin-right: 30px;
-  padding: 10px 20px;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #official_declaration {
-  overflow-x: hidden;
-}
-/* line 40, ../../app/stylesheets/partials/_home.sass */
-body.home #peru {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 190px;
-  overflow: visible;
-}
-/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.home #peru {
-  overflow-x: hidden;
-}
-/* line 43, ../../app/stylesheets/partials/_home.sass */
-body.home #peru img {
-  margin: -45px 0 0 -45px;
-  position: absolute;
-}
-/* line 46, ../../app/stylesheets/partials/_home.sass */
-body.home #peru .encuentra {
-  border-bottom: 1px dashed #666666;
-  border-top: 1px dashed #666666;
-  color: #cc6666;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  margin-top: 250px;
-  text-transform: uppercase;
-}
-/* line 55, ../../app/stylesheets/partials/_home.sass */
-body.home .comment {
-  border-bottom: 1px dashed #666666;
-  display: inline-block;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  width: 100%;
-}
-/* line 61, ../../app/stylesheets/partials/_home.sass */
-body.home .comment p.top {
-  border-bottom: 1px dashed #666666;
-  display: inline-block;
-  text-align: right;
-  padding-bottom: 5px;
-  width: 100%;
-}
-/* line 67, ../../app/stylesheets/partials/_home.sass */
-body.home .comment p.top span.title {
-  color: #cc6666;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 14px;
-  float: left;
-}
-/* line 72, ../../app/stylesheets/partials/_home.sass */
-body.home .comment p.top span.region {
-  color: #333333;
-  margin-right: 25px;
-}
-/* line 75, ../../app/stylesheets/partials/_home.sass */
-body.home .comment p.top span.gobierno {
-  color: #333333;
-  float: left;
-}
-/* line 78, ../../app/stylesheets/partials/_home.sass */
-body.home .comment p.comment_content {
-  text-align: center;
-  padding: 20px;
-}
-/* line 81, ../../app/stylesheets/partials/_home.sass */
-body.home .comment .compartir {
-  float: right;
-  margin-top: -5px;
-}
-/* line 84, ../../app/stylesheets/partials/_home.sass */
-body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {
-  float: right;
-  margin-right: 5px;
-}
-
 /* line 2, ../../app/stylesheets/partials/_directorio.sass */
 #directory .directory_title {
   display: inline;
@@ -1596,6 +1433,174 @@ body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #temas h2 {
   overflow-x: hidden;
+}
+
+/* line 1, ../../app/stylesheets/partials/_home.sass */
+body.home {
+  background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom;
+}
+/* line 4, ../../app/stylesheets/partials/_home.sass */
+body.home #search_box {
+  border: 0;
+  margin-bottom: 10px;
+}
+/* line 8, ../../app/stylesheets/partials/_home.sass */
+body.home #banner {
+  text-align: center;
+}
+/* line 10, ../../app/stylesheets/partials/_home.sass */
+body.home #banner img {
+  margin-right: 30px;
+}
+/* line 13, ../../app/stylesheets/partials/_home.sass */
+body.home #vp_title {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  margin: 80px 30px 10px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #vp_title {
+  overflow-x: hidden;
+}
+/* line 16, ../../app/stylesheets/partials/_home.sass */
+body.home #od_title {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  margin: 80px 30px 10px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #od_title {
+  overflow-x: hidden;
+}
+/* line 19, ../../app/stylesheets/partials/_home.sass */
+body.home #peru_title {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+  margin: 80px 0 10px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #peru_title {
+  overflow-x: hidden;
+}
+/* line 23, ../../app/stylesheets/partials/_home.sass */
+body.home h1 {
+  border-bottom: 1px dashed #666666;
+}
+/* line 26, ../../app/stylesheets/partials/_home.sass */
+body.home #vox_populi {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+  background: url("../images/vox_pupuli.png") no-repeat;
+  min-height: 420px;
+  margin-right: 30px;
+  padding: 10px 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #vox_populi {
+  overflow-x: hidden;
+}
+/* line 33, ../../app/stylesheets/partials/_home.sass */
+body.home #official_declaration {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+  background: url("../images/official_dec.png") no-repeat;
+  min-height: 420px;
+  margin-right: 30px;
+  padding: 10px 20px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #official_declaration {
+  overflow-x: hidden;
+}
+/* line 40, ../../app/stylesheets/partials/_home.sass */
+body.home #peru {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+  overflow: visible;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180@promesometro/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.home #peru {
+  overflow-x: hidden;
+}
+/* line 43, ../../app/stylesheets/partials/_home.sass */
+body.home #peru img {
+  margin: -45px 0 0 -45px;
+  position: absolute;
+}
+/* line 46, ../../app/stylesheets/partials/_home.sass */
+body.home #peru .encuentra {
+  border-bottom: 1px dashed #666666;
+  border-top: 1px dashed #666666;
+  color: #cc6666;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  margin-top: 250px;
+  text-transform: uppercase;
+}
+/* line 55, ../../app/stylesheets/partials/_home.sass */
+body.home .comment {
+  border-bottom: 1px dashed #666666;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+/* line 61, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.top {
+  border-bottom: 1px dashed #666666;
+  display: inline-block;
+  text-align: right;
+  padding-bottom: 5px;
+  width: 100%;
+}
+/* line 69, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.top span.title {
+  float: left;
+}
+/* line 72, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.top span.title, body.home .comment p.top span.title a {
+  color: #cc6666;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+/* line 77, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.top span.region {
+  color: #333333;
+  margin-right: 25px;
+}
+/* line 81, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.top span.gobierno {
+  color: #333333;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+}
+/* line 87, ../../app/stylesheets/partials/_home.sass */
+body.home .comment p.comment_content {
+  text-align: center;
+  padding: 20px;
+}
+/* line 90, ../../app/stylesheets/partials/_home.sass */
+body.home .comment .compartir {
+  float: right;
+  margin-top: -5px;
+}
+/* line 93, ../../app/stylesheets/partials/_home.sass */
+body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {
+  float: right;
+  margin-right: 5px;
 }
 
 /* line 28, ../../app/stylesheets/screen.sass */

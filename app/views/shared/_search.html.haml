@@ -1,7 +1,7 @@
 = form_for Promise.search, :url => promesas_path do |form|
 
   - if params[:controller] == 'promesas'
-    = select_tag :tema, options_from_collection_for_select(Topic.all, 'name','name', ((params[:search].nil?)? "" :  params[:search][:topics_contains])), :include_blank => 'temas'
+    = select_tag :tema, options_from_collection_for_select(Topic.all, 'name','name', ((params[:search] == 'topic')? "" :  params[:query])), :include_blank => 'temas'
 
   = form.text_field :general_search
 

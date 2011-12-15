@@ -1,7 +1,7 @@
 .promesa
   %p.promesa_top
     %span.region
-      = promesa.official_state_name.humanize
+      = link_to promesa.official_state_name.humanize, promesas_filters_path(:state, promesa.official_state_name.humanize)
     %span.fecha
       = promesa.created_at.to_s(:date)
   %p
@@ -12,14 +12,14 @@
   %p
     .compartir
       .share-fb
-        <div class="fb-send" data-href="http://www.promesometro.pe"></div>
+        <a name="fb_share" type="button" share_url="#{promesa_url(promesa.slug)}">Enviar</a>
       .share-tw
         <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
 .arrow
 .status
   .representante
     = image_tag promesa.official_avatar_url, :class => 'foto_representante'
-    %span.nombre_representante= promesa.official_name
+    %span.nombre_representante= link_to promesa.official_name, promesas_filters_path(:official, promesa.official_name)
     %span.partido_representante= promesa.official_political_party_name
   .promesa_status
     .dias_progreso

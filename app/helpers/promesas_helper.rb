@@ -67,6 +67,6 @@ module PromesasHelper
   end
   
   def promesas_temas(promesa)
-    concat 'Promesa de ' + promesa.topics.collect {|topic| topic.name}.join(', ')
+    concat raw 'Promesa de ' + promesa.topics.collect {|topic| link_to topic.name, promesas_filters_path(:topic, topic.name)}.join(', ')
   end
 end

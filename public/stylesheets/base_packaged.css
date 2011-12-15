@@ -55,7 +55,7 @@
  #promesas .promesa_titulo, #show-promesa .promesa_titulo {display: inline; float: left; margin-right: 10px; width: 630px}
  * html #promesas .promesa_titulo, * html #show-promesa .promesa_titulo {overflow-x: hidden}
  #promesas span.title a, #show-promesa span.title a {color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
- #promesas p.topic, #show-promesa p.topic {color: #959595}
+ #promesas p.topic, #promesas p.topic a, #show-promesa p.topic, #show-promesa p.topic a {color: #959595}
  #promesas span.region, #show-promesa span.region {color: #333333; margin-right: 25px}
  #promesas span.etiqueta, #show-promesa span.etiqueta {color: #464646}
  #promesas p.promesa_top, #show-promesa p.promesa_top {text-align: right; margin-bottom: 5px}
@@ -63,7 +63,7 @@
  #promesas .compartir .share-tw, #promesas .compartir .share-fb, #show-promesa .compartir .share-tw, #show-promesa .compartir .share-fb {float: right; margin-right: 5px}
  #promesas .representante, #show-promesa .representante {border-bottom: 1px dashed #999999; float: left; margin-bottom: 10px; padding-bottom: 10px}
  #promesas .representante img.foto_representante, #show-promesa .representante img.foto_representante {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; height: 37px; margin-right: 10px; width: 41px}
- #promesas .representante span.nombre_representante, #show-promesa .representante span.nombre_representante {color: #cc6666; display: inline-block; font-size: 14px; margin-right: 10px; width: 110px}
+ #promesas .representante span.nombre_representante, #promesas .representante span.nombre_representante a, #show-promesa .representante span.nombre_representante, #show-promesa .representante span.nombre_representante a {color: #cc6666; display: inline-block; font-size: 14px; margin-right: 10px; width: 110px}
  #promesas .representante span.partido_representante, #show-promesa .representante span.partido_representante {display: inline-block; width: 120px}
  #promesas .promesa_status .dias_progreso, #show-promesa .promesa_status .dias_progreso {display: inline; float: left; margin-right: 10px; width: 40px}
  * html #promesas .promesa_status .dias_progreso, * html #show-promesa .promesa_status .dias_progreso {overflow-x: hidden}
@@ -149,33 +149,6 @@
  #show-promesa ul#hito li {float: left; border-left: 1px dashed #666666; margin: 15px 0 0 15px; max-width: 250px; padding-left: 15px}
  #show-promesa .share {border: 1px dashed #666666; border-left: 0; border-right: 0; display: inline-block; margin: 20px 0; padding: 5px 0; width: 100%}
  #show-promesa .share .comentarios_counter {color: #cc6666}
- body.home {background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom}
- body.home #search_box {border: 0; margin-bottom: 10px}
- body.home #banner {text-align: center}
- body.home #banner img {margin-right: 30px}
- body.home #vp_title {display: inline; float: left; margin-right: 10px; width: 390px; margin: 80px 30px 10px 0}
- * html body.home #vp_title {overflow-x: hidden}
- body.home #od_title {display: inline; float: left; margin-right: 10px; width: 310px; margin: 80px 30px 10px 0}
- * html body.home #od_title {overflow-x: hidden}
- body.home #peru_title {display: inline; float: left; margin-right: 0; width: 190px; margin: 80px 0 10px 0}
- * html body.home #peru_title {overflow-x: hidden}
- body.home h1 {border-bottom: 1px dashed #666666}
- body.home #vox_populi {display: inline; float: left; margin-right: 10px; width: 350px; background: url("../images/vox_pupuli.png") no-repeat; min-height: 420px; margin-right: 30px; padding: 10px 20px}
- * html body.home #vox_populi {overflow-x: hidden}
- body.home #official_declaration {display: inline; float: left; margin-right: 10px; width: 270px; background: url("../images/official_dec.png") no-repeat; min-height: 420px; margin-right: 30px; padding: 10px 20px}
- * html body.home #official_declaration {overflow-x: hidden}
- body.home #peru {display: inline; float: left; margin-right: 0; width: 190px; overflow: visible}
- * html body.home #peru {overflow-x: hidden}
- body.home #peru img {margin: -45px 0 0 -45px; position: absolute}
- body.home #peru .encuentra {border-bottom: 1px dashed #666666; border-top: 1px dashed #666666; color: #cc6666; font-family: "Oswald", sans-serif; font-size: 18px; margin-top: 250px; text-transform: uppercase}
- body.home .comment {border-bottom: 1px dashed #666666; display: inline-block; margin-bottom: 15px; padding-bottom: 10px; width: 100%}
- body.home .comment p.top {border-bottom: 1px dashed #666666; display: inline-block; text-align: right; padding-bottom: 5px; width: 100%}
- body.home .comment p.top span.title {color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 14px; float: left}
- body.home .comment p.top span.region {color: #333333; margin-right: 25px}
- body.home .comment p.top span.gobierno {color: #333333; float: left}
- body.home .comment p.comment_content {text-align: center; padding: 20px}
- body.home .comment .compartir {float: right; margin-top: -5px}
- body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {float: right; margin-right: 5px}
  #directory .directory_title {display: inline; float: left; margin-right: 10px; width: 310px}
  * html #directory .directory_title {overflow-x: hidden}
  #directory .region_title {display: inline; float: left; margin-right: 10px; width: 270px}
@@ -250,6 +223,34 @@
  * html #temas h1 {overflow-x: hidden}
  #temas h2 {display: inline; float: left; margin-right: 0; width: 950px}
  * html #temas h2 {overflow-x: hidden}
+ body.home {background: url("../images/home_bg.png") repeat-x, url("../images/background-bottom.png") repeat-x bottom}
+ body.home #search_box {border: 0; margin-bottom: 10px}
+ body.home #banner {text-align: center}
+ body.home #banner img {margin-right: 30px}
+ body.home #vp_title {display: inline; float: left; margin-right: 10px; width: 390px; margin: 80px 30px 10px 0}
+ * html body.home #vp_title {overflow-x: hidden}
+ body.home #od_title {display: inline; float: left; margin-right: 10px; width: 310px; margin: 80px 30px 10px 0}
+ * html body.home #od_title {overflow-x: hidden}
+ body.home #peru_title {display: inline; float: left; margin-right: 0; width: 190px; margin: 80px 0 10px 0}
+ * html body.home #peru_title {overflow-x: hidden}
+ body.home h1 {border-bottom: 1px dashed #666666}
+ body.home #vox_populi {display: inline; float: left; margin-right: 10px; width: 350px; background: url("../images/vox_pupuli.png") no-repeat; min-height: 420px; margin-right: 30px; padding: 10px 20px}
+ * html body.home #vox_populi {overflow-x: hidden}
+ body.home #official_declaration {display: inline; float: left; margin-right: 10px; width: 270px; background: url("../images/official_dec.png") no-repeat; min-height: 420px; margin-right: 30px; padding: 10px 20px}
+ * html body.home #official_declaration {overflow-x: hidden}
+ body.home #peru {display: inline; float: left; margin-right: 0; width: 190px; overflow: visible}
+ * html body.home #peru {overflow-x: hidden}
+ body.home #peru img {margin: -45px 0 0 -45px; position: absolute}
+ body.home #peru .encuentra {border-bottom: 1px dashed #666666; border-top: 1px dashed #666666; color: #cc6666; font-family: "Oswald", sans-serif; font-size: 18px; margin-top: 250px; text-transform: uppercase}
+ body.home .comment {border-bottom: 1px dashed #666666; display: inline-block; margin-bottom: 15px; padding-bottom: 10px; width: 100%}
+ body.home .comment p.top {border-bottom: 1px dashed #666666; display: inline-block; text-align: right; padding-bottom: 5px; width: 100%}
+ body.home .comment p.top span.title {float: left}
+ body.home .comment p.top span.title, body.home .comment p.top span.title a {color: #cc6666; font-family: "Open Sans Condensed", sans-serif; font-size: 14px}
+ body.home .comment p.top span.region {color: #333333; margin-right: 25px}
+ body.home .comment p.top span.gobierno {color: #333333; display: block; text-align: left; margin-top: 5px}
+ body.home .comment p.comment_content {text-align: center; padding: 20px}
+ body.home .comment .compartir {float: right; margin-top: -5px}
+ body.home .comment .compartir .share-tw, body.home .comment .compartir .share-fb {float: right; margin-right: 5px}
  body.bp {line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333333; font-size: 75%}
  body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {font-weight: normal; color: #222222}
  body.bp h1 img, body.bp h2 img, body.bp h3 img, body.bp h4 img, body.bp h5 img, body.bp h6 img {margin: 0}

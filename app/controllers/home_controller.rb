@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
   
   def show
-    @government = Comment.government.limit(10).order('id DESC')
-    @citizens = Comment.citizens_approved.limit(10).order('id DESC')
+    @government = Comment.government.limit(5).order('id DESC')
+    @citizens = Comment.citizens_approved.limit(5).order('id DESC')
   end
   
   def facebook
