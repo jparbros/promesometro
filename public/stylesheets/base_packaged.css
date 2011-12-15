@@ -59,6 +59,18 @@
  #promesas span.region, #show-promesa span.region {color: #333333; margin-right: 25px}
  #promesas span.etiqueta, #show-promesa span.etiqueta {color: #464646}
  #promesas p.promesa_top, #show-promesa p.promesa_top {text-align: right; margin-bottom: 5px}
+ #promesas #filter-container, #show-promesa #filter-container {display: inline; float: left; margin-right: 10px; width: 950px; background-color: white; margin: 0 0 20px 0; padding: 10px}
+ * html #promesas #filter-container, * html #show-promesa #filter-container {overflow-x: hidden}
+ #promesas #filter-container h2, #show-promesa #filter-container h2 {color: #cc6666; margin-bottom: 0}
+ #promesas #filter-container span, #show-promesa #filter-container span {color: #dddddd}
+ #promesas #filter-container section, #show-promesa #filter-container section {display: inline; float: left; margin-right: 10px; width: 230px; border-right: 1px dashed #999999; margin: 0 10px; padding: 0 10px}
+ * html #promesas #filter-container section, * html #show-promesa #filter-container section {overflow-x: hidden}
+ #promesas #filter-container section.container, #show-promesa #filter-container section.container {display: inline; float: left; margin-right: 0; border-top: 1px dashed #999999; border-bottom: 1px dashed #999999; border-right: 0; margin: 10px 0; padding: 10px 0; width: 930px}
+ * html #promesas #filter-container section.container, * html #show-promesa #filter-container section.container {overflow-x: hidden}
+ #promesas #filter-container section.button, #show-promesa #filter-container section.button {display: inline; float: left; margin-right: 0; width: 70px; border: 0; margin-top: 43px}
+ * html #promesas #filter-container section.button, * html #show-promesa #filter-container section.button {overflow-x: hidden}
+ #promesas #filter-container .input, #show-promesa #filter-container .input {display: inline; float: left; margin-right: 0; width: 230px; padding: 5px 0}
+ * html #promesas #filter-container .input, * html #show-promesa #filter-container .input {overflow-x: hidden}
  #promesas .compartir, #show-promesa .compartir {float: right; margin-top: -5px}
  #promesas .compartir .share-tw, #promesas .compartir .share-fb, #show-promesa .compartir .share-tw, #show-promesa .compartir .share-fb {float: right; margin-right: 5px}
  #promesas .representante, #show-promesa .representante {border-bottom: 1px dashed #999999; float: left; margin-bottom: 10px; padding-bottom: 10px}

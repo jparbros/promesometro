@@ -1,14 +1,45 @@
 - content_for :title, ":: Promesas"
 #promesas
+    
+  - if (params[:controller] == 'promesas' && params[:action] == 'index') or (params[:controller] == 'promise_filter')
+    #filter-container
+      %h2 Busqueda Avanzada
+      = form_tag promise_filter_path, :method => :post
+      %section.container
+        %section
+          .input
+            = text_field_tag 'search[state]', nil, :placeholder => 'Region'
+          .input
+            = text_field_tag 'search[province]', nil, :placeholder => 'Provincia'
+    
+        %section
+          .input
+            = text_field_tag 'search[topic]', nil, :placeholder => 'Tema'
+          .input
+            = text_field_tag 'search[official]', nil, :placeholder => 'Autoridad'
+        
+        %section
+          .input
+            = text_field_tag 'search[keyword]', nil, :placeholder => 'Busqueda'
+          .input
+            = text_field_tag 'search[political_party]', nil, :placeholder => 'Partido Politico'
+    
+        %section.button
+          = submit_tag 'Buscar', :class => :button
+
+      %span
+        Nota: No es necesario llenar todos los campos del filtro
+
   .promesa_titulo
     %h1 Promesas
-    
+
   .promesa_estado_titulo
     %h1 Estado de la Promesa
 
   - titulo_filtro_promesas({})
+      
 
-  = render :partial => 'promesa', :collection => @promises
+  = render :partial => 'promesas/promesa', :collection => @promises
   - if @promises.empty?
     %h3
       No existen coincidencias para su busqueda

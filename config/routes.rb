@@ -34,6 +34,8 @@ Promesometro::Application.routes.draw do
   resources :acerca_de, :only => [:index]
   resources :temas, :only => [:index]
   
+  resource :promise_filter, :controller => :promise_filter, :only => [:create]
+  
   match "/estados/:estado/provincias", :to => "provincias#index"
   
   match "/representantes/:lugar", :to => "representantes#show"

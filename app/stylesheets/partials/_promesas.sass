@@ -21,6 +21,45 @@
     text-align: right
     margin-bottom: 5px
   
+  #filter-container
+    +column(24)
+    background-color: #ffffff
+    margin: 0 0 20px 0
+    padding: 10px
+    
+    
+    h2
+      color: #CC6666
+      margin-bottom: 0
+      
+    span
+      color: #dddddd
+    
+    section
+      +column(6)
+      border-right: 1px dashed #999999
+      margin: 0 10px
+      padding: 0 10px
+      
+      &.container
+        +column-base(true)
+        border-top: 1px dashed #999999
+        border-bottom: 1px dashed #999999
+        border-right: 0
+        margin: 10px 0
+        padding: 10px 0
+        width: 930px
+      
+      &.button
+        +column(2,true)
+        border: 0
+        margin-top: 43px
+
+    .input
+      +column(6, true)
+      padding: 5px 0
+
+  
   .compartir
     float: right
     margin-top: -5px

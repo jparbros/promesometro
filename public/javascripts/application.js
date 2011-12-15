@@ -48,7 +48,7 @@ $.extend({
    $('select#tema').change(function(){
      host = window.location.host;
      value = $(this).attr('value');
-     window.location = 'http://' + host + '/promesas?search[topics_contains]=' + value;
+     window.location = 'http://' + host + '/promesas/topic/' + value;
    });
  }
 });
