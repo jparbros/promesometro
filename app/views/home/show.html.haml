@@ -1,7 +1,7 @@
 #banner
   = image_tag 'mide.png'
   = image_tag 'accelerometer.png'
-  
+
 
 #vp_title
   %h1 Vox Populi
@@ -17,11 +17,10 @@
   = render :partial => 'comment', :collection => @government
 
 #peru
-  = image_tag('peru_home.png', :usemap => '#home_map') 
+  = image_tag('peru_home.png', :usemap => '#home_map')
   = content_tag('div','encuentra tus representantes y mide sus promesas', :class => 'encuentra')
-  
+
 %map{:name => "home_map"}
-  %area{:shape => "poly", :title => "lambayeque", :coords => "66,132,74,129,77,125,72,119,75,114,71,112,69,113,69,110,64,106,62,112,59,111,55,115,53,119,59,122,65,127,64,127", :href => "promesas/?search[official_state_name_contains]=lambayeque", :target => "_self", :alt => "Lambayeque"}
-  %area{:shape => "poly", :title => "san martin", :coords => "99,122,99,128,101,134,104,138,104,146,107,145,110,146,110,150,111,152,119,154,122,151,124,154,126,154,126,151,130,147,127,141,124,134,124,129,125,126,127,124,131,126,133,126,134,123,134,118,132,115,121,113,119,111,116,114,114,110,107,107,100,102,99,107,101,113,106,114,108,118,103,123,100,123", :href => "promesas?search[official_state_name_contains]=san martin", :target => "_self", :alt => "San Martin"}
-  %area{:shape => "poly", :title => "cusco", :coords => "165,196,161,200,165,202,164,207,159,212,159,215,162,215,161,218,170,228,174,228,180,230,185,234,187,240,184,244,180,246,181,249,185,250,188,248,191,251,191,254,195,254,198,253,201,255,203,259,204,251,200,247,204,247,206,241,207,235,209,235,214,223,211,221,208,224,202,222,195,219,192,220,190,218,189,213,184,210,185,208,182,205,185,196,179,197,173,194,170,196,170,196", :href => "promesas?search[official_state_name_contains]=cusco", :target => "_self", :alt => "Cusco"}
-    
+  %area{:shape => "poly", :title => "Lambayeque", :coords => "66,132,74,129,77,125,72,119,75,114,71,112,69,113,69,110,64,106,62,112,59,111,55,115,53,119,59,122,65,127,64,127", :href => "#{promesas_filters_path(:search => 'state', :query => 'lambayeque')}", :target => "_self", :alt => "Lambayeque"}
+  %area{:shape => "poly", :title => "San Martín", :coords => "99,122,99,128,101,134,104,138,104,146,107,145,110,146,110,150,111,152,119,154,122,151,124,154,126,154,126,151,130,147,127,141,124,134,124,129,125,126,127,124,131,126,133,126,134,123,134,118,132,115,121,113,119,111,116,114,114,110,107,107,100,102,99,107,101,113,106,114,108,118,103,123,100,123", :href => "#{promesas_filters_path(:search => 'state', :query => 'san martin')}", :target => "_self", :alt => "San Martin"}
+  %area{:shape => "poly", :title => "Cusco", :coords => "165,196,161,200,165,202,164,207,159,212,159,215,162,215,161,218,170,228,174,228,180,230,185,234,187,240,184,244,180,246,181,249,185,250,188,248,191,251,191,254,195,254,198,253,201,255,203,259,204,251,200,247,204,247,206,241,207,235,209,235,214,223,211,221,208,224,202,222,195,219,192,220,190,218,189,213,184,210,185,208,182,205,185,196,179,197,173,194,170,196,170,196", :href => "#{promesas_filters_path(:search => 'state', :query => 'cusco')}", :target => "_self", :alt => "Cusco"}

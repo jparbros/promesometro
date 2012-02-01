@@ -12,7 +12,7 @@ gem 'jquery-rails', '~> 1.0.12'
 gem 'kaminari'
 gem 'koala'
 gem 'mini_magick'
-gem 'mysql2', '~> 0.2.11'
+gem 'pg'
 gem 'rails', '~> 3.0.10'
 gem "meta_where"
 gem "meta_search"
@@ -23,4 +23,6 @@ gem 'twitter_oauth'
 
 group :development do
   gem "ruby-debug19"
+  gem 'heroku'
+  gem 'taps'
 end

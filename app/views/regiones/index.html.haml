@@ -16,10 +16,10 @@
     &nbsp;
   .representante
     &nbsp;
-  
+
 %script{:type => "text/template", :id => "provincia-template"}
   <a href="#representante/<%= name %>/alcalde"><%= name %></a>
-  
+
 %script{:type => "text/template", :id => "estado-template"}
   <a href="#representante/<%= name %>/gobernador"><%= name %> &gt;&gt;</a>
 
@@ -35,4 +35,4 @@
   .representante_bar
     <a href="<%= resume %>" target="_blank">Hoja de vida</a>
   .representante_bar
-    <a href="/promesas?search[official_name_contains]=<%= name %>"><%= promise_count %> Promesas</a>
+    <a href="/promesas/official/<%=name%>"><%=promise_count%> Promesas</a>
